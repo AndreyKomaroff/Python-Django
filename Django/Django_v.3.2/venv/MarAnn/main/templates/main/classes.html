@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+  {{ title }}
+{% endblock %}
+
+{% block body %}
+  {{ h1 }}
+  <div class="video-block">
+    <iframe class="video-block__link" src="https://www.youtube.com/embed/CEH7s7_2K70" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <iframe class="video-block__link" src="https://www.youtube.com/embed/duz6sLxWqQo" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+  <p class="paper__param">
+    <span>Дальше будут еще уроки</span>
+  </p>
+{% endblock %}
