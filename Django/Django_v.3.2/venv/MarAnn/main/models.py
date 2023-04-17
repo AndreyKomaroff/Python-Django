@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
-class News(models.Model):
+class Task(models.Model):
     title = models.CharField('Название статьи',max_length=100, unique=True)
     text = models.TextField('Основной текст статьи')
     date = models.DateTimeField(default=timezone.now)
