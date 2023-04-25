@@ -38,54 +38,33 @@ class Module(models.Model):
                         on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     description = models.TextField(blank=True)
+    url = models.URLField()
     order = OrderField(blank=True, for_fields=['course'])
 
     class Meta:
         ordering = ['order']
+        verbose_name = 'Модуль'
+        verbose_name_plural = 'Модули'
 
     def __str__(self):
         return f'{self.order}. {self.title}'
     
 class Content(models.Model):
-    module = models.ForeignKey(Course,
-                                related_name='contents',
-                                on_delete=models.CASCADE)
+    module = models.ForeignKey(Module,
+                            related_name='contents',
+                            on_delete=models.CASCADE)
     content_type = models.ForeignKey(ContentType,
-                                on_delete=models.CASCADE,
-                                limit_choices_to={'model__in':(
-                                                'text',
-                                                'video',
-                                                'image',
-                                                'file')})
+                            on_delete=models.CASCADE,
+                            limit_choices_to={'model__in':(
+                                            'text',
+                                            'video',
+                                            'image',
+                                            'file')})
     object_id = models.PositiveIntegerField()
     item = GenericForeignKey('content_type', 'object_id')
     order = OrderField(blank=True, for_fields=['module'])
     
     class Meta:
         ordering = ['order']
-        
-class ItemBase(models.Model):
-    owner = models.ForeignKey(User,
-                            related_name='%(class)s_related',
-                            on_delete=models.CASCADE)
-    title = models.CharField(max_length=250)
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
 
-    class Meta:
-        abstract = True
 
-    def __str__(self):
-        return self.title
-    
-class Text(ItemBase):
-    content = models.TextField()
-
-class File(ItemBase):
-    file = models.FileField(upload_to='files')
-
-class Image(ItemBase):
-    file = models.FileField(upload_to='images')
-
-class Video(ItemBase):
-    url = models.URLField()

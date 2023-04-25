@@ -16,3 +16,8 @@ class CourseAdmin(admin.ModelAdmin):
     search_fields = ['title', 'overview']
     prepopulated_fields = {'slug': ('title',)}
     inlines = [ModuleInline]
+
+#class AdminVideo(AdminVideoMixin, admin.ModelAdmin):
+ #   pass
+
+#admin.site.register(Video, AdminVideo)

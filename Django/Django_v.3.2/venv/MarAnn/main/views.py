@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from courses.models import *
 
 # Create your views here.
 
@@ -14,4 +15,10 @@ def portfolio(request):
 
 @login_required
 def classes(request):
-    return render(request, 'main/classes.html', {'title': 'Уроки', 'h1': 'Видеоуроки от Супермаркетолог'})
+    posts = Module.objects.all()
+    context = {
+        'title': 'Уроки',
+        'h1': 'Видеоуроки от Супермаркетолог',
+        'posts': posts
+    }
+    return render(request, 'main/classes.html', context=context)

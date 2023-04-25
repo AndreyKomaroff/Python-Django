@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'courses'
+    'courses',
+    'embed_video'
 ]
 
 MIDDLEWARE = [
@@ -123,7 +124,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    '/var/www/static/',
+   '/var/www/static/',
 ]
 
 # Default primary key field type
@@ -131,6 +132,6 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = 'profile'
+LOGIN_REDIRECT_URL = 'home'
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'

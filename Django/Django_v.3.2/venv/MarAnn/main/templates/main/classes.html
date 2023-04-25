@@ -5,17 +5,17 @@
 {% endblock %}
 
 {% block body %}
-  {{ h1 }}
-  <div class="video-block">
-    <iframe class="video-block__link" src="https://www.youtube.com/embed/CEH7s7_2K70" title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-    <iframe class="video-block__link" src="https://www.youtube.com/embed/duz6sLxWqQo" title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-  </div>
+  <h1 class="title">{{ h1 }}</h1>
+  <ul class="list">
+    {% for p in posts %}
+    <li class="item">
+      <img class="image" src="https://mobimg.b-cdn.net/v3/fetch/d5/d5a7014027c420bcb11088ae0ff97763.jpeg?w=1470&r=0.5625" alt="">
+      <h2>{{ p.title }}</h2>
+      <p>{{ p.description }}</p>
+      <a href="{{ p.url }}" target="_blank" class="link">Видео урока</a>
+    </li>
+    {% endfor %}
+  </ul>
   <p class="paper__param">
     <span>Дальше будут еще уроки</span>
   </p>
