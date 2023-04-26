@@ -37,9 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main',
-    'courses',
-    'embed_video'
+    'main.apps.MainConfig',
+    'courses.apps.CoursesConfig',
 ]
 
 MIDDLEWARE = [

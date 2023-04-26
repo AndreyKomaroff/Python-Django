@@ -1,16 +1,21 @@
+@import url(vars.css);
+
 body {
     background-color: white;
     color: black;
+    text-transform: uppercase;
 }
 
-.carousel {
-    margin-top: 70px;
-}
 
 .list {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
 }
 
 .image {
@@ -23,4 +28,59 @@ body {
     border-bottom: 3px solid black;
 }
 
-  
+.blog-img {
+    width: 350px;
+}
+
+.accordion-item {
+    color: var(--bs-accordion-color);
+    background-color: var(--orange_color);
+    border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+
+}
+
+.accordion-button {
+    text-transform: uppercase;
+
+}
+
+.accordion-button:focus {
+    border-color: var(--orange_color);
+    box-shadow: var(--orange_color);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--orange_color);
+    background-color: var(--white_color);
+    box-shadow: none;
+
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.carousel-caption {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-1 {
+    background-image: url(../main/img/slide320-1.png);
+
+}
+
+.slide-2 {
+    background-image: url(../main/img/slide320-2.png);
+
+}
+.slide-3 {
+    background-image: url(../main/img/slide320-3.png);
+
+}
+.slide-4 {
+    background-image: url(../main/img/slide320-4.png);
+
+}

@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from courses.models import *
+from main.models import Blog
 
 # Create your views here.
 
@@ -8,10 +9,13 @@ def home(request):
     return render(request, 'main/home.html', {'title': 'Главная!', 'h1': 'Комарова супер макретолог: быстро, качественно, дорого!'})
 
 def blog(request):
-    return render(request, 'main/blog.html', {'title': 'Блог', 'h1': 'Блог'})
-
-def portfolio(request):
-    return render(request, 'main/portfolio.html', {'title': 'Портфолио', 'h1': 'Портфолио'})
+    posts = Blog.objects.all()
+    context = {
+        'title': 'Блог',
+        'h1': 'Посты',
+        'posts': posts
+    }
+    return render(request, 'main/blog.html', context=context)
 
 @login_required
 def classes(request):

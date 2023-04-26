@@ -5,10 +5,12 @@
 {% endblock %}
 
 {% block body %}
+
   <h1 class="title">{{ h1 }}</h1>
   <ul class="list">
     {% for p in posts %}
     <li class="item">
+      
       <img class="image" src="https://mobimg.b-cdn.net/v3/fetch/d5/d5a7014027c420bcb11088ae0ff97763.jpeg?w=1470&r=0.5625" alt="">
       <h2>{{ p.title }}</h2>
       <p>{{ p.description }}</p>

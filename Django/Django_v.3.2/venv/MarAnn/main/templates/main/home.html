@@ -1,84 +1,481 @@
 {% extends 'main/base.html' %}
 
 {% block title %}
-  {{ title }}
+{{ title }}
 {% endblock %}
 
 {% block body %}
-  <section class="hero">
-    <div class="container">
-        <div class="hero__main flex">
-          {{ h1 }}
-          <h2 class="">
-                Уроки и занятия онлайн
-            </h2>
+<main class="main">
+    <section class="hero">
+        <div class="container">
+            <div class="hero__main">
+                <div class="hero__left-block">
+                    <h1 class="title">
+                        создай уникальный блог
+                    </h1>
+                    <h2 class="subtitle">
+                        научись вести блог без навязанных трендов и проверенных схем.
+                    </h2>
+                    <ul class="hero__list list-reset">
+                        <li class="hero__item">
+                            без выгорания
+                        </li>
+                        <li class="hero__item">
+                            без постоянных прогревов
+                        </li>
+                        <li class="hero__item">
+                            уникально и интересно
+                        </li>
+                    </ul>
+                    <div class="hero__btn">
+                        <a href="#services" class="btn btn-reset btn-first">
+                            сделай за меня
+                        </a>
+                        <a href="{% url 'classes' %}" target="_blank" class="btn btn-reset btn-second">
+                            хочу научится сам
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__right-block">
+                    <img src="img/Main-foto.png" alt="Фотография" class="hero__main-foto">
+                </div>
+            </div>
+            <div class="about__line">
+                <p class="about__line__list list-reset">
+                    SHORTS
+                    <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.3477 0.237754L16.927 7.04897L24.7582 2.42629L19.8984 8.84591L29.5991 9.46081L20.1471 11.7283L26.0348 17.2206L17.5274 14.0077L16.153 21.16L13.5738 14.3488L5.74256 18.9715L10.6024 12.5519L0.90166 11.937L10.3537 9.66948L4.46604 4.1772L12.9734 7.39011L14.3477 0.237754Z"
+                            fill="#FC9E6D" />
+                    </svg>
+                    STORIES
+                    <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.3477 0.237754L16.927 7.04897L24.7582 2.42629L19.8984 8.84591L29.5991 9.46081L20.1471 11.7283L26.0348 17.2206L17.5274 14.0077L16.153 21.16L13.5738 14.3488L5.74256 18.9715L10.6024 12.5519L0.90166 11.937L10.3537 9.66948L4.46604 4.1772L12.9734 7.39011L14.3477 0.237754Z"
+                            fill="#FC9E6D" />
+                    </svg>
+                    REELS
+                    <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.3477 0.237754L16.927 7.04897L24.7582 2.42629L19.8984 8.84591L29.5991 9.46081L20.1471 11.7283L26.0348 17.2206L17.5274 14.0077L16.153 21.16L13.5738 14.3488L5.74256 18.9715L10.6024 12.5519L0.90166 11.937L10.3537 9.66948L4.46604 4.1772L12.9734 7.39011L14.3477 0.237754Z"
+                            fill="#FC9E6D" />
+                    </svg>
+                    КЛИПЫ
+                    <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.3477 0.237754L16.927 7.04897L24.7582 2.42629L19.8984 8.84591L29.5991 9.46081L20.1471 11.7283L26.0348 17.2206L17.5274 14.0077L16.153 21.16L13.5738 14.3488L5.74256 18.9715L10.6024 12.5519L0.90166 11.937L10.3537 9.66948L4.46604 4.1772L12.9734 7.39011L14.3477 0.237754Z"
+                            fill="#FC9E6D" />
+                    </svg>
+                    СТАТЬИ
+                    <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.3477 0.237754L16.927 7.04897L24.7582 2.42629L19.8984 8.84591L29.5991 9.46081L20.1471 11.7283L26.0348 17.2206L17.5274 14.0077L16.153 21.16L13.5738 14.3488L5.74256 18.9715L10.6024 12.5519L0.90166 11.937L10.3537 9.66948L4.46604 4.1772L12.9734 7.39011L14.3477 0.237754Z"
+                            fill="#FC9E6D" />
+                    </svg>
+                    ПОСТЫ
+                    <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.3477 0.237754L16.927 7.04897L24.7582 2.42629L19.8984 8.84591L29.5991 9.46081L20.1471 11.7283L26.0348 17.2206L17.5274 14.0077L16.153 21.16L13.5738 14.3488L5.74256 18.9715L10.6024 12.5519L0.90166 11.937L10.3537 9.66948L4.46604 4.1772L12.9734 7.39011L14.3477 0.237754Z"
+                            fill="#FC9E6D" />
+                    </svg>
+                </p>
+            </div>
         </div>
-    </div>
-</section>
-<section class="about" id="about">
-  <div class="container">
-    <div class="about__main flex">
-      <div class="about__left-block flex">
-          <p class="param-about param-title">
-              Комаров Андрей
-          </p>
-          <p class="param-about">
-              Автор курсов "Гиревой тренинг в домашних условиях", "Тренировки с двумя гирями на все тело",
-              "Развитие силы хвата"
-          </p>
-          <p class="param-about">
-              Сертифицированный персональный тренер по фитнесу
-              и бодибилдингу. Тренировки по таким направлениям как: гиревой тренинг, фитнес, тренировки в
-              тренажерном зале, функциональный тренинг, бокс, тайский бокс и т.д.
-              Опыт работы с людьми пожилого возраста, подростками, детьми и людьми
-              с ограничениями по здоровью.
-              Обладатель нескольких званий World Class и Elite по версии международного рейтинга Grabhold, участник и призер большого количества онлайн соревнований
-              и сертификаций по силе хвата и сгибанию стали.
-          </p>
-      </div>
-      <div class="about__right-block flex">
-          <img src="img/Foto.jpg" alt="Фотография" class="about__foto">
-      </div>
-  </div>
-  <div class="about__side-block">
-      <ul class="side-block__list flex list-reset">
-          <li class="side-block__item">
-              <p class="side-block__param-main">
-                  БОЛЕЕ 10 ЛЕТ
-              </p>
-              <p class="side-block__param">
-                  Тренерской деятельности
-              </p>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__main">
+                <div class="about__left-block">
+                    <h2 class="subtitle title__about">
+                        то обучение, где нет домашек, долгих лекций и проектной работы
+                    </h2>
+                </div>
+                <div class="about__right-block">
+                    <br class="about__content">
+                    <p class="about__content">
+                        когда ты <b>делаешь</b> как все, то и <s>конкурентов</s> становится больше, а <b>зритель</b> не
+                        видит твою <b>индивидуальность</b>. Тебя просто пролистывают, как очередной <b>блог</b> «магазин
+                        на диване».
+                    </p>
+                    <p class="about__content">
+                        <mark>ЧТО ЖЕ ДЕЛАТЬ?</mark>
+                    </p>
+                    <ul class="about__list list-reset row">
+                        <li class="about__item col-md-4">
+                            <span class="about__item-text">
+                                научится рассказывать истории
+                            </span>
+                            <p class="about__param">
+                                не монтаж, не прогревы, не визуал делают твой блог интересныи и уникальным, а твои
+                                истории
+                            </p>
+                        </li>
+                        <li class="about__item col-md-4">
+                            <span class="about__item-text">
+                                понять структуру блога
+                            </span>
+                            <p class="about__param">
+                                Если ты станешь архитектором своего блога, то он легко монетизируется
+                            </p>
+                        </li>
+                        <li class="about__item col-md-4">
+                            <span class="about__item-text">
+                                найти себя и создавать контент
+                            </span>
+                            <p class="about__param">
+                                ты напишешь свою историю и блог станет сериалом твоей жизни
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about__results row">
+                    <div class="about__results-block col-md-4">
+                        <span>
+                            3+
+                        </span>
+                        <p class="about__results-param">
+                            года я в сфере рекламы
+                        </p>
+                    </div>
+                    <div class="about__results-block col-md-4">
+                        <span>
+                            62+
+                        </span>
+                        <p class="about__results-param">
+                            проекта за моими плечами
+                        </p>
+                    </div>
+                    <div class="about__results-block col-md-4">
+                        <span>
+                            28+
+                        </span>
+                        <p class="about__results-param">
+                            экспертов, которым я изменила жизнь
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="container">
+            <div class="services__main">
+                <div class="services__logo">
+                    <img src="img/Logo-1.svg" alt="Логотип" class="services__logo-img">
+                    <h3 class="heading">
+                        Структура обучения
+                    </h3>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                понимание маркетинга и режиссуры
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                блог - это не только продажи, но и не только кино. очень важно понимать роль маркетинга
+                                и режиссуры. вот я и объясню на пальцах, без душноты, чем полезен маркетинг и как стать
+                                режиссером своего блога.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                алгоритмы и понимание социальных сетей
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                есть вещи, которые просто нужно знать. это, как машина: нужно понимать, что она умеет и
+                                как она работает, чтобы можно было доехать до точки б.
+                                единственный момент - я расскажу, как работает практически каждая социальная сеть
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                структура и архитектура блога
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                из чего строится блог? нет, не из фоток и видосиков.
+                                мы выстроим систему раз и навсегда, избавимся от ненужных манипуляций и перестанем
+                                делать, как все.
+                                у блога появится герой, миссия, сюжет, и логлайн.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                медиа
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                создадим рекламный ролик для
+                                телевидения и подберем лучшие
+                                радиостанции с вашей целевой
+                                аудитории.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                event
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                корпоративные праздники,
+                                открытие новых площадок,
+                                презентация продукта/услуги —
+                                любое мероприятие для вашего
+                                бренда.
 
-          </li>
-          <li class="side-block__item">
-              <p class="side-block__param-main">
-                  БОЛЕЕ 100
-              </p>
-              <p class="side-block__param">
-                  Довольных клиентов
-              </p>
+                            </div>
+                        </div>
+                    </div>
 
-          </li>
-          <li class="side-block__item">
-              <p class="side-block__param-main">
-                  БОЛЕЕ 20 ЛЕТ
-              </p>
-              <p class="side-block__param">
-                  Стажа собственных тренировок
-              </p>
-          </li>
-      </ul>
-  </div>
-</div>
-</section>
-<section class="services" id="services">
-  <div class="container">
-      <div class="services__main">
-        <h2 class="title-second title__about">
-          УСЛУГИ
-      </h2>
-  </div>
-  </div>
-</section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolios" class="slider">
+        <div class="container">
+            <h3 class="heading">
+                Портфолио
+            </h3>
+
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                    <div class="container">
+                      <div class="carousel-caption slide-1">
+                        <h4>Маркетплейс Handmade-товаров IRIS Search</h4>
+                        <ul class="slider__list list-reset">
+                            <li class="slider__item">
+                                Создание бренда с нуля
+                            </li>
+                            <li class="slider__item">
+                                Индивидуальный дизайн SMM (+4500 подписчиков за 1 месяц)
+                            </li>
+                            <li class="slider__item">
+                                Верстка сайта (создание многостраничного интернет-магазина)
+                            </li>
+                            <li class="slider__item">
+                                СМИ (работа с региональными СМИ OTS 60000)
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                    <div class="container">
+                      <div class="carousel-caption slide-2">
+                        <h4>Сеть ресторанов грузино-итальянской кухни Тбиладжио</h4>
+                        <ul class="slider__list list-reset">
+                            <li class="slider__item">
+                                Комплексное ведение всех соц. сетей (+1000 подписчиков каждый месяц без
+                                вложений)
+                            </li>
+                            <li class="slider__item">
+                                Таргетированная реклама (OTS 300000 ежемесячно)
+                            </li>
+                            <li class="slider__item">
+                                Работа с блогерами
+                            </li>
+                            <li class="slider__item">
+                                Организация мероприятия
+                            </li>
+                            <li class="slider__item">
+                                СМИ, Медиа
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                    <div class="container">
+                      <div class="carousel-caption slide-3">
+                        <h4>Магазин женского белья “В&nbsp;Ажуре”</h4>
+                        <ul class="slider__list list-reset">
+                            <li class="slider__item">
+                                Организация спецпроектов с другими брендами
+                            </li>
+                            <li class="slider__item">
+                                Работа с блогерами
+                            </li>
+                            <li class="slider__item">
+                                Организация фотосессии и видеосъемки
+                            </li>
+                            <li class="slider__item">
+                                Комплексное ведение соц. сетей (органический OTS 30000 в месяц)
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                    <div class="container">
+                      <div class="carousel-caption slide-4">
+                        <h4>Онлайн-школа спецагентов по недвижимости Agent-SI</h4>
+                        <ul class="slider__list list-reset">
+                            <li class="slider__item">
+                                Создание бренда
+                            </li>
+                            <li class="slider__item">
+                                Индивидуальный дизайн
+                            </li>
+                            <li class="slider__item">
+                                SMM (+1700 подписчиков)
+                            </li>
+                            <li class="slider__item">
+                                Верстка сайта (площадка для онлайн-уроков)
+                            </li>
+                            <li class="slider__item">
+                                Работа с блогерами
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>        
+            </div>
+    </section>
+    <section class="section cooperation">
+        <div class="container">
+            <div class="cooperation__main">
+                <h3 class="title__section">
+                    Успешно сотрудничали
+                </h3>
+                <ul class="cooperation__list list-reset">
+                    <li class="cooperation__item">
+                        BIGLION
+                    </li>
+                    <li class="cooperation__item">
+                        HappyLande
+                    </li>
+                    <li class="cooperation__item">
+                        IRIS Search
+                    </li>
+                    <li class="cooperation__item">
+                        Тбиладжио
+                    </li>
+                    <li class="cooperation__item">
+                        В Ажуре
+                    </li>
+                    <li class="cooperation__item">
+                        Agent-SI
+                    </li>
+                    <li class="cooperation__item">
+                        Мария Троицкая
+                    </li>
+                    <li class="cooperation__item">
+                        Кофе да Булка
+                    </li>
+                    <li class="cooperation__item">
+                        LuChic
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section team">
+        <div class="container">
+            <div class="team__main">
+                <h3 class="title__section">
+                    Наша команда
+                </h3>
+                <ul class="team__list list-reset">
+                    <li class="team__item">
+                        <img src="img/1.png" alt="Фото" class="team__item_foto">
+                        <p class="team__param">
+                            COMPANY FOUNDER
+
+                        </p>
+                        <p class="team__param">
+                            Комарова Анна
+                        </p>
+                    </li>
+                    <li class="team__item">
+                        <img src="img/2.png" alt="Фото" class="team__item_foto">
+                        <p class="team__param">
+                            WEB-DEVELOPER / SEO
+
+                        </p>
+                        <p class="team__param">
+                            Комаров Андрей
+                        </p>
+
+                    </li>
+                    <li class="team__item">
+                        <img src="img/3.png" alt="Фото" class="team__item_foto">
+                        <p class="team__param">
+                            SMM MANAGER
+
+
+                        </p>
+                        <p class="team__param">
+                            Сухарева Ксения
+                        </p>
+
+                    </li>
+                    <li class="team__item">
+                        <img src="img/4.png" alt="Фото" class="team__item_foto">
+                        <p class="team__param">
+                            WEB DESIGNER
+
+                        </p>
+                        <p class="team__param">
+                            Грек Ульяна
+                        </p>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
 {% endblock %}
