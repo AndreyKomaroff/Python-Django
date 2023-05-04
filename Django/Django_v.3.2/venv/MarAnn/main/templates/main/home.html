@@ -420,60 +420,25 @@
             </div>
         </div>
     </section>
-    <section class="section team">
-        <div class="container">
-            <div class="team__main">
-                <h3 class="title__section">
-                    Наша команда
-                </h3>
-                <ul class="team__list list-reset">
-                    <li class="team__item">
-                        <img src="img/1.png" alt="Фото" class="team__item_foto">
-                        <p class="team__param">
-                            COMPANY FOUNDER
+    <section class="prod">
+        <ul class="list">
+          {% for i in items %}
+        
+          <li class="item">
+        
+            <h2>{{ i.title }}</h2>
+            <p>{{ i.text }}</p>
+            <p>{{ i.price }} / {{ i.discountPrice }}</p>
+            <a href="{{ i.url }}" target="_blank" class="button btn-reset">
+                Купить
+            </a>
 
-                        </p>
-                        <p class="team__param">
-                            Комарова Анна
-                        </p>
-                    </li>
-                    <li class="team__item">
-                        <img src="img/2.png" alt="Фото" class="team__item_foto">
-                        <p class="team__param">
-                            WEB-DEVELOPER / SEO
-
-                        </p>
-                        <p class="team__param">
-                            Комаров Андрей
-                        </p>
-
-                    </li>
-                    <li class="team__item">
-                        <img src="img/3.png" alt="Фото" class="team__item_foto">
-                        <p class="team__param">
-                            SMM MANAGER
-
-
-                        </p>
-                        <p class="team__param">
-                            Сухарева Ксения
-                        </p>
-
-                    </li>
-                    <li class="team__item">
-                        <img src="img/4.png" alt="Фото" class="team__item_foto">
-                        <p class="team__param">
-                            WEB DESIGNER
-
-                        </p>
-                        <p class="team__param">
-                            Грек Ульяна
-                        </p>
-
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-</main>
+          </li>
+          {% endfor %}
+        </ul>
+        <p class="paper__param">
+          <span>ГаГаГА</span>
+        </p>
+          </section>
+        </main>
 {% endblock %}

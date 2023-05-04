@@ -11,5 +11,7 @@ class BlogAdmin(admin.ModelAdmin):
     search_fields = ['title']
 
 
+
 admin.site.register(Blog, BlogAdmin)
+#admin.site.register(Product, ProductAdmin)
 admin.site.login = redirect_to_home

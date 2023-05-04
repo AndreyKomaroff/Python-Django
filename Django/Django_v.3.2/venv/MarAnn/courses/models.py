@@ -59,4 +59,18 @@ class Content(models.Model):
     class Meta:
         ordering = ['order']
 
+class Product(models.Model):
+    title = models.CharField('Название',max_length=100, unique=True)
+    #image = models.ImageField(upload_to="media/blog", verbose_name="Фото")
+    text = models.TextField('Основной текст статьи')
+    price = models.IntegerField('Стоимость')
+    discountPrice = models.IntegerField('Стоимость со скидкой')
+    url = models.URLField()
+
+    def __str__ (self):
+        return f'Предложения: {self.title}'
+
+    class Meta:
+        verbose_name = 'Предложение'
+        verbose_name_plural = 'Предложения'
 

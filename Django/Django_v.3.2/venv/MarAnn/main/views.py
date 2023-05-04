@@ -13,9 +13,11 @@ menu = [{'title': 'Главная', 'url_name': 'home'},
 
 
 def home(request):
+    items = Product.objects.all()
     context = {
         'title': 'Главная',
-        'menu': menu
+        'menu': menu,
+        'items': items
     }
 
     return render(request, 'main/home.html', context=context)
