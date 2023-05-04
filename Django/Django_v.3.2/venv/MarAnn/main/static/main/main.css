@@ -1,11 +1,112 @@
 @import url(vars.css);
 
-body {
-    background-color: white;
-    color: black;
-    text-transform: uppercase;
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat-Regular'),
+      url(../main/fonts/Montserrat-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat-Bold'),
+      url(../main/fonts/Montserrat-Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat-Medium'),
+      url(../main/fonts/Montserrat-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    min-width: 320px;
+    background-color: var(--white_color);
+    color: var(--black_color);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+section {
+    padding: 55px 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    max-width: 19em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 25px;
+    color: var(--black_color);
+    border: var(--orange_color) 1px solid;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease-in-out,
+      background-color 0.3s ease-in-out,
+      box-shadow 0.3s ease-in-out;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.button:not(:last-child) {
+    margin-right: 15px;
+}
+  
+.button:hover {
+    transform: translateY(-5px);
+    background-color: var(--orange_color);
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.25);
+    color: var(--black_color);
+}
+
+.navbar {
+    background-color: var(--orange_color);
+    color: var(--black_color);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.hero__main-foto {
+}
+
+.about-line {
+    background-color: var(--black_color);
+    color: var(--orange_color);
+}
 
 .list {
     margin: 0;
@@ -57,7 +158,7 @@ body {
 }
 
 .carousel-item {
-    height: 400px;
+    height: 430px;
 }
 
 .carousel-caption {
@@ -69,18 +170,14 @@ body {
 
 .slide-1 {
     background-image: url(../main/img/slide320-1.png);
-
 }
 
 .slide-2 {
     background-image: url(../main/img/slide320-2.png);
-
 }
 .slide-3 {
     background-image: url(../main/img/slide320-3.png);
-
 }
 .slide-4 {
     background-image: url(../main/img/slide320-4.png);
-
 }

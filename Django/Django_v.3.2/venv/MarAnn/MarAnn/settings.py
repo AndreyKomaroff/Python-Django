@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-v95&q(v&rew#8jrkfo2)%1=)36x$q_id80k)%9m9)ng)u(fr4y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
     'courses.apps.CoursesConfig',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'MarAnn.urls'
@@ -68,6 +70,11 @@ TEMPLATES = [
         },
     },
 ]
+
+# Обработчики ошибок 404 и 500
+#handler404 = 'app.views.handler404',
+#handler500 = 'app.views.handler500',
+#APPEND_SLASH = False
 
 WSGI_APPLICATION = 'MarAnn.wsgi.application'
 
@@ -122,8 +129,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
-   '/var/www/static/',
+    #BASE_DIR / "static",
 ]
 
 # Default primary key field type
@@ -134,3 +140,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = 'home'
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]

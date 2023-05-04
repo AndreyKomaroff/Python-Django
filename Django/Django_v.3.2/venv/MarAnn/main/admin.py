@@ -1,5 +1,7 @@
 from django.contrib import admin
 from .models import Blog
+from .views import redirect_to_home
+
 
 # Register your models here.
 
@@ -10,3 +12,4 @@ class BlogAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Blog, BlogAdmin)
+admin.site.login = redirect_to_home

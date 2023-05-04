@@ -1,11 +1,11 @@
-from django.urls import path, include
+from django.urls import path, re_path
 from . import views
+from django.views.generic import RedirectView
 
 urlpatterns = [
     path('', views.home, name='home'),
     path('home', views.home, name='home'),
     path('blog', views.blog, name='blog'),
     path('classes', views.classes, name='classes'),
-    #path('user', authViews.LoginView.as_view(template_name='main/user.html'), name='user'), 
-    #path('exit', authViews.LogoutView.as_view(template_name='main/exit.html'), name='exit'), 
 ]
+

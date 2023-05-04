@@ -8,8 +8,8 @@
 <main class="main">
     <section class="hero">
         <div class="container">
-            <div class="hero__main">
-                <div class="hero__left-block">
+            <div class="hero__main flex row">
+                <div class="hero__left-block col-lg-8 col-md-6">
                     <h1 class="title">
                         создай уникальный блог
                     </h1>
@@ -27,21 +27,20 @@
                             уникально и интересно
                         </li>
                     </ul>
-                    <div class="hero__btn">
-                        <a href="#services" class="btn btn-reset btn-first">
-                            сделай за меня
-                        </a>
-                        <a href="{% url 'classes' %}" target="_blank" class="btn btn-reset btn-second">
-                            хочу научится сам
-                        </a>
-                    </div>
                 </div>
-                <div class="hero__right-block">
-                    <img src="img/Main-foto.png" alt="Фотография" class="hero__main-foto">
+                <div class="hero__right-block pb-2 pt-2 d-flex justify-content-center col-lg-4 col-md-6">
+                    <img src="../../static/main/img/main.png" alt="Фотография" class="w-75">
+                </div>
+                <div class="flex mb-3 col-lg-6 col-md-9">
+                    <a href="#services" class="button btn-reset">
+                        услуги
+                    </a>
+                    <a href="{% url 'classes' %}" target="_blank" class="button btn-reset">
+                        обучение
+                    </a>
                 </div>
             </div>
-            <div class="about__line">
-                <p class="about__line__list list-reset">
+            <div class="about-line d-flex justify-content-between pb-2 pt-2 ps-1 pe-1">
                     SHORTS
                     <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -78,7 +77,6 @@
                             d="M14.3477 0.237754L16.927 7.04897L24.7582 2.42629L19.8984 8.84591L29.5991 9.46081L20.1471 11.7283L26.0348 17.2206L17.5274 14.0077L16.153 21.16L13.5738 14.3488L5.74256 18.9715L10.6024 12.5519L0.90166 11.937L10.3537 9.66948L4.46604 4.1772L12.9734 7.39011L14.3477 0.237754Z"
                             fill="#FC9E6D" />
                     </svg>
-                </p>
             </div>
         </div>
     </section>
