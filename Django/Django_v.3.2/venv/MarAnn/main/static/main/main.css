@@ -181,3 +181,25 @@ section {
 .slide-4 {
     background-image: url(../main/img/slide320-4.png);
 }
+
+
+.b24-widget-button-popup {
+    border: 2px solid var(--orange_color) !important;
+}
+
+.b24-widget-button-inner-block {
+    background-color: var(--orange_color) !important;
+}
+
+.b24-widget-button-openline_livechat {
+    background-color: var(--orange_color) !important;
+}
+
+.b24-widget-button-crmform {
+    background-color: var(--orange_color) !important;
+}
+
+.b24-widget-button-pulse {
+    border: 2px solid var(--orange_color) !important;
+
+}

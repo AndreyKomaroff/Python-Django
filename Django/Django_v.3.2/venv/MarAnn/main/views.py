@@ -48,3 +48,8 @@ def redirect_to_home(request):
         return redirect('home')
     else:
         return None
+
+def page_not_found(request, exception):
+    return render(request, 'main/404.html', {'title': 'Страница не найдена'})
+
+handler404 = page_not_found

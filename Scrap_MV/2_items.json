@@ -1,0 +1,2197 @@
+{
+    "success": true,
+    "messages": [],
+    "body": {
+        "products": [
+            {
+                "productId": "30066789",
+                "name": "Ноутбук Lenovo IdeaPad 3 15ITL05 81X800MCUS",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-15itl05-81x800mcus",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30066789",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 3 15ITL05 81X800MCUS",
+                "rating": {
+                    "star": 5,
+                    "count": 2,
+                    "percent": 101
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30066789b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30066789.jpg",
+                    "Pdb/30066789b.jpg",
+                    "Pdb/30066789b1.jpg",
+                    "Pdb/30066789b2.jpg",
+                    "Pdb/30066789b3.jpg",
+                    "Pdb/30066789b4.jpg",
+                    "Pdb/30066789s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1366x768 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Core i3 1115G4 3.0 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Intel UHD Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 389,
+                        "name": "Сенсорный экран",
+                        "value": "Да",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 6,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30065399",
+                "name": "Ноутбук Lenovo IdeaPad 5 15ITL05 82FG0165US",
+                "nameTranslit": "noutbuk-lenovo-ideapad-5-15itl05-82fg0165us",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30065399",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 5 15ITL05 82FG0165US",
+                "rating": {
+                    "star": 5,
+                    "count": 29,
+                    "percent": 101
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30065399b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30065399.jpg",
+                    "Pdb/30065399b.jpg",
+                    "Pdb/30065399b21.jpg",
+                    "Pdb/30065399b22.jpg",
+                    "Pdb/30065399b23.jpg",
+                    "Pdb/30065399b24.jpg",
+                    "Pdb/30065399s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Core i5 1135G7 2.4 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Intel Iris Xe Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "256 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30064660",
+                "name": "Ноутбук Lenovo IdeaPad 3 17 82H900EFUS",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-17-82h900efus",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30064660",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 3 17.3 i7-1165G7 Arctic Gray",
+                "rating": {
+                    "star": 4.7,
+                    "count": 20,
+                    "percent": 91
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30064660b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30064660.jpg",
+                    "Pdb/30064660b.jpg",
+                    "Pdb/30064660b1.jpg",
+                    "Pdb/30064660b2.jpg",
+                    "Pdb/30064660b3.jpg",
+                    "Pdb/30064660b4.jpg",
+                    "Pdb/30064660s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "17.3\"/1600x900 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Core i7 1165G7 2.8 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Intel Iris Xe Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "256 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30065769",
+                "name": "Ноутбук Lenovo V15 G2 ALC 82KD004KUS",
+                "nameTranslit": "noutbuk-lenovo-v15-g2-alc-82kd004kus",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30065769",
+                "materialSource": "ERP",
+                "modelName": "V15 G2 15.6 FHD Notebook - AMD Ryzen 5 5500U",
+                "rating": {
+                    "star": 5,
+                    "count": 18,
+                    "percent": 101
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30065769b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30065769.jpg",
+                    "Pdb/30065769b.jpg",
+                    "Pdb/30065769b1.jpg",
+                    "Pdb/30065769b2.jpg",
+                    "Pdb/30065769b3.jpg",
+                    "Pdb/30065769b4.jpg",
+                    "Pdb/30065769s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "AMD Ryzen 5 5500U 2.1 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Radeon Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "256 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30065694",
+                "name": "Ноутбук Lenovo IdeaPad 3 15ITL6 82H801VXUE",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-15itl6-82h801vxue",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30065694",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 3 15ITL6 82H801VXUE",
+                "rating": {
+                    "star": 5,
+                    "count": 8,
+                    "percent": 101
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30065694b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30065694.jpg",
+                    "Pdb/30065694b.jpg",
+                    "Pdb/30065694b1.jpg",
+                    "Pdb/30065694b2.jpg",
+                    "Pdb/30065694b3.jpg",
+                    "Pdb/30065694b4.jpg",
+                    "Pdb/30065694s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Core i3 1115G4 3.0 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "4",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Intel UHD Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850951,
+                        "name": "Объем HDD",
+                        "value": "1 ТБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 9,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30066706",
+                "name": "Ноутбук Lenovo IdeaPad 1 15ADA7 (82R10055RK)",
+                "nameTranslit": "noutbuk-lenovo-ideapad-1-15ada7-82r10055rk",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30066706",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 1 15ADA7 (82R10055RK)",
+                "rating": {
+                    "star": 4.913043478260869,
+                    "count": 23,
+                    "percent": 91
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30066706b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30066706.jpg",
+                    "Pdb/30066706b.jpg",
+                    "Pdb/30066706b1.jpg",
+                    "Pdb/30066706b2.jpg",
+                    "Pdb/30066706b3.jpg",
+                    "Pdb/30066706b4.jpg",
+                    "Pdb/30066706s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "AMD Ryzen 3 3250U 2.6 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Radeon Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "256 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30066705",
+                "name": "Ноутбук Lenovo IdeaPad 1 15ADA7 (82R10052RK)",
+                "nameTranslit": "noutbuk-lenovo-ideapad-1-15ada7-82r10052rk",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30066705",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 1 15ADA7 (82R10052RK)",
+                "rating": {
+                    "star": 5,
+                    "count": 17,
+                    "percent": 101
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30066705b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30066705.jpg",
+                    "Pdb/30066705b.jpg",
+                    "Pdb/30066705b1.jpg",
+                    "Pdb/30066705b2.jpg",
+                    "Pdb/30066705b3.jpg",
+                    "Pdb/30066705b4.jpg",
+                    "Pdb/30066705s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "AMD Ryzen 3 3250U 2.6 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Radeon Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "256 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30066574",
+                "name": "Ноутбук Lenovo V15 G2 ITL 82KB00N5UK",
+                "nameTranslit": "noutbuk-lenovo-v15-g2-itl-82kb00n5uk",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30066574",
+                "materialSource": "ERP",
+                "modelName": "V15 G2 ITL 82KB00N5UK",
+                "rating": {
+                    "star": 5,
+                    "count": 19,
+                    "percent": 101
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30066574b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30066574.jpg",
+                    "Pdb/30066574b.jpg",
+                    "Pdb/30066574b1.jpg",
+                    "Pdb/30066574b2.jpg",
+                    "Pdb/30066574b3.jpg",
+                    "Pdb/30066574b4.jpg",
+                    "Pdb/30066574s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Core i5 1135G7 2.4 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Intel Iris Xe Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "256 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30065988",
+                "name": "Ноутбук Lenovo V14 G2 ITL 82KA00NFUK",
+                "nameTranslit": "noutbuk-lenovo-v14-g2-itl-82ka00nfuk",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30065988",
+                "materialSource": "ERP",
+                "modelName": "V14 G2 ITL 82KA00NFUK",
+                "rating": {
+                    "star": 4.642857142857143,
+                    "count": 14,
+                    "percent": 91
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30065988b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30065988.jpg",
+                    "Pdb/30065988b.jpg",
+                    "Pdb/30065988b21.jpg",
+                    "Pdb/30065988b22.jpg",
+                    "Pdb/30065988b23.jpg",
+                    "Pdb/30065988b24.jpg",
+                    "Pdb/30065988s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "14\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Core i5 1135G7 2.4 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Intel Iris Xe Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "256 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30064625",
+                "name": "Ноутбук Lenovo IdeaPad 3 15IGL05 81WQ007EUE",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-15igl05-81wq007eue",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30064625",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 3 15IGL05 Model Name",
+                "rating": {
+                    "star": 4.642857142857143,
+                    "count": 14,
+                    "percent": 91
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30064625b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30064625.jpg",
+                    "Pdb/30064625b.jpg",
+                    "Pdb/30064625b1.jpg",
+                    "Pdb/30064625b2.jpg",
+                    "Pdb/30064625b3.jpg",
+                    "Pdb/30064625b4.jpg",
+                    "Pdb/30064625s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Celeron N4020 1.1 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "4",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "UHD Graphics 600",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850951,
+                        "name": "Объем HDD",
+                        "value": "1 ТБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 9,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30055123",
+                "name": "Ноутбук Lenovo IdeaPad 3 14ADA05 (81W000KQRU)",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-14ada05-81w000kqru",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30055123",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 3 14ADA05 (81W000KQRU)",
+                "rating": {
+                    "star": 4.541666666666667,
+                    "count": 24,
+                    "percent": 91
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30055123b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30055123.jpg",
+                    "Pdb/30055123b.jpg",
+                    "Pdb/30055123b1.jpg",
+                    "Pdb/30055123b21.jpg",
+                    "Pdb/30055123b22.jpg",
+                    "Pdb/30055123b23.jpg",
+                    "Pdb/30055123b24.jpg",
+                    "Pdb/30055123s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "14\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "AMD Athlon Silver 3050U 2.3 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "4",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Radeon Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "256 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30057546",
+                "name": "Ноутбук Lenovo IdeaPad 3 14ADA05 (81W000KNRU)",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-14ada05-81w000knru",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30057546",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 3 14ADA05 (81W000KNRU)",
+                "rating": {
+                    "star": 4.7272727272727275,
+                    "count": 22,
+                    "percent": 91
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30057546b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": true,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30057546.jpg",
+                    "Pdb/30057546b.jpg",
+                    "Pdb/30057546b1.jpg",
+                    "Pdb/30057546b21.jpg",
+                    "Pdb/30057546b22.jpg",
+                    "Pdb/30057546b23.jpg",
+                    "Pdb/30057546b24.jpg",
+                    "Pdb/30057546s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "14\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "AMD Ryzen 5 3500U 2.1 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Radeon Vega 8",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "512 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30060110",
+                "name": "Ноутбук Lenovo IdeaPad 3 15IIL05 (81WE01BFRU)",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-15iil05-81we01bfru",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30060110",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 3 15IIL05 (81WE01BFRU)",
+                "rating": {
+                    "star": 5,
+                    "count": 18,
+                    "percent": 101
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30060110b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30060110.jpg",
+                    "Pdb/30060110b.jpg",
+                    "Pdb/30060110b1.jpg",
+                    "Pdb/30060110b2.jpg",
+                    "Pdb/30060110b21.jpg",
+                    "Pdb/30060110b22.jpg",
+                    "Pdb/30060110b23.jpg",
+                    "Pdb/30060110b24.jpg",
+                    "Pdb/30060110s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Core i3 1005G1 1.2 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Intel UHD Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "256 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30054781",
+                "name": "Ноутбук Lenovo IdeaPad 3 14ADA05 (81W000FXRU)",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-14ada05-81w000fxru",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30054781",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 3 14ADA05 (81W000FXRU)",
+                "rating": {
+                    "star": 4.828571428571428,
+                    "count": 35,
+                    "percent": 91
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30054781b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": true,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30054781.jpg",
+                    "Pdb/30054781b.jpg",
+                    "Pdb/30054781b1.jpg",
+                    "Pdb/30054781b21.jpg",
+                    "Pdb/30054781b22.jpg",
+                    "Pdb/30054781b23.jpg",
+                    "Pdb/30054781b24.jpg",
+                    "Pdb/30054781s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "14\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "AMD Ryzen 5 3500U 2.1 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Radeon Vega 8",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "256 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30065297",
+                "name": "Ноутбук для бизнеса Lenovo V15 G2 ITL/82KB00YMUE",
+                "nameTranslit": "noutbuk-dlya-biznesa-lenovo-v15-g2-itl-82kb00ymue",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30065297",
+                "materialSource": "ERP",
+                "modelName": "V15 G2 ITL/82KB00YMUE",
+                "rating": {
+                    "star": 5,
+                    "count": 11,
+                    "percent": 101
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30065297b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30065297.jpg",
+                    "Pdb/30065297b.jpg",
+                    "Pdb/30065297b1.jpg",
+                    "Pdb/30065297b2.jpg",
+                    "Pdb/30065297b3.jpg",
+                    "Pdb/30065297b4.jpg",
+                    "Pdb/30065297s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Core i3 1115G4 3.0 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "4",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Intel UHD Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850951,
+                        "name": "Объем HDD",
+                        "value": "1 ТБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 9,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30065908",
+                "name": "Ноутбук Lenovo IdeaPad 3 15ITL6 (82H800VJFE)",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-15itl6-82h800vjfe",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30065908",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 3 15ITL6 (82H800VJFE)",
+                "rating": {
+                    "star": 4.928571428571429,
+                    "count": 14,
+                    "percent": 91
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30065908b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30065908.jpg",
+                    "Pdb/30065908b.jpg",
+                    "Pdb/30065908b1.jpg",
+                    "Pdb/30065908b2.jpg",
+                    "Pdb/30065908b3.jpg",
+                    "Pdb/30065908b4.jpg",
+                    "Pdb/30065908s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Core i5 1135G7 2.4 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "GeForce MX350 2ГБ",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850951,
+                        "name": "Объем HDD",
+                        "value": "1 ТБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 9,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30066485",
+                "name": "Ноутбук Lenovo IdeaPad 3 14ITL6 82H701FYUS",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-14itl6-82h701fyus",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30066485",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 3 14ITL6 82H701FYUS",
+                "rating": {
+                    "star": 5,
+                    "count": 9,
+                    "percent": 101
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30066485b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": true,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30066485.jpg",
+                    "Pdb/30066485b.jpg",
+                    "Pdb/30066485b1.jpg",
+                    "Pdb/30066485b2.jpg",
+                    "Pdb/30066485b3.jpg",
+                    "Pdb/30066485b4.jpg",
+                    "Pdb/30066485s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "14\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Core i5 1135G7 2.4 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Intel Iris Xe Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "512 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30065767",
+                "name": "Ноутбук Lenovo IdeaPad 3 14ALC6 82KT00GVUS",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-14alc6-82kt00gvus",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30065767",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 3 14.0 FHD IPS Notebook-AMD Ryzen 5 5500U",
+                "rating": {
+                    "star": 5,
+                    "count": 11,
+                    "percent": 101
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30065767b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30065767.jpg",
+                    "Pdb/30065767b.jpg",
+                    "Pdb/30065767b21.jpg",
+                    "Pdb/30065767b22.jpg",
+                    "Pdb/30065767b23.jpg",
+                    "Pdb/30065767b24.jpg",
+                    "Pdb/30065767s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "14\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "AMD Ryzen 5 5500U 2.1 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Radeon Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "256 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30066486",
+                "name": "Ноутбук Lenovo IdeaPad 3 15ITL6 82H801DQUS",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-15itl6-82h801dqus",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30066486",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 3 15ITL6 82H801DQUS",
+                "rating": {
+                    "star": 5,
+                    "count": 10,
+                    "percent": 101
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30066486b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30066486.jpg",
+                    "Pdb/30066486b.jpg",
+                    "Pdb/30066486b1.jpg",
+                    "Pdb/30066486b2.jpg",
+                    "Pdb/30066486b3.jpg",
+                    "Pdb/30066486b4.jpg",
+                    "Pdb/30066486s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Core i5 1135G7 2.4 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "12",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Intel Iris Xe Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 389,
+                        "name": "Сенсорный экран",
+                        "value": "Да",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 6,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30065398",
+                "name": "Ноутбук Lenovo IdeaPad 3 17ITL6 82H900DTUS",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-17itl6-82h900dtus",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30065398",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 3 17ITL6 82H900DTUS",
+                "rating": {
+                    "star": 5,
+                    "count": 13,
+                    "percent": 101
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30065398b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": true,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30065398.jpg",
+                    "Pdb/30065398b.jpg",
+                    "Pdb/30065398b21.jpg",
+                    "Pdb/30065398b22.jpg",
+                    "Pdb/30065398b23.jpg",
+                    "Pdb/30065398b24.jpg",
+                    "Pdb/30065398s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "17.3\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Core i3 1115G4 3.0 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "UHD Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "256 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30065279",
+                "name": "Ноутбук Lenovo IdeaPad 3 14IML05 81WA00G0UE",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-14iml05-81wa00g0ue",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30065279",
+                "materialSource": "ERP",
+                "modelName": "NB IP 3 14IML05 I3 4G 1T 14\" DOS",
+                "rating": {
+                    "star": 5,
+                    "count": 7,
+                    "percent": 101
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30065279b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30065279.jpg",
+                    "Pdb/30065279b.jpg",
+                    "Pdb/30065279b1.jpg",
+                    "Pdb/30065279b2.jpg",
+                    "Pdb/30065279b3.jpg",
+                    "Pdb/30065279b4.jpg",
+                    "Pdb/30065279s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "14\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Core i3 10110U 2.1 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "4",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Intel UHD Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850951,
+                        "name": "Объем HDD",
+                        "value": "1 ТБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 9,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30065620",
+                "name": "Ноутбук Lenovo IdeaPad 3 15ALC6 82KU009GRK",
+                "nameTranslit": "noutbuk-lenovo-ideapad-3-15alc6-82ku009grk",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30065620",
+                "materialSource": "ERP",
+                "modelName": "IdeaPad 3 15ALC6 82KU009GRK",
+                "rating": {
+                    "star": 4.866666666666666,
+                    "count": 15,
+                    "percent": 91
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30065620b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": true,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30065620.jpg",
+                    "Pdb/30065620b.jpg",
+                    "Pdb/30065620b1.jpg",
+                    "Pdb/30065620b2.jpg",
+                    "Pdb/30065620b3.jpg",
+                    "Pdb/30065620b4.jpg",
+                    "Pdb/30065620s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "AMD Ryzen 5 5500U 2.1 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Radeon Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850951,
+                        "name": "Объем HDD",
+                        "value": "1 ТБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 9,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30065290",
+                "name": "Ноутбук Lenovo IdP 3 15IGL05/81WQ007EUE",
+                "nameTranslit": "noutbuk-lenovo-idp-3-15igl05-81wq007eue",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30065290",
+                "materialSource": "ERP",
+                "modelName": "IdP 3 15IGL05/81WQ007EUE",
+                "rating": {
+                    "star": 4.444444444444445,
+                    "count": 18,
+                    "percent": 81
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30065290b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30065290.jpg",
+                    "Pdb/30065290b.jpg",
+                    "Pdb/30065290b1.jpg",
+                    "Pdb/30065290b2.jpg",
+                    "Pdb/30065290b3.jpg",
+                    "Pdb/30065290b4.jpg",
+                    "Pdb/30065290s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Celeron N4020 1.1 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "4",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "UHD Graphics 600",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850951,
+                        "name": "Объем HDD",
+                        "value": "1 ТБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 9,
+                        "measure": null
+                    }
+                ]
+            },
+            {
+                "productId": "30066090",
+                "name": "Ноутбук для бизнеса Lenovo V15 G1 IML 82NB003LUK",
+                "nameTranslit": "noutbuk-dlya-biznesa-lenovo-v15-g1-iml-82nb003luk",
+                "productType": "DIG",
+                "usedProductType": null,
+                "materialCisNumber": "30066090",
+                "materialSource": "ERP",
+                "modelName": "V15 IML 82NB003LUK",
+                "rating": {
+                    "star": 5,
+                    "count": 6,
+                    "percent": 101
+                },
+                "supplier": null,
+                "vendorCatalog": null,
+                "sublicense": false,
+                "partnerType": null,
+                "preorder": null,
+                "isMprimeSubscription": false,
+                "image": "Pdb/small_pic/480/30066090b.jpg",
+                "brandId": "1006",
+                "brandName": "Lenovo",
+                "status": {
+                    "showCase": false,
+                    "availableOnlyInRetailStore": false,
+                    "soldOut": false,
+                    "isCannotBeExchanged": false
+                },
+                "category": {
+                    "id": "987",
+                    "name": "Ноутбуки"
+                },
+                "properties": null,
+                "images": [
+                    "Pdb/30066090.jpg",
+                    "Pdb/30066090b.jpg",
+                    "Pdb/30066090b21.jpg",
+                    "Pdb/30066090b22.jpg",
+                    "Pdb/30066090b23.jpg",
+                    "Pdb/30066090b24.jpg",
+                    "Pdb/30066090s.jpg"
+                ],
+                "propertiesPortion": [
+                    {
+                        "id": 621,
+                        "name": "Диагональ/разрешение",
+                        "value": "15.6\"/1920x1080 пикс.",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 1,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852930,
+                        "name": "Процессор",
+                        "value": "Intel Core i5 10210U 1.6 ГГц",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 2,
+                        "measure": null
+                    },
+                    {
+                        "id": 30852805,
+                        "name": "Оперативная память (RAM)",
+                        "value": "8",
+                        "nameDescription": "Часть системной памяти, от которой зависят скорость выполнения всех операций и быстродействие девайса в целом.",
+                        "valueDescription": null,
+                        "priority": 4,
+                        "measure": "ГБ"
+                    },
+                    {
+                        "id": 620,
+                        "name": "Графический контроллер",
+                        "value": "Intel UHD Graphics",
+                        "nameDescription": "Модуль компьютера, отвечающий за обработку графической составляющей данных.",
+                        "valueDescription": null,
+                        "priority": 5,
+                        "measure": null
+                    },
+                    {
+                        "id": 30850950,
+                        "name": "Объем SSD",
+                        "value": "256 ГБ",
+                        "nameDescription": null,
+                        "valueDescription": null,
+                        "priority": 7,
+                        "measure": null
+                    }
+                ]
+            }
+        ]
+    }
+}
