@@ -1,9 +1,10 @@
-from flask import Flask, render_template, request, g
+from flask import Flask, render_template, request, g, flash, abort
+from fDataBase import FDataBase
 import sqlite3
 import os
 
 # конфигурация
-DATABASE = '/tmp/main.db'
+DATABASE = '/tmp/post.db'
 DEBUG = True
 SECRET_KEY = 'aKL;L83acvpavla832lfaoa495723c;4jja489'
 USERNAME = 'admin'
@@ -11,7 +12,7 @@ PASSWORD = 'Kamap999!'
 
 app = Flask(__name__)
 app.config.from_object(__name__)
-app.config.update(dict(DATABASE=os.path.join(app.root_path,'main.db')))
+app.config.update(dict(DATABASE=os.path.join(app.root_path,'post.db')))
 
 def connect_db():
     conn = sqlite3.connect(app.config['DATABASE'])
@@ -26,7 +27,7 @@ def create_db():
     db.commit()
     db.close()
 
-#create_db()
+create_db()
 
 def get_db():
     # Соединение с БД, если оно еще не установлено
@@ -41,18 +42,48 @@ def close_db(error):
         g.link_db.close()
 
 menu = [{'title': 'Главная', 'url_name': 'home'},
-        {'title': 'Блог', 'url_name': 'blog'}
+        {'title': 'Блог', 'url_name': 'blog'},
+        {'title': 'Добавить пост', 'url_name': 'add_post'}
 ]
 
 @app.route("/")
 @app.route("/home")
 def home():
+        return render_template('home.html', title="Главная", menu=menu)
+
+@app.route("/post/<int:id_post>")
+def showPost(id_post):
     db = get_db()
-    return render_template('home.html', title="Главная", menu=menu)
+    dbase = FDataBase(db)
+    title, post = dbase.getPost(id_post)
+    if not title:
+        abort(404)
+ 
+    return render_template('post.html', menu=menu, title=title, post=post)
 
 @app.route("/blog")
 def blog():
-    return render_template('blog.html', title="Блог", menu=menu)
+        db = get_db()
+        dbase = FDataBase(db)
+        return render_template('blog.html', title="Главная", menu=menu, posts=dbase.getPostsAnonce())
+
+
+@app.route("/add_post", methods=["POST", "GET"])
+def addPost():
+    db = get_db()
+    dbase = FDataBase(db)
+ 
+    if request.method == "POST":
+        if len(request.form['name']) > 4 and len(request.form['post']) > 10:
+            res = dbase.addPost(request.form['name'], request.form['image'], request.form['post'])
+            if not res:
+                flash('Ошибка добавления статьи', category = 'error')
+            else:
+                flash('Статья добавлена успешно', category='success')
+        else:
+            flash('Ошибка добавления статьи', category='error')
+ 
+    return render_template('add_post.html', title="Добавление статьи", menu=menu)
 
 @app.errorhandler(404)
 def pageNotFound(error):

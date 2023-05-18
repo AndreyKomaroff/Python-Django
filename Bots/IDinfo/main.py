@@ -1,9 +1,9 @@
 import telebot
 import sqlite3
-#import os
+import os
 
-#API_KEY = os.getenv('API_KEY')
-bot = telebot.TeleBot('5881128062:AAGlP1kWt8Z_WlcSG84V_AM9Qo0kJn-E8Wo')
+API_KEY = os.getenv('API_KEY')
+bot = telebot.TeleBot(API_KEY)
 
 @bot.message_handler(content_types=['text'])
 def send_id(message):

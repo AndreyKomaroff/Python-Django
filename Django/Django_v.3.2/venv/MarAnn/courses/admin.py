@@ -19,6 +19,10 @@ class ProductAdmin(admin.ModelAdmin):
     search_fields = ['title']
 
 
+admin.site.site_title = 'Админ-панель MarAnn'
+admin.site.site_header = 'Админ-панель MarAnn'
+
+
 #class AdminVideo(AdminVideoMixin, admin.ModelAdmin):
  #   pass
 

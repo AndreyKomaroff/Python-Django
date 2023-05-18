@@ -9,11 +9,11 @@ from .fields import OrderField
 class Course(models.Model):
     owner = models.ForeignKey(User,
                         related_name='courses_created',
-                        on_delete=models.CASCADE)
-    title = models.CharField(max_length=200)
+                        on_delete=models.CASCADE, verbose_name="Создатель")
+    title = models.CharField('Название курса', max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
-    overview = models.TextField()
-    created = models.DateTimeField(auto_now_add=True)
+    overview = models.TextField('Описание')
+    created = models.DateTimeField(auto_now_add=True, verbose_name="Дата")
 
     class Meta:
         ordering = ['-created']
@@ -28,10 +28,10 @@ class Module(models.Model):
     course = models.ForeignKey(Course,
                         related_name='modules',
                         on_delete=models.CASCADE)
-    title = models.CharField(max_length=200)
-    description = models.TextField(blank=True)
-    url = models.URLField()
-    order = OrderField(blank=True, for_fields=['course'])
+    title = models.CharField('Название модуля', max_length=200)
+    description = models.TextField('Описание', blank=True)
+    url = models.URLField('Ссылка')
+    order = OrderField(blank=True, for_fields=['course'], verbose_name="Номер п/п")
 
     class Meta:
         ordering = ['order']
@@ -47,11 +47,7 @@ class Content(models.Model):
                             on_delete=models.CASCADE)
     content_type = models.ForeignKey(ContentType,
                             on_delete=models.CASCADE,
-                            limit_choices_to={'model__in':(
-                                            'text',
-                                            'video',
-                                            'image',
-                                            'file')})
+                            limit_choices_to={'model__in':('text', 'video', 'image', 'file')})
     object_id = models.PositiveIntegerField()
     item = GenericForeignKey('content_type', 'object_id')
     order = OrderField(blank=True, for_fields=['module'])
@@ -65,7 +61,7 @@ class Product(models.Model):
     text = models.TextField('Основной текст статьи')
     price = models.IntegerField('Стоимость')
     discountPrice = models.IntegerField('Стоимость со скидкой')
-    url = models.URLField()
+    url = models.URLField('Ссылка')
 
     def __str__ (self):
         return f'Предложения: {self.title}'

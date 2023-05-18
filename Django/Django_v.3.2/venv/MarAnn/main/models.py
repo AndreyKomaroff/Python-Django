@@ -6,9 +6,9 @@ from django.contrib.auth.models import User
 
 class Blog(models.Model):
     title = models.CharField('Название статьи',max_length=100, unique=True)
-    image = models.ImageField(upload_to="media/blog", verbose_name="Фото")
+    image = models.ImageField(upload_to="media/blog", verbose_name="Изображение")
     text = models.TextField('Основной текст статьи')
-    date = models.DateTimeField(default=timezone.now)
+    date = models.DateTimeField(default=timezone.now, verbose_name="Дата")
 
     def __str__ (self):
         return f'Пост: {self.title}'
