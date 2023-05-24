@@ -1,0 +1,31 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+  {{ title }}
+{% endblock %}
+
+{% block body %}
+<main class="main">
+  <section class="hero">
+
+<h1 class="title">{{ h1 }}</h1>
+<ul class="list">
+  {% for p in posts %}
+  <img class="blog-img" src="{{ p.image.url }}" alt="">
+
+  <li class="item">
+
+    <h2>{{ p.title }}</h2>
+    <p>{{ p.text|linebreaks|truncatewords:50 }}</p>
+    <p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читать пост</a></p>
+    <span>{{ p.publish }}/ {{ p.author }}</span>
+  </li>
+  {% endfor %}
+</ul>
+<p class="paper__param">
+  <span>ГаГаГА</span>
+</p>
+  </section>
+</main>
+
+{% endblock %}
