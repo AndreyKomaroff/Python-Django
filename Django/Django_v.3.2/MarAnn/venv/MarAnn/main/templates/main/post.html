@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+
+{% block body %}
+<h1>{{ post.title }}</h1>
+
+ <img class="blog-img" src="{{ post.image.url }}" alt="">
+
+
+{{ post.text|linebreaks }}
+{% endblock %}
+

@@ -16,7 +16,8 @@
   <li class="item">
 
     <h2>{{ p.title }}</h2>
-    <p>{{ p.text }}</p>
+    <p>{{ p.text|linebreaks|truncatewords:50 }}</p>
+    <p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читать пост</a></p>
   </li>
   {% endfor %}
 </ul>

@@ -6,10 +6,16 @@ from django.utils.safestring import mark_safe
 
 # Register your models here.
 
+@admin.register(Blog)
 class BlogAdmin(admin.ModelAdmin):
-    list_display = ['title', 'image', 'get_html_photo', 'date']
-    list_display_links = ['title', 'image']
+    list_display = ['title', 'image', 'get_html_photo', 'created', 'publish']
+    list_display_links = ['title', 'image', 'publish']
     search_fields = ['title']
+    prepopulated_fields = {'slug': ('title',)}
+    date_hierarchy = 'publish'
+    ordering = ['publish']
+
+
 
     def get_html_photo(self, object):
         if object.image:
@@ -18,7 +24,7 @@ class BlogAdmin(admin.ModelAdmin):
     get_html_photo.short_description = "Миниатюра"
 
 
-admin.site.register(Blog, BlogAdmin)
+#admin.site.register(Blog, BlogAdmin)
 #admin.site.register(Product, ProductAdmin)
-admin.site.login = redirect_to_home
+#admin.site.login = redirect_to_home
 

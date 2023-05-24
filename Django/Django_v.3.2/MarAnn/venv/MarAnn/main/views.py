@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from courses.models import *
 from main.models import Blog
@@ -51,5 +51,17 @@ def redirect_to_home(request):
 
 def page_not_found(request, exception):
     return render(request, 'main/404.html', {'title': 'Страница не найдена'})
+
+def show_post(request, post_slug):
+    post = get_object_or_404(Blog, slug=post_slug)
+
+    context = {
+        'post': post,
+        'menu': menu,
+        'title': post.title,
+    }
+
+    return render(request, 'main/post.html', context=context)
+
 
 handler404 = page_not_found

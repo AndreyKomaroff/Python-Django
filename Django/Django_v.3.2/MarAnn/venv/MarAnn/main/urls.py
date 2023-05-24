@@ -9,6 +9,7 @@ urlpatterns = [
     path('blog', views.blog, name='blog'),
     path('classes', views.classes, name='classes'),
     path('404', page_not_found, name='page_404'),
+    path('post/<slug:post_slug>/', views.show_post, name='post'),
 ]
 
 handler404 = page_not_found
