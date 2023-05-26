@@ -6,11 +6,22 @@
 
 
 {% block body %}
-<h1>{{ post.title }}</h1>
+<main class="main">
+    <section class="post">
+        <h1 class="title">{{ post.title }}</h1>
 
- <img class="blog-img" src="{{ post.image.url }}" alt="">
-
-
-{{ post.text|linebreaks }}
+        <img class="blog-img" src="{{ post.image.url }}" alt="">
+       
+       <p>
+           {{ post.text|linebreaks }}
+       </p>
+       <p>
+           <span class="post__span">({{ post.publish }})</span>
+       
+       </p>
+    
+    </section>
+   
+</main>
 {% endblock %}
 

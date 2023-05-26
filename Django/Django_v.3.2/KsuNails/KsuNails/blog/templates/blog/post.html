@@ -4,13 +4,15 @@
 {{ title }}
 {% endblock %}
 
-
 {% block body %}
-<h1>{{ post.title }}</h1>
-
- <img class="blog-img" src="{{ post.image.url }}" alt="">
-
-
-{{ post.text|linebreaks }}
+<main class="main">
+    <section class="post">
+        <div class="pb-5 pt-5">
+            <h1 class="mb-3">{{ post.title }}</h1>
+            <img class="blog-img mb-2" src="{{ post.image.url }}" alt="">
+            <p>{{ post.text|linebreaks }}</p>
+            <p class="data-span">{{ post.publish }}</p>
+        </div>
+    </section>
+</main>
 {% endblock %}
-

@@ -7,49 +7,107 @@
 {% block body %}
 <main class="main">
     <section class="hero">
-        <div class="container">
-            <div class="hero__main flex row">
-                <div class="hero__left-block col-lg-8 col-md-6">
-                    <h1 class="title">
-                        Главный заголовок
-                    </h1>
-                    <h2 class="subtitle">
-                        Заголовок номер 2
-                    </h2>
-                    <ul class="hero__list list-reset">
-                        <li class="hero__item">
-                            Перечисление важного
-                        </li>
-                        <li class="hero__item">
-                            Перечисление важного
-                        </li>
-                        <li class="hero__item">
-                            Перечисление важного
-                        </li>
-                    </ul>
-                </div>
-                <div class="hero__right-block pb-2 pt-2 d-flex justify-content-center col-lg-4 col-md-6">
-                    <img src="../../static/main/img/main.png" alt="Фотография" class="w-75">
-                </div>
-                <div class="flex mb-3 col-lg-6 col-md-9">
-                    <a href="#product" class="button btn-reset">
-                        кнопка услуги         
-                    </a>
-                    <a href="#" target="_blank" class="button btn-reset">
-                        кнопка блог
-                    </a>
-                </div>
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="../../static/blog/img/IMG_8346.jpg" class="d-block mx-lg-auto img-fluid"
+                    alt="Bootstrap Themes" width="700" height="500" loading="lazy">
             </div>
-            <div class="about-line d-flex justify-content-between pb-2 pt-2 ps-1 pe-1">
-                Главный слоган, типа "крутые ногти - уверенность в завтрашнем дне"
-                <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M14.3477 0.237754L16.927 7.04897L24.7582 2.42629L19.8984 8.84591L29.5991 9.46081L20.1471 11.7283L26.0348 17.2206L17.5274 14.0077L16.153 21.16L13.5738 14.3488L5.74256 18.9715L10.6024 12.5519L0.90166 11.937L10.3537 9.66948L4.46604 4.1772L12.9734 7.39011L14.3477 0.237754Z"
-                        fill="#FC9E6D" />
-                </svg>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Самый главный-преглавный заголовок страницы
+                </h1>
+                <p class="lead">Я думаю тут должен быть текст о себе, учитывая вертикальные расположения картинок, места
+                    тут много и текста должно быть много</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Примеры работ</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Контакты</button>
+                </div>
             </div>
         </div>
     </section>
+    <section class="about">
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 class="pb-2 border-bottom about__subtitle">Блок текста "почему я а не она"</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="feature col">
+                    <svg width="27" height="48" viewBox="0 0 27 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5 0L14.688 9.73233C15.5028 16.4076 20.4355 21.845 27 23.3043C20.5311 24.3315 15.5468 29.5556 14.8244 36.0656L13.5 48L12.2539 36.1942C11.5598 29.6182 6.53243 24.33 0 23.3043C6.62839 21.8474 11.6022 16.3452 12.3849 9.60389L13.5 0Z" fill="#F9F9F9"/>
+                        </svg>
+                <h3 class="fs-2">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+              </div>
+              <div class="feature col">
+                    <svg width="27" height="48" viewBox="0 0 27 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5 0L14.688 9.73233C15.5028 16.4076 20.4355 21.845 27 23.3043C20.5311 24.3315 15.5468 29.5556 14.8244 36.0656L13.5 48L12.2539 36.1942C11.5598 29.6182 6.53243 24.33 0 23.3043C6.62839 21.8474 11.6022 16.3452 12.3849 9.60389L13.5 0Z" fill="#F9F9F9"/>
+                        </svg>
+                <h3 class="fs-2">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+              </div>
+              <div class="feature col">
+                    <svg width="27" height="48" viewBox="0 0 27 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5 0L14.688 9.73233C15.5028 16.4076 20.4355 21.845 27 23.3043C20.5311 24.3315 15.5468 29.5556 14.8244 36.0656L13.5 48L12.2539 36.1942C11.5598 29.6182 6.53243 24.33 0 23.3043C6.62839 21.8474 11.6022 16.3452 12.3849 9.60389L13.5 0Z" fill="#F9F9F9"/>
+                        </svg>
+                <h3 class="fs-2">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="slider">
+        <div class="d-flex justify-content-between">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item slider--item active">
+                        <img src="../../static/blog/img/photo_2023-05-25_15-23-09.jpg" class="d-block w-100 slider--img"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item slider--item">
+                        <img src="../../static/blog/img/photo_2023-05-25_15-23-30.jpg" class="d-block w-100 slider--img"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item slider--item">
+                        <img src="../../static/blog/img/photo_2023-05-25_15-23-35.jpg" class="d-block w-100 slider--img"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item slider--item">
+                        <img src="../../static/blog/img/photo_2023-05-25_15-23-39.jpg" class="d-block w-100 slider--img"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item slider--item">
+                        <img src="../../static/blog/img/photo_2023-05-25_15-23-43.jpg" class="d-block w-100 slider--img"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item slider--item">
+                        <img src="../../static/blog/img/photo_2023-05-25_15-23-46.jpg" class="d-block w-100 slider--img"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item slider--item">
+                        <img src="../../static/blog/img/photo_2023-05-25_15-23-49.jpg" class="d-block w-100 slider--img"
+                            alt="...">
+                    </div>
 
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="flex-column justify-content-center slider__right">
+                <h2 class="subtitle">
+                    Примеры работ
+                </h2>
+                <p>
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                </p>
+            </div>
+
+        </div>
+    </section>
 </main>
 {% endblock %}

@@ -29,6 +29,7 @@ class Module(models.Model):
                         related_name='modules',
                         on_delete=models.CASCADE)
     title = models.CharField('Название модуля', max_length=200)
+    image = models.ImageField(upload_to="media/courses", default='image', verbose_name="Изображение")
     description = models.TextField('Описание', blank=True)
     url = models.URLField('Ссылка')
     order = OrderField(blank=True, for_fields=['course'], verbose_name="Номер п/п")

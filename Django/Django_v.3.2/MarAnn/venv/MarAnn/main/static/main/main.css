@@ -133,6 +133,13 @@ section {
     width: 350px;
 }
 
+.post__span {
+    color: var(--storm-gray);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
 .accordion-item {
     color: var(--bs-accordion-color);
     background-color: var(--orange_color);

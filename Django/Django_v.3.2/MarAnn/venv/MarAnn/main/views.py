@@ -26,7 +26,7 @@ def blog(request):
     posts = Blog.objects.all()
     context = {
         'title': 'Блог',
-        'h1': 'Посты',
+        'h1': 'Блог',
         'posts': posts,
         'menu': menu
     }

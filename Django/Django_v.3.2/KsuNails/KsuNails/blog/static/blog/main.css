@@ -1,3 +1,50 @@
+@import url(vars.css);
+
+
+
+.header {
+    background-color: var(--oslo_gray);
+}
+
 .blog-img {
     width: 350px;
 }
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.blog-item {
+    border-bottom: 3px solid var(--oslo_gray);
+}
+
+.data-span {
+    color: var(--oslo_gray);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+}
+
+.about {
+    background-color: var(--lavender);
+}
+
+.about__subtitle {
+    text-align: center;
+}
+
+.slider {
+    padding: 50px 0;
+}
+
+.slide {
+    max-width: 600px;
+}
+
+.slider__right {
+    width: calc(100% / 2);
+}
+

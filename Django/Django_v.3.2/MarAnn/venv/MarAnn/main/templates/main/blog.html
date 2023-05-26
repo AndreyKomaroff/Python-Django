@@ -6,7 +6,7 @@
 
 {% block body %}
 <main class="main">
-  <section class="hero">
+  <section class="blog">
 
 <h1 class="title">{{ h1 }}</h1>
 <ul class="list">
@@ -15,9 +15,12 @@
 
   <li class="item">
 
-    <h2>{{ p.title }}</h2>
+    <h2 class="d-flex justify-content-between">
+      {{ p.title }}    
+      <span class="post__span">({{ p.publish }})</span>
+    </h2>
     <p>{{ p.text|linebreaks|truncatewords:50 }}</p>
-    <p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читать пост</a></p>
+    <a href="{{ p.get_absolute_url }}" class="button btn-reset">Читать пост</a>
   </li>
   {% endfor %}
 </ul>
