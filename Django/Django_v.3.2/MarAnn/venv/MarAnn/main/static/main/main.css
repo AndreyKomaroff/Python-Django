@@ -89,6 +89,10 @@ section {
     color: var(--black_color);
 }
 
+.span {
+    color: var(--orange_color);
+}
+
 .navbar {
     background-color: var(--orange_color);
     color: var(--black_color);
@@ -98,6 +102,10 @@ section {
     font-weight: 700;
     font-size: 36px;
     line-height: 36px;
+}
+
+.heading {
+    text-align: center;
 }
 
 .about {
@@ -131,17 +139,12 @@ section {
     line-height: 150%;
 }
 
-.about__item span {
-    color: var(--orange_color);
-}
-
 .about__results-block {
     text-align: center;
     border: 1px solid var(--black_color);
 }
 
 .about__results-block span {
-    color: var(--orange_color);
     font-weight: 400;
     font-size: 26px;
     line-height: 100%;
@@ -163,9 +166,6 @@ section {
 }
 
 .item {
-    margin-bottom: 50px;
-    padding: 30px 0;
-    border-bottom: 3px solid black;
 }
 
 .blog-img {
@@ -178,6 +178,8 @@ section {
     font-size: 18px;
     line-height: 150%;
 }
+
+
 
 .accordion-item {
     color: var(--bs-accordion-color);
@@ -203,6 +205,11 @@ section {
 
 }
 
+.portfolios {
+    background-color: var(--light-black_color);
+    color: var(--white_color);
+}
+
 .carousel-item {
     height: 430px;
 }
@@ -215,18 +222,58 @@ section {
 }
 
 .slide-1 {
-    background-image: url(../main/img/slide320-1.png);
+    background-image: url(../main/img/IMG_1878.JPG);
 }
 
 .slide-2 {
-    background-image: url(../main/img/slide320-2.png);
+    background-image: url(../main/img/IMG_1875.JPG);
 }
 .slide-3 {
-    background-image: url(../main/img/slide320-3.png);
+    background-image: url(../main/img/IMG_1874.JPG);
 }
-.slide-4 {
-    background-image: url(../main/img/slide320-4.png);
+
+.cooperation__item {
+    text-align: center;
+    background-color: var(--orange_color);
 }
+
+.reviews {
+    background-color: var(--light-black_color);
+    color: var(--white_color);
+}
+
+.reviews__img {
+    width: 271px;
+}
+
+.product__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 50px;
+    padding: 30px 0;
+    border-bottom: 3px solid black;
+}
+
+.product__title {
+    text-align: center;
+}
+
+.blog__item {
+    margin-bottom: 50px;
+    padding: 30px 0;
+    border-bottom: 3px solid black;
+
+}
+
+
+
+
+
+
+
 
 
 .b24-widget-button-popup {

@@ -13,7 +13,7 @@
         <img class="blog-img" src="{{ post.image.url }}" alt="">
        
        <p>
-           {{ post.text|linebreaks }}
+           {{ post.text|safe|linebreaks }}
        </p>
        <p>
            <span class="post__span">({{ post.publish }})</span>
