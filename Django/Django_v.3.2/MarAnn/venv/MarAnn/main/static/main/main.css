@@ -100,12 +100,51 @@ section {
     line-height: 36px;
 }
 
-.hero__main-foto {
+.about {
+    background-color: var(--light-black_color);
+    color: var(--white_color);
 }
 
 .about-line {
     background-color: var(--black_color);
     color: var(--orange_color);
+
+}
+
+.title__about {
+    width: calc(100% / 2 - 30px);
+}
+
+.about__content {
+    width: calc(100% / 2);
+}
+
+.about__content span {
+    background-color: var(--orange_color);
+    color: var(--white_color);
+}
+
+.about__item {
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.about__item span {
+    color: var(--orange_color);
+}
+
+.about__results-block {
+    text-align: center;
+    border: 1px solid var(--black_color);
+}
+
+.about__results-block span {
+    color: var(--orange_color);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
 }
 
 .list {

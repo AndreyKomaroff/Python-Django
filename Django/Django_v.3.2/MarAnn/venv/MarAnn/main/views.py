@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from courses.models import *
+from courses.models import Module, Product
 from main.models import Blog
 from django.http import HttpResponseRedirect
 import os
