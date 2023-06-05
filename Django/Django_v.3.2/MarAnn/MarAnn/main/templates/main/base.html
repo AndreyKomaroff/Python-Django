@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'main/main.css' %}">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <header class="header header-bg">
+    <div class="container">
+
+      <nav class="navbar navbar-expand-lg" aria-label="Eighth navbar example">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'home' %}">MarAnn</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
+            aria-controls="navbarsExample07" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarsExample07">
+            <ul class="navbar-collapse navbar-nav me-auto mb-2 mb-lg-0">
+              {% for m in menu %}
+              <li class="nav-item">
+                <a class="nav-link" href="{% url m.url_name %}">{{ m.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+            {% if not user.is_authenticated %}
+            <a class="nav-link" href="{% url 'login' %}">
+              <button class="btn btn-dark">Войти</button>
+            </a>
+            {% elif user.is_superuser %}
+            <a class="nav-link" href="{% url 'admin:index' %}">
+              <button class="btn btn-dark">Админ</button>
+            </a>
+            {% else %}
+            {% endif %}
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+  <main>
+    {% block body %}
+    {% endblock %}
+  </main>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+    <div class="container footer pt-5 pb-3">
+      <h3 class="heading mb-5">
+        Контакты
+      </h3>
+      <div class="footer__main d-flex justify-content-between">
+        <div class="footer__contacts">
+          <p class="contacts__param">
+            ИП Комарова Анна Анатольевна
+          </p>
+          <ul class="d-flex list-unstyled">
+            <li class="me-3">
+              <a href="https://vk.com/komarova.marketolog" target="_blank" class="social__link">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                  viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+                  <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="white" stroke="none">
+                    <path d="M572 5109 c-279 -47 -519 -292 -562 -575 -7 -47 -10 -687 -8 -2019
+                      l3 -1950 28 -80 c79 -223 229 -373 452 -452 l80 -28 1995 0 1995 0 80 28 c231
+                      82 390 248 462 482 17 57 18 148 18 2050 l0 1990 -28 80 c-79 223 -229 373
+                      -452 452 l-80 28 -1965 1 c-1109 1 -1988 -2 -2018 -7z m2095 -1639 c97 -13
+                      130 -31 155 -86 18 -42 19 -64 17 -367 -3 -292 -1 -326 15 -364 33 -79 71 -71
+                      162 35 129 151 255 361 339 567 22 54 48 101 66 118 l30 28 330 -3 331 -3 25
+                      -29 c31 -37 27 -77 -21 -181 -41 -88 -98 -174 -280 -420 -159 -215 -196 -276
+                      -196 -323 0 -30 19 -53 178 -216 342 -351 408 -481 283 -559 -35 -21 -43 -22
+                      -316 -21 -373 1 -346 -9 -560 209 -88 89 -178 174 -199 189 -48 32 -86 33
+                      -114 3 -28 -29 -37 -61 -62 -205 -23 -131 -29 -146 -73 -169 -27 -15 -57 -18
+                      -192 -17 -274 0 -462 58 -669 206 -206 146 -406 393 -621 768 -137 238 -335
+                      652 -335 700 0 15 9 38 19 51 l19 24 276 -2 c352 -2 339 4 422 -193 88 -206
+                      276 -509 360 -578 50 -42 72 -45 99 -18 39 39 50 119 49 356 -1 193 -3 220
+                      -21 261 -23 52 -60 82 -121 98 -34 10 -42 16 -42 35 0 42 70 93 149 106 66 11
+                      413 11 498 0z" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="https://t.me/@KomarovaAnn" target="_blank" class="social__link">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                  viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+                  <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="white" stroke="none">
+                    <path d="M572 5109 c-279 -47 -519 -292 -562 -575 -7 -47 -10 -687 -8 -2019
+                      l3 -1950 28 -80 c79 -223 229 -373 452 -452 l80 -28 1995 0 1995 0 80 28 c231
+                      82 390 248 462 482 17 57 18 148 18 2050 l0 1990 -28 80 c-79 223 -229 373
+                      -452 452 l-80 28 -1965 1 c-1109 1 -1988 -2 -2018 -7z m3524 -1330 c33 -20 64
+                      -72 64 -107 0 -26 -498 -2229 -512 -2265 -24 -62 -116 -107 -182 -88 -19 5
+                      -208 126 -419 270 -212 144 -388 261 -392 261 -3 0 -88 -78 -188 -173 -231
+                      -219 -228 -217 -288 -217 -42 0 -55 5 -84 33 -30 29 -47 72 -171 437 -75 223
+                      -142 410 -148 417 -6 6 -180 57 -386 113 -338 91 -378 104 -402 131 -18 18
+                      -28 40 -28 59 0 71 -40 55 1240 516 652 234 1291 464 1420 511 129 47 267 96
+                      305 109 78 26 120 25 171 -7z" />
+                    <path d="M2736 2895 c-446 -256 -813 -471 -818 -477 -4 -7 -8 -25 -8 -39 0
+                      -34 215 -662 228 -667 13 -4 16 14 42 243 12 99 23 190 26 202 3 15 236 212
+                      692 584 378 309 690 567 694 573 14 20 3 41 -22 43 -17 2 -278 -143 -834 -462z" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p>
+            <a href="tel:+79933729459" class="contacts__tel">
+              tel: +7 (993) 372-94-59
+            </a>
+          </p>
+          <p class="mb-3 mb-md-0 text-body-secondary">© 2023 KomDevel, Inc</p>
+        </div>
+        <div class="footer__docs">
+          <p>
+            Договор оферты
+          </p>
+          <p>
+            Политика конфиденциальности
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

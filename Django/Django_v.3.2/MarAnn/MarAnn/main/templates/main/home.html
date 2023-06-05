@@ -5,9 +5,8 @@
 {% endblock %}
 
 {% block body %}
-<main class="main">
-    <section class="hero">
-        <div class="container">
+    <section class="">
+        <div class="container hero pt-5 pb-3">
             <div class="hero__main flex row">
                 <div class="hero__left-block col-lg-8 col-md-6">
                     <h1 class="title">
@@ -80,8 +79,8 @@
             </div>
         </div>
     </section>
-    <section class="about">
-        <div class="container">
+    <section class="">
+        <div class="container about pt-5 pb-3">
             <div class="about__main">
                 <div class="about__left-block mb-5 d-flex justify-content-between">
                     <h2 class="subtitle title__about">
@@ -152,8 +151,8 @@
             </div>
         </div>
     </section>
-    <section id="services" class="services">
-        <div class="container">
+    <section id="services" class="">
+        <div class="container services pt-5 pb-3">
             <div class="services__main">
                 <div class="services__logo">
                     <h3 class="heading mb-5">
@@ -292,8 +291,8 @@
             </div>
         </div>
     </section>
-    <section id="portfolios" class="portfolios">
-        <div class="container">
+    <section id="portfolios" class="">
+        <div class="container portfolios pt-5 pb-3">
             <h3 class="heading mb-5">
                 КОМУ ПОДОЙДЕТ ОБУЧЕНИЕ?
             </h3>
@@ -387,8 +386,8 @@
             </div>
         </div>
     </section>
-    <section class="section cooperation">
-        <div class="container">
+    <section class="">
+        <div class="container cooperation pt-5 pb-3">
             <div class="cooperation__main">
                 <h3 class="heading mb-5">
                     ЗА МОИМИ ПЛЕЧАМИ
@@ -425,22 +424,88 @@
             </div>
         </div>
     </section>
-    <section class="reviews">
-        <div class="container">
+    <section class="">
+        <div class="container reviews pt-5 pb-3">
             <h3 class="heading mb-5">
                 Отзывы
             </h3>
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="../../static/main/img/cust-1.png" class="reviews__img d-block" alt="...">
+                  <div class="carousel-item reviews__item active" >
+                    <div class="d-flex ps-5 pe-5 flex-column justify-content-center align-items-center">
+                        <img src="../../static/main/img/cust-1.png" class="reviews__img d-block mb-3" alt="...">
+                        <p>
+                            ТАТЬЯНА (nail-МАСТЕР)
+                        </p>
+                        <p>
+                            Привет вот и подошёл 3й марафон к концу. Спасибо большое за полученные знания. Они сейчас как никогда мне были нужны. Много интересной информации, просто море! Отдельное спасибо за книгу. Читаю. Рада знакомству
+                        </p>
+                      </div>
+    
+                    </div>
+                  <div class="carousel-item reviews__item" >
+                    <div class="d-flex ps-5 pe-5 flex-column justify-content-center align-items-center">
+
+                    <img src="../../static/main/img/cust-2.png" class="reviews__img d-block mb-3" alt="...">
+                    <p>
+                        КСЕНИЯ (nail-МАСТЕР)
+                    </p>
+                    <p>
+                        Аня, хочу сказать тебе огромное спасибо за моё участие в твоём марафоне по созданию Stories и контента. Очень грамотно подавала всю информацию, особенно хочу сказать тебе респект за твою обратную связь, в этом ты большая умничка, объясняла, если что-то не получалось. Я очень много новой информации получила от тебя и теперь все это надо применять. Ещё раз говорю тебе спасибо!!
+                    </p>
+                    </div>
                   </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="../../static/main/img/cust-2.png" class="reviews__img d-block" alt="...">
+                  <div class="carousel-item reviews__item">
+                    <div class="d-flex ps-5 pe-5 flex-column justify-content-center align-items-center">
+
+                    <img src="../../static/main/img/cust-3.png" class="reviews__img d-block mb-3" alt="...">
+                    <p>
+                        ОЛЕСЯ (СЕТЕВИК)
+                    </p>
+                    <p>
+                        Привет! я только пробежалась глазами по материалу. Осмысливать буду вечером, но хочу сказать огромное тебе спасибо.
+                        За такие крутые марафоны, за твою энергетику, за то что не слезешь с нас и будешь до конца в наши головы впихивать информацию. Ты излагаешь все подробно, кратно и при этом ты еще раз объясняешь, если кто-то, например я не поймет в очередной раз. Спасибо большое!
+                    </p>
+                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="../../static/main/img/cust-3.png" class="reviews__img d-block" alt="...">
+                  <div class="carousel-item reviews__item">
+                    <div class="d-flex ps-5 pe-5 flex-column justify-content-center align-items-center">
+
+                    <img src="../../static/main/img/cust-4.png" class="reviews__img d-block mb-3" alt="...">
+                    <p>
+                        Мария (РИЛСМЕЙКЕР)
+                    </p>
+                    <p>
+                        Я ТЕБЯ ЗНАЮ ДАВНО, НО И ПОНЯТИЯ НЕ ИМЕЛА, НАСКОЛЬКО ТЫ КРУТАЯ! Я ТОЛЬКО С ТОБОЙ ПОНЯЛА НАКОНЕЦ-ТО , КАК ВЕСТИ ИНСТУ, КЕМ Я ХОЧУ БЫТЬ И ЧТО МНЕ НУЖНО СДЕЛАТЬ. ЛЮДИ ДОЛЖНЫ ТЕБЕ ПЛАТИТЬ ПРОСТО ЗА ТО, ЧТО СТОЯТ РЯДОМ С ТОБОЙ, ОТВЕЧАЮ! ПОКУПАЮ ВСЕ ТВОИ ПРОДУКТЫ И ДРУГИМ СОВЕТУЮ.
+                    </p>
+                    </div>
                   </div>
+                  <div class="carousel-item reviews__item">
+                    <div class="d-flex ps-5 pe-5 flex-column justify-content-center align-items-center">
+
+                    <img src="../../static/main/img/cust-5.png" class="reviews__img d-block mb-3" alt="...">
+                    <p>
+                        Татьяна (колорист)
+                    </p>
+                    <p>
+                        Ань, твои марафоны невероятные! Сколько не пыталась найти ту самую информацию, которая бы раскрыла суть ведения аккаунта - у меня не выходило. Днями читала и смотрела  разные Smm - блоги. И только сейчас поняла почему не было понимания. Ты поступаешь самым верным образом - даешь «удочку», а не «рыбу». Ты ведёшь нас к осознанию так, чтобы это уже никуда не делось. Твой подход самый правильный, в данной сфере. Цель – раскрыть суть ведения аккаунта и возможность в будущем справляться самостоятельно. От нас только ответственный подход и мотивация. От тебя всё остальное. Спасибо! И безумно рада тому, что когда-то попала на твою страницу. Там кстати , тоже кладезь информации, впервые её видела. Желаю тебе процветания! А всем остальным - сотрудничество с тобой
+                    </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item reviews__item">
+                    <div class="d-flex ps-5 pe-5 flex-column justify-content-center align-items-center">
+
+                    <img src="../../static/main/img/cust-6.png" class="reviews__img d-block mb-3" alt="...">
+                    <p>
+                        АЛЕНА (ВЛАДЕЛЕЦ БРЕНДА ОДЕЖДЫ)
+                    </p>
+                    <p>
+                        Привет! Первый марафон личный бренд и создание контента, закончился.  Хочу сказать большое спасибо! В некоторых моментах кипел мозг (оно и хорошо). Узнала новое для себя и про себя!
+Иногда казалось что с психологом общаюсь. Это очень здорово. Без напряга и интересно! Рада, что выбрала тебя.
+                    </p>
+                    </div>
+                  </div>
+
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -453,9 +518,8 @@
               </div>
         </div>
     </section>
-    
-    <section class="product" id="product">
-        <div class="container">
+    <section class="" id="product">
+        <div class="container product pt-5 pb-3">
             <div class="cooperation__main">
                 <h3 class="heading mb-5">
                     Курсы
@@ -472,11 +536,7 @@
                     </li>
                     {% endfor %}
                 </ul>
-                <p class="paper__param">
-                    <span>ГаГаГА</span>
-                </p>
             </div>
         </div>
     </section>
-</main>
 {% endblock %}

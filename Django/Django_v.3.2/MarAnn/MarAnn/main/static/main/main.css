@@ -98,12 +98,6 @@ section {
     color: var(--black_color);
 }
 
-.title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 36px;
-}
-
 .heading {
     text-align: center;
 }
@@ -211,11 +205,11 @@ section {
 }
 
 .carousel-item {
-    height: 430px;
+    height: 35vh;
 }
 
 .carousel-caption {
-    height: 400px;
+    height: 35vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -243,7 +237,15 @@ section {
 }
 
 .reviews__img {
-    width: 271px;
+    width: 150px;
+}
+
+.title {
+  }
+
+
+.carousel-control-next, .carousel-control-prev {
+    top: 75%; 
 }
 
 .product__item {
@@ -251,7 +253,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
     margin-bottom: 50px;
     padding: 30px 0;
     border-bottom: 3px solid black;
@@ -261,12 +262,18 @@ section {
     text-align: center;
 }
 
+.footer {
+    background-color: var(--light-black_color);
+    color: var(--white_color);
+}
+
 .blog__item {
     margin-bottom: 50px;
     padding: 30px 0;
     border-bottom: 3px solid black;
 
 }
+
 
 
 
