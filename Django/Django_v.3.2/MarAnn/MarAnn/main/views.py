@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.cache import cache_page
 from courses.models import Module, Product
 from main.models import Blog
 from django.http import HttpResponseRedirect
@@ -22,6 +23,7 @@ def home(request):
 
     return render(request, 'main/home.html', context=context)
 
+@cache_page(60)
 def blog(request):
     posts = Blog.objects.all()
     context = {
@@ -32,6 +34,7 @@ def blog(request):
     }
     return render(request, 'main/blog.html', context=context)
 
+#@cache_page(60)
 @login_required
 def classes(request):
     posts = Module.objects.all()
@@ -52,6 +55,7 @@ def redirect_to_home(request):
 def page_not_found(request, exception):
     return render(request, 'main/404.html', {'title': 'Страница не найдена'})
 
+#@cache_page(60)
 def show_post(request, post_slug):
     post = get_object_or_404(Blog, slug=post_slug)
 

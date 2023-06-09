@@ -8,20 +8,15 @@
 {% block body %}
 <section class="post">
     <div class="container">
-        <h1 class="title">{{ post.title }}</h1>
-
+        <h1 class="title title__animation">{{ post.title }}</h1>
         <img class="blog-img" src="{{ post.image.url }}" alt="">
-
         <p>
             {{ post.text|safe|linebreaks }}
         </p>
         <p>
             <span class="post__span">({{ post.publish }})</span>
-
         </p>
-
     </div>
-
 </section>
 
 {% endblock %}

@@ -41,11 +41,6 @@ section {
     padding: 55px 0;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
-}
-
 .list-reset {
     margin: 0;
     padding: 0;
@@ -68,7 +63,7 @@ section {
     text-align: center;
     padding: 10px 25px;
     color: var(--black_color);
-    border: var(--orange_color) 1px solid;
+    background-color: var(--orange_color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease-in-out,
       background-color 0.3s ease-in-out,
@@ -84,10 +79,28 @@ section {
   
 .button:hover {
     transform: translateY(-5px);
-    background-color: var(--orange_color);
+    background-color: var(--white_color);
     box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.25);
     color: var(--black_color);
 }
+
+.btn__animation {
+    animation: btn-size 3s linear infinite;
+}
+
+@keyframes btn-size {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+        transform: scale(75%);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 .span {
     color: var(--orange_color);
@@ -110,7 +123,35 @@ section {
 .about-line {
     background-color: var(--black_color);
     color: var(--orange_color);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+}
 
+.running-line {
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+}
+  
+.running-line::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    animation: running-line 2s linear infinite;
+}
+  
+@keyframes running-line {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
 }
 
 .title__about {
@@ -127,7 +168,6 @@ section {
 }
 
 .about__item {
-    text-align: center;
     font-weight: 400;
     font-size: 15px;
     line-height: 150%;
@@ -136,6 +176,25 @@ section {
 .about__results-block {
     text-align: center;
     border: 1px solid var(--black_color);
+    animation: background-transition 8s linear infinite;
+}
+
+@keyframes background-transition {
+    0% {
+      background-color: var(--light-black_color);
+    }
+    50% {
+      background-color: var(--storm-gray);
+    }
+    100% {
+      background-color: var(--light-black_color);
+    }
+}
+
+
+.about__results:hover {
+    animation: color-transition 3s linear alternate forwards;
+    animation-delay: 2s;
 }
 
 .about__results-block span {
@@ -159,7 +218,18 @@ section {
     max-width: 350px;
 }
 
-.item {
+.classes__item {
+    border-bottom: 3px solid black;
+}
+
+.classes__btn {
+    background-color: var(--orange_color);
+    outline: 1px solid var(--light-black_color);
+}
+
+.classes__btn:hover {
+    background-color: var(--storm-gray);
+    outline: none;
 }
 
 .blog-img {
@@ -169,7 +239,7 @@ section {
 .post__span {
     color: var(--storm-gray);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 150%;
 }
 
@@ -179,12 +249,10 @@ section {
     color: var(--bs-accordion-color);
     background-color: var(--orange_color);
     border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
-
 }
 
 .accordion-button {
     text-transform: uppercase;
-
 }
 
 .accordion-button:focus {
@@ -196,7 +264,6 @@ section {
     color: var(--orange_color);
     background-color: var(--white_color);
     box-shadow: none;
-
 }
 
 .portfolios {
@@ -213,6 +280,27 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.portfolios__subtitle {
+    @media (max-width: 770px) {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 120%;
+            }
+}
+
+.portfolios__param {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+
+
+    @media (max-width: 770px) {
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 120%;
+            }
 }
 
 .slide-1 {
@@ -237,15 +325,21 @@ section {
 }
 
 .reviews__img {
-    width: 150px;
+    width: 100px;
 }
 
-.title {
-  }
+.reviews__param {
+    @media (max-width: 770px) {
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 120%;
+            }
+    }
+
 
 
 .carousel-control-next, .carousel-control-prev {
-    top: 75%; 
+    bottom: 75%; 
 }
 
 .product__item {
@@ -271,12 +365,48 @@ section {
     margin-bottom: 50px;
     padding: 30px 0;
     border-bottom: 3px solid black;
+}
 
+.title__animation {
+    animation: color-transition 5s linear infinite;
+}
+
+@keyframes color-transition {
+    0% {
+      color: var(--black_color);
+    }
+    50% {
+      color: var(--orange_color);
+    }
+    100% {
+      color: var(--black_color);
+    }
 }
 
 
 
+.social__link svg {
+    fill: var(--white_color);
+    transition: fill 0.3s ease-in-out;
+}
 
+.social__link svg:hover {
+    fill: var(--orange_color);
+}
+
+  
+@keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+}
 
 
 
