@@ -26,5 +26,5 @@ class BlogAdmin(admin.ModelAdmin):
 
 #admin.site.register(Blog, BlogAdmin)
 #admin.site.register(Product, ProductAdmin)
-#admin.site.login = redirect_to_home
+admin.site.login = redirect_to_home
 

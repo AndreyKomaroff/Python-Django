@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+SITE_ID = 1
+
 
 # Application definition
 
@@ -40,6 +42,8 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'courses.apps.CoursesConfig',
     'debug_toolbar',
+    'django.contrib.sites',
+    'django.contrib.sitemaps'
 ]
 
 MIDDLEWARE = [
@@ -72,7 +76,7 @@ TEMPLATES = [
 ]
 
 # Обработчики ошибок 404 и 500
-#handler404 = 'app.views.handler404',
+#handler404 = 'main.views.handler404',
 #handler500 = 'app.views.handler500',
 #APPEND_SLASH = False
 
@@ -144,3 +148,4 @@ MEDIA_ROOT = BASE_DIR / 'media'
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+

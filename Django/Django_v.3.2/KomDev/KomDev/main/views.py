@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.cache import cache_page
 from main.models import Blog
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect
 import os
 
 # Create your views here.
@@ -53,5 +53,9 @@ def show_post(request, post_slug):
 
     return render(request, 'main/post.html', context=context)
 
+def robots(request):
+    content = "User-agent: *\nDisallow: /admin/\n" # Ваш файл robots.txt здесь
+    response = HttpResponse(content, content_type='text/plain')
+    return response
 
 handler404 = page_not_found
