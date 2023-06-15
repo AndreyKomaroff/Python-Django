@@ -24,8 +24,8 @@ def blog(request):
     }
     return render(request, 'blog/blog.html', context=context)
 
-def pageNotFound(request, exception):
-    return HttpResponseNotFound('<h1>Страница не найдена</h1>')
+def page_not_found(request, exception):
+    return render(request, 'blog/404.html', status=404)
 
 def show_post(request, post_slug):
     post = get_object_or_404(Post, slug=post_slug)
@@ -38,3 +38,9 @@ def show_post(request, post_slug):
 
     return render(request, 'blog/post.html', context=context)
 
+def robots(request):
+    content = "User-agent: *\nDisallow: /admin/\nDisallow: /database/"
+    response = HttpResponse(content, content_type='text/plain')
+    return response
+
+handler404 = page_not_found

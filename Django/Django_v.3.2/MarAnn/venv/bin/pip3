@@ -1,4 +1,4 @@
-#!/home/andrew/Документы/Python/Django/Django_v.3.2/venv/bin/python3
+#!/home/andrew/Документы/Python/Django/Django_v.3.2/MarAnn/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

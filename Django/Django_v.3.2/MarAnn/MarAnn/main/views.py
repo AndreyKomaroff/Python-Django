@@ -87,10 +87,8 @@ def show_post(request, post_slug):
     return render(request, 'main/post.html', context=context)
 
 def robots(request):
-    content = "User-agent: *\nDisallow: /admin/\nDisallow: /classes/\nDisallow: /database/" # Ваш файл robots.txt здесь
+    content = "User-agent: *\nDisallow: /admin/\nDisallow: /classes/\nDisallow: /database/"
     response = HttpResponse(content, content_type='text/plain')
     return response
-
-
 
 handler404 = page_not_found
