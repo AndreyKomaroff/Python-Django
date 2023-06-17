@@ -60,10 +60,19 @@ def classes(request):
     
     return render(request, 'main/classes.html', context=context)
 
+#@cache_page(60)
 def modules_view(request, course_slug):
     course = get_object_or_404(Course, slug=course_slug)
     modules = course.modules.all()
-    return render(request, 'main/modules.html', {'menu': menu, 'course': course, 'modules': modules})
+
+    context = {
+        'title': course.title,
+        'menu': menu,
+        'course': course,
+        'modules': modules
+    }
+
+    return render(request, 'main/modules.html', context=context)
 
 def redirect_to_home(request):
     if not request.user.is_superuser:
@@ -85,6 +94,25 @@ def show_post(request, post_slug):
     }
 
     return render(request, 'main/post.html', context=context)
+
+def offer_doc(request):
+
+    context = {
+        'menu': menu,
+        'title': 'Договор оферты'
+    }
+
+    return render(request, 'main/offer_doc.html', context=context)
+
+def user_consent(request):
+
+    context = {
+        'menu': menu,
+        'title': 'Политика конфиденциальности'
+    }
+
+    return render(request, 'main/user_consent.html', context=context)
+
 
 def robots(request):
     content = "User-agent: *\nDisallow: /admin/\nDisallow: /classes/\nDisallow: /database/"
