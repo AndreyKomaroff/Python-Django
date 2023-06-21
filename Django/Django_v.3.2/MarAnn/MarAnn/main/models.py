@@ -25,6 +25,6 @@ class Blog(models.Model):
         verbose_name_plural = 'Посты'
 
     def get_absolute_url(self):
-        return reverse('post', kwargs={'post_slug': self.slug})
+        return reverse('post', kwargs={'blog_slug': self.slug})
 
 

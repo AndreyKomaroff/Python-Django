@@ -1,0 +1,50 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+  {{ title }}
+{% endblock %}
+
+{% block body %}
+  <section class="classes">
+    <div class="container">
+      <h1 class="title">{{ h1 }}</h1>
+      <div class="classes__main flex">
+        <!-- Левая колонка со списком курсов -->
+        <div class="classes__left col-md-4">
+          <h2 class="blog__subtitle">Курсы</h2>
+          <ul class="list-reset">
+            {% for course in courses %}
+              <li class="classes__item flex">
+                <a href="?course={{ course.slug }}" class="classes__link">
+                {{ course.title }}
+              </a>
+              <a href="{{ course.get_absolute_url }}" class="btn">Перейти</a>
+
+            </li>
+            {% endfor %}
+          </ul>
+          
+        </div>
+    
+        <!-- Правая колонка с модулями выбранного курса -->
+        <div class="classes__right">
+          <h4>{{ selected_course.title|default_if_none:"Выберите курс" }}</h4>
+          {% if modules %}
+            <ul>
+              {% for module in modules %}
+              
+                <li>{{ module.title }}</li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <p>Выберите курс из списка, чтобы увидеть оглавление</p>
+          {% endif %}
+        </div>
+      </div>      
+      <p class="paper__param">
+        <span>Дальше будут еще уроки</span>
+      </p>
+  
+    </div>
+</section>
+{% endblock %}

@@ -84,8 +84,8 @@ def page_not_found(request, exception):
     return render(request, 'main/404.html', status=404)
 
 #@cache_page(60)
-def show_post(request, post_slug):
-    post = get_object_or_404(Blog, slug=post_slug)
+def show_post(request, blog_slug):
+    post = get_object_or_404(Blog, slug=blog_slug)
 
     context = {
         'post': post,

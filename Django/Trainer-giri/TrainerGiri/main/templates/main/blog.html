@@ -1,0 +1,32 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+
+{% block body %}
+<section class="blog">
+  <div class="container">
+    <h1 class="blog__title">{{ h1 }}</h1>
+    <ul class="list-reset">
+      {% for p in posts %}
+      <li class="blog__item">
+        <img class="blog__img" src="{{ p.image.url }}" alt="">
+        <h2 class="blog__subtitle">
+          {{ p.title }}
+        </h2>
+        <p class="post__span">
+          <span>({{ p.publish }})</span>
+        </p>
+        <p class="blog__param">
+          {{ p.text|safe|linebreaks|truncatewords:50 }}
+        </p>
+        <a href="{{ p.get_absolute_url }}" class="btn" target="_blank">Читать пост</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% endblock %}
