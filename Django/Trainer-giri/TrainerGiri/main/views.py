@@ -4,7 +4,7 @@ from django.views.decorators.cache import cache_page
 from courses.models import Module, Product, Course
 from main.models import Blog
 from django.http import HttpResponse, HttpResponseRedirect
-import os
+from django.core.paginator import Paginator
 
 # Create your views here.
 
@@ -23,14 +23,18 @@ def home(request):
 
     return render(request, 'main/home.html', context=context)
 
-@cache_page(60)
+#@cache_page(60)
 def blog(request):
     posts = Blog.objects.all()
+    paginator = Paginator(posts, 1)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
     context = {
         'title': 'Блог',
         'h1': 'Блог',
         'posts': posts,
-        'menu': menu
+        'menu': menu,
+        'page_obj': page_obj
     }
 
     return render(request, 'main/blog.html', context=context)

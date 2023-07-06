@@ -11,14 +11,14 @@
       <div class="classes__main flex">
         <!-- Левая колонка со списком курсов -->
         <div class="classes__left col-md-4">
-          <h2 class="blog__subtitle">Курсы</h2>
+          <h2 class="course__subtitle">Курсы</h2>
           <ul class="list-reset">
             {% for course in courses %}
               <li class="classes__item flex">
                 <a href="?course={{ course.slug }}" class="classes__link">
                 {{ course.title }}
               </a>
-              <a href="{{ course.get_absolute_url }}" class="btn">Перейти</a>
+              <a href="{{ course.get_absolute_url }}" class="btn course__btn">Перейти</a>
 
             </li>
             {% endfor %}
@@ -41,10 +41,6 @@
           {% endif %}
         </div>
       </div>      
-      <p class="paper__param">
-        <span>Дальше будут еще уроки</span>
-      </p>
-  
     </div>
 </section>
 {% endblock %}

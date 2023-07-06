@@ -19,9 +19,9 @@ img {
     max-width: 100%;
 }
 
-/*p {
-    margin: 0;
-}*/
+p {
+    margin-top: 0;
+}
 
 h1,
 h2,
@@ -572,6 +572,10 @@ section {
     margin-bottom: 25px;
 }
 
+.blog__btn {
+    margin-top: 25px;
+}
+
 .post__span {
     margin: 0;
     margin-bottom: 15px;
@@ -589,9 +593,6 @@ section {
     padding: 15px;
     margin-right: 35px;
     width: calc(100% / 2 - 3em);
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 120%;
     border: 1px solid var(--dusty_gray);
 }
 
@@ -600,7 +601,9 @@ section {
 }
 
 .classes__link {
-    margin-bottom: 15px;
+    margin-bottom: 15px;    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
 }
 
 .classes__btn {
@@ -609,26 +612,43 @@ section {
     align-items: center;
     justify-content: center;
     padding: 35px;
-    color: var(--dusty_gray);
-    background-color: var(--mine-shaft);
+    color: black;
+    background-color: var(--ronchi);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
-    
 }
 
 .classes__btn:hover {
     background-color: var(--golden_tainoi);
-    color: black;
+    color: var(--dusty_gray);
     transform: translateY(-5px);
     box-shadow: 0 5px 5px 5px rgba(99, 90, 90, 0.25);
 }
 
 .classes__btn svg {
     margin-right: 15px;
-    fill: var(--dusty_gray);
+    fill: black;
     transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
 }
 
 .classes__btn:hover svg{
-    fill: black;
+    fill: var(--dusty_gray);
 }
 
+.course__subtitle {
+    margin-bottom: 15px;
+}
+
+.pagination {
+    /*width: calc(100% / 2);*/
+    justify-content: end;
+    align-items: center;
+}
+
+.pagination__item {
+    padding: 10px;
+}
+
+.pagination__item-selected {
+    color: var(--dusty_gray);
+	font-size: 20px;
+}

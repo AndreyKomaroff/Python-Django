@@ -309,8 +309,20 @@
         padding: 15px 0;
     }
 
-    .classes__left {
+    .classes__link {
         font-weight: 600;
+        font-size: 15px;
+        line-height: 120%;
+    }
+
+    .course__subtitle {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+    .course__btn {
+        font-weight: 400;
         font-size: 15px;
         line-height: 120%;
     }

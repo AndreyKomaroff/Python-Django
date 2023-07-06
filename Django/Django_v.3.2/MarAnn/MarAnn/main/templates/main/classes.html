@@ -19,20 +19,16 @@
                 {{ course.title }}
               </a>
               <a href="{{ course.get_absolute_url }}" class="button btn-reset mb-3 mt-3">Перейти</a>
-
             </li>
             {% endfor %}
           </ul>
-          
         </div>
-    
         <!-- Правая колонка с модулями выбранного курса -->
         <div class="col-md-8">
           <h4>{{ selected_course.title|default_if_none:"Выберите курс" }}</h4>
           {% if modules %}
             <ul>
               {% for module in modules %}
-              
                 <li>{{ module.title }}</li>
               {% endfor %}
             </ul>
@@ -40,16 +36,13 @@
             <p>Выберите курс из списка, чтобы увидеть оглавление</p>
           {% endif %}
         </div>
-      </div>      <p class="paper__param">
-        <span>Дальше будут еще уроки</span>
-      </p>
+      </div>      
       <script>
         (function(w,d,u){
                 var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
                 var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
         })(window,document,'https://cdn-ru.bitrix24.ru/b25527632/crm/site_button/loader_1_tswzs7.js');
     </script>
-    
     </div>
 </section>
 {% endblock %}

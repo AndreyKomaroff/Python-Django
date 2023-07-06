@@ -35,7 +35,7 @@ def blog(request):
 
     return render(request, 'main/blog.html', context=context)
 
-#@cache_page(60)
+@cache_page(60)
 @login_required
 def classes(request):
     courses = Course.objects.all()
@@ -60,7 +60,7 @@ def classes(request):
     
     return render(request, 'main/classes.html', context=context)
 
-#@cache_page(60)
+@cache_page(60)
 def modules_view(request, course_slug):
     course = get_object_or_404(Course, slug=course_slug)
     modules = course.modules.all()
@@ -83,7 +83,7 @@ def redirect_to_home(request):
 def page_not_found(request, exception):
     return render(request, 'main/404.html', status=404)
 
-#@cache_page(60)
+@cache_page(60)
 def show_post(request, blog_slug):
     post = get_object_or_404(Blog, slug=blog_slug)
 

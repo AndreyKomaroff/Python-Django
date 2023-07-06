@@ -10,7 +10,7 @@
   <div class="container">
     <h1 class="blog__title">{{ h1 }}</h1>
     <ul class="list-reset">
-      {% for p in posts %}
+      {% for p in page_obj %}
       <li class="blog__item">
         <img class="blog__img" src="{{ p.image.url }}" alt="">
         <h2 class="blog__subtitle">
@@ -19,13 +19,38 @@
         <p class="post__span">
           <span>({{ p.publish }})</span>
         </p>
-        <p class="blog__param">
           {{ p.text|safe|linebreaks|truncatewords:50 }}
-        </p>
-        <a href="{{ p.get_absolute_url }}" class="btn" target="_blank">Читать пост</a>
+        <a href="{{ p.get_absolute_url }}" class="btn blog__btn" target="_blank">Читать пост</a>
       </li>
       {% endfor %}
     </ul>
+    {% if page_obj.has_other_pages %}
+    <ul class="pagination list-reset flex">
+
+      {% if page_obj.has_previous %}
+      <li class="list-reset">
+               <a href="?page={{ page_obj.previous_page_number }}">&lt;&lt;</a>
+      </li>
+      {% endif %}
+      
+      {% for p in page_obj.paginator.page_range %}
+      {% if page_obj.number == p %}
+        <li class="pagination__item pagination__item-selected">{{ p }}</li>
+                   {% elif p >= page_obj.number|add:-2 and p <= page_obj.number|add:2  %}
+        <li class="pagination__item">
+            <a href="?page={{ p }}">{{ p }}</a>
+        </li>
+                   {% endif %}
+      {% endfor %}
+
+      {% if page_obj.has_next %}
+      <li class="list-reset">
+               <a href="?page={{ page_obj.next_page_number }}">&gt;&gt;</a>
+      </li>
+      {% endif %}
+      
+  </ul>
+  {% endif %}
   </div>
 </section>
 

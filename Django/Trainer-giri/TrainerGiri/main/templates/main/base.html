@@ -13,7 +13,7 @@
 
   <link rel="shortcut icon" href="{% static 'main/img/favicon.ico' %}"/>
   <script defer src="{% static 'main/js/main.js' %}"></script>
-  <meta name="description" content="Научись продвигать свой бренд в социальных сетях вместе с контент-маркетологом. Обучение продвижению на YouTube. Обучение SMM">
+  <meta name="description" content="#">
 </head>
 
 <body>
@@ -101,7 +101,9 @@
 
         <div class="footer__main flex">
             <div class="footer__logo flex">
+              <a href="{% url 'home' %}">
                 <img src="../../static/main/img/svg/Logo.svg" alt="Логотип" class="logo">
+              </a>
             </div>
             <ul class="footer__list list-reset flex">
               {% for m in menu %}
