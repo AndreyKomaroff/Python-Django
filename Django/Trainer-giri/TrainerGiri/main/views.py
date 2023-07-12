@@ -10,7 +10,7 @@ from django.core.paginator import Paginator
 
 menu = [{'title': 'Главная', 'url_name': 'home'},
     {'title': 'Блог', 'url_name': 'blog'},
-    {'title': 'Тренировки', 'url_name': 'classes'}]
+    {'title': 'Тренировки', 'url_name': 'trainings'}]
 
 
 def home(request):
@@ -26,7 +26,7 @@ def home(request):
 #@cache_page(60)
 def blog(request):
     posts = Blog.objects.all()
-    paginator = Paginator(posts, 1)
+    paginator = Paginator(posts, 5)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     context = {
@@ -41,7 +41,7 @@ def blog(request):
 
 #@cache_page(60)
 @login_required
-def classes(request):
+def trainings(request):
     courses = Course.objects.all()
     #posts = Module.objects.all()
 
@@ -54,7 +54,7 @@ def classes(request):
         modules = None
 
     context = {
-        'title': 'Уроки',
+        'title': 'Тренировки',
         'h1': 'Курсы и программы',
         'menu': menu,
         'courses': courses,

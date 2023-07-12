@@ -214,6 +214,10 @@
         align-items: flex-start;
     }
 
+    .nav__btn {
+        margin-top: 10px;
+    }
+
     .logo__name {
         display: none;
     }

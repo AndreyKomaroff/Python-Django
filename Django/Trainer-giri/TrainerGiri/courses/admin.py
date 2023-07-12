@@ -19,8 +19,8 @@ class ProductAdmin(admin.ModelAdmin):
     search_fields = ['title']
 
 
-admin.site.site_title = 'Kamaroff admin'
-admin.site.site_header = 'Kamaroff admin'
+admin.site.site_title = 'KomDevel Admin'
+admin.site.site_header = 'KomDevel Admin'
 
 
 #class AdminVideo(AdminVideoMixin, admin.ModelAdmin):

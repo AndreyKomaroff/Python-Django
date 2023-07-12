@@ -111,6 +111,23 @@ section {
     margin: 0;
 }
 
+.btn {
+    display: flex;
+    max-width: 18em;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    color: var(--mine-shaft);
+    background-color: var(--ronchi);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--golden_tainoi);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px 5px rgba(99, 90, 90, 0.25);
+}
+
 /*header*/
 
 .header {
@@ -488,25 +505,13 @@ section {
     width: calc(100% / 4);
 }
 
-.btn {
-    display: flex;
-    max-width: 18em;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 35px;
-    color: var(--mine-shaft);
-    background-color: var(--ronchi);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.btn:hover {
-    background-color: var(--golden_tainoi);
-    transform: translateY(-5px);
-    box-shadow: 0 5px 5px 5px rgba(99, 90, 90, 0.25);
-}
 
 
 /*  footer  */
+
+.footer {
+    /*border-top: 1px solid var(--dusty_gray);*/
+}
 
 .title__footer__img {
     position: relative;
@@ -549,6 +554,15 @@ section {
     width: 36px;
 }
 
+.brand {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 100%;
+
+}
+
+/*  blog  */
+
 .blog__item {
     margin-bottom: 50px;
     padding: 30px 0;
@@ -585,19 +599,44 @@ section {
     line-height: 150%;
 }
 
+.pagination {
+    /*width: calc(100% / 2);*/
+    justify-content: end;
+    align-items: center;
+}
+
+.pagination__item {
+    padding: 10px;
+}
+
+.pagination__item-selected {
+    color: var(--dusty_gray);
+	font-size: 20px;
+}
+
+/*  classes  */
+
 .classes__main {
 
 }
 
+.classes__title {
+    margin-bottom: 25px;
+}
+
 .classes__left {
-    padding: 15px;
     margin-right: 35px;
     width: calc(100% / 2 - 3em);
-    border: 1px solid var(--dusty_gray);
 }
 
 .classes__item {
+    padding: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
+    border: 1px solid var(--dusty_gray);
+
 }
 
 .classes__link {
@@ -638,17 +677,6 @@ section {
     margin-bottom: 15px;
 }
 
-.pagination {
-    /*width: calc(100% / 2);*/
-    justify-content: end;
-    align-items: center;
-}
-
-.pagination__item {
-    padding: 10px;
-}
-
-.pagination__item-selected {
-    color: var(--dusty_gray);
-	font-size: 20px;
+.modules__item {
+    margin-bottom: 50px;
 }

@@ -5,9 +5,9 @@
 {% endblock %}
 
 {% block body %}
-<section class="post">
+<section class="hero">
     <div class="container">
-        <h1 class="blog__title">{{ post.title }}</h1>
+        <h1 class="title-second blog__title">{{ post.title }}</h1>
         <img class="blog__img" src="{{ post.image.url }}" alt="">
         <p>
             {{ post.text|safe|linebreaks }}

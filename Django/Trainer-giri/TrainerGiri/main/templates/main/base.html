@@ -10,59 +10,54 @@
   <link rel="stylesheet" href="{% static 'main/css/normalize.css' %}">
   <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
   <link rel="stylesheet" href="{% static 'main/css/media.css' %}">
-
-  <link rel="shortcut icon" href="{% static 'main/img/favicon.ico' %}"/>
+  <link rel="shortcut icon" href="{% static 'main/img/favicon.ico' %}" />
   <script defer src="{% static 'main/js/main.js' %}"></script>
-  <meta name="description" content="#">
+  <meta name="description" content="Персональные тренировки онлайн: гири, тренажерный зал, функциональный тренинг. Составление программ тренировок и сопровождение занятий. Развитие силы хвата.">
 </head>
 
 <body>
   <header class="header">
     <div class="container header__container">
-        <button class="header__burger-btn" id="burger">
-            <span></span><span></span><span></span>
-        </button>
-
-        <nav class="nav flex">
-            <div class="nav__logo flex">
-              <a href="{% url 'home' %}">
-                <img src="../../static/main/img/svg/Logo.svg" alt="Логотип" class="logo">
-              </a>
-            </div>
-            <ul class="nav__list list-reset flex">
-              {% for m in menu %}
-              <li class="nav__item">
-                <a class="#" href="{% url m.url_name %}">{{ m.title }}</a>
-              </li>
-              {% endfor %}
-              {% if not user.is_authenticated %}
-              <a class="#" href="{% url 'login' %}">
-                <button class="btn">Войти</button>
-              </a>
-              {% elif user.is_superuser %}
-              <a class="#" href="{% url 'admin:index' %}">
-                <button class="btn">Админ</button>
-              </a>
-              {% else %}
-              {% endif %}
-  
-            </ul>
-        </nav>
-
+      <button class="header__burger-btn" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav flex">
+        <div class="nav__logo flex">
+          <a href="{% url 'home' %}">
+            <img src="../../static/main/img/svg/Logo.svg" alt="Логотип" class="logo">
+          </a>
+        </div>
+        <ul class="nav__list list-reset flex">
+          {% for m in menu %}
+          <li class="nav__item">
+            <a class="#" href="{% url m.url_name %}">{{ m.title }}</a>
+          </li>
+          {% endfor %}
+          {% if not user.is_authenticated %}
+          <a class="nav__btn" href="{% url 'login' %}">
+            <button class="btn">Войти</button>
+          </a>
+          {% elif user.is_superuser %}
+          <a class="nav__btn" href="{% url 'admin:index' %}">
+            <button class="btn">Админ</button>
+          </a>
+          {% else %}
+          {% endif %}
+        </ul>
+      </nav>
     </div>
-</header>            
+  </header>
   <main class="main">
     {% block body %}
     {% endblock %}
   </main>
-  <footer class="footer" id="contacts">
-    <div class="container">
-        <div class="title__block">
-            <svg class="title__about__img" version="1.0" xmlns="http://www.w3.org/2000/svg" width="" height=""
-                viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
-                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
-                    stroke="none">
-                    <path d="M2325 5114 c-22 -2 -92 -9 -155 -14 -560 -51 -1031 -238 -1239 -494
+  <footer class="" id="contacts">
+    <div class="container footer">
+      <div class="title__block">
+        <svg class="title__about__img" version="1.0" xmlns="http://www.w3.org/2000/svg" width="" height=""
+          viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+          <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+            <path d="M2325 5114 c-22 -2 -92 -9 -155 -14 -560 -51 -1031 -238 -1239 -494
                 -57 -71 -123 -202 -146 -291 -93 -359 31 -816 377 -1387 l89 -148 -67 -77
                 c-307 -360 -460 -836 -425 -1317 34 -456 180 -783 452 -1011 232 -195 519
                 -306 919 -357 168 -21 730 -18 900 5 515 70 875 266 1094 594 141 213 213 444
@@ -77,7 +72,7 @@
                 216 596 423 818 33 34 59 71 59 82 0 11 -31 69 -70 129 -209 328 -352 640
                 -411 898 -29 128 -36 335 -15 443 20 102 86 243 148 314 98 114 330 248 543
                 316 355 112 797 159 1225 130z" />
-                                    <path d="M2330 4609 c-431 -18 -755 -95 -935 -223 -118 -85 -158 -167 -158
+            <path d="M2330 4609 c-431 -18 -755 -95 -935 -223 -118 -85 -158 -167 -158
                 -326 -1 -118 18 -203 79 -366 81 -219 327 -660 377 -678 20 -7 42 0 119 37
                 128 63 310 122 454 148 167 30 421 30 588 0 143 -25 325 -85 451 -146 50 -25
                 101 -45 113 -45 24 0 47 31 145 198 143 241 250 479 298 662 29 114 32 263 5
@@ -87,79 +82,78 @@
                 164 -242 0 -531 -63 -752 -164 l-77 -35 -19 27 c-81 115 -240 425 -296 574
                 -50 135 -68 218 -69 318 -2 146 47 211 217 291 134 63 356 113 611 138 143 15
                 679 6 825 -13z" />
-                                    <path d="M1497 2498 c-206 -217 -336 -515 -368 -840 -11 -115 -11 -129 5 -152
+            <path d="M1497 2498 c-206 -217 -336 -515 -368 -840 -11 -115 -11 -129 5 -152
                 18 -29 66 -36 85 -12 6 7 16 70 21 139 25 308 141 575 345 797 35 39 55 69 55
                 84 0 26 -32 56 -60 56 -8 0 -46 -32 -83 -72z" />
-                                    <path d="M1169 1249 c-25 -25 -21 -61 26 -201 52 -159 196 -368 252 -368 57 0
+            <path d="M1169 1249 c-25 -25 -21 -61 26 -201 52 -159 196 -368 252 -368 57 0
                 71 69 22 116 -77 73 -159 230 -194 370 -25 102 -60 129 -106 83z" />
-                </g>
+          </g>
+        </svg>
+        <h2 class="title-second title__about">
+          КОНТАКТЫ
+        </h2>
+      </div>
+      <div class="footer__main flex">
+        <div class="footer__logo flex">
+          <a href="{% url 'home' %}">
+            <img src="../../static/main/img/svg/Logo.svg" alt="Логотип" class="logo">
+          </a>
+          <p class="brand">© 2023 KomDevel</p>
+
+        </div>
+        <ul class="footer__list list-reset flex">
+          {% for m in menu %}
+          <li class="nav__item">
+            <a class="#" href="{% url m.url_name %}">{{ m.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <div class="footer__social flex">
+          <a href="https://vk.com/kamarooff" target="_blank" class="social__link social__vk">
+            <svg class="social-img" width="36" height="36" viewBox="0 0 36 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_56_84)">
+                <path
+                  d="M29.7 0H6.3C2.82061 0 0 2.82061 0 6.3V29.7C0 33.1794 2.82061 36 6.3 36H29.7C33.1794 36 36 33.1794 36 29.7V6.3C36 2.82061 33.1794 0 29.7 0Z"
+                  fill="black" />
+                <path
+                  d="M5.4113 11.1204H9.7313C9.82162 11.1202 9.90983 11.1476 9.9842 11.1989C10.0586 11.2501 10.1155 11.3228 10.1476 11.4073C10.6257 12.6391 12.6113 17.4598 14.4282 17.8535C15.7782 17.8535 15.3001 11.441 13.5844 11.441C13.1344 11.441 14.3832 10.6423 14.4676 10.6085C16.0619 10.1715 17.7445 10.1715 19.3388 10.6085C20.1994 10.9685 20.3457 11.9754 20.3682 12.8304C20.3907 13.6854 19.4119 17.3304 20.7001 17.7241C22.3876 18.2416 24.5588 12.9485 25.0651 11.6491C25.098 11.5657 25.1553 11.4942 25.2296 11.4441C25.3039 11.3939 25.3916 11.3673 25.4813 11.3679H30.2907C30.365 11.3677 30.4382 11.3858 30.5038 11.4208C30.5694 11.4558 30.6253 11.5064 30.6665 11.5683C30.7077 11.6301 30.733 11.7012 30.7401 11.7752C30.7471 11.8492 30.7357 11.9238 30.7069 11.9923C29.7163 14.2522 28.5286 16.4206 27.1576 18.4723C27.041 18.6416 26.9863 18.8459 27.0027 19.0508C27.0191 19.2556 27.1056 19.4486 27.2476 19.5973C28.6876 21.1385 32.6251 25.5035 30.3751 25.5035H25.5207C25.3952 25.5038 25.2711 25.4774 25.1567 25.426C25.0422 25.3746 24.94 25.2994 24.8569 25.2054C24.1032 24.3729 21.9094 22.0554 20.9194 22.241C20.0982 22.3929 20.0194 23.7879 20.0588 24.6991C20.0712 24.9342 19.991 25.1649 19.8354 25.3415C19.6798 25.5182 19.4611 25.6268 19.2263 25.6441C18.3657 25.6948 17.1901 25.7173 17.0832 25.7116C13.6519 25.4923 11.6213 23.2029 9.68068 20.6491C7.64789 17.9417 6.06215 14.926 4.9838 11.7166C4.96176 11.6487 4.95599 11.5766 4.96695 11.506C4.9779 11.4355 5.00529 11.3685 5.04689 11.3105C5.08849 11.2525 5.14314 11.205 5.20644 11.172C5.26974 11.139 5.33992 11.1213 5.4113 11.1204V11.1204Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_56_84">
+                  <rect width="36" height="36" fill="white" />
+                </clipPath>
+              </defs>
             </svg>
-            <h2 class="title-second title__about">
-                КОНТАКТЫ
-            </h2>
+
+          </a>
+          <a href="tg://resolve?domain=Kamarooff" target="_blank" class="social__link social__telegram">
+            <svg class="social-img" width="36" height="36" viewBox="0 0 36 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_56_89)">
+                <path
+                  d="M35.9895 0H0.0105469C0.004722 0 0 0.004722 0 0.0105469V35.9895C0 35.9953 0.004722 36 0.0105469 36H35.9895C35.9953 36 36 35.9953 36 35.9895V0.0105469C36 0.004722 35.9953 0 35.9895 0Z"
+                  fill="black" />
+                <path
+                  d="M13.9922 28.4062C13.2188 28.4062 13.2891 28.125 13.0781 27.4219L10.8281 20.0391L28.0547 9.91406"
+                  fill="#C8DAEA" />
+                <path
+                  d="M13.9922 28.4062C14.4844 28.4062 14.7656 28.125 15.1172 27.8438L18.2812 24.8203L14.3438 22.4297"
+                  fill="#A9C9DD" />
+                <path
+                  d="M14.3437 22.4296L23.8359 29.3906C24.8203 30.0234 25.664 29.6718 25.9453 28.4062L29.8125 10.2656C30.164 8.71869 29.1797 8.01557 28.125 8.50775L5.55466 17.2265C4.0781 17.789 4.0781 18.7031 5.27341 19.0546L11.1093 20.8828L24.4687 12.3749C25.1015 12.0234 25.664 12.164 25.2422 12.6562"
+                  fill="#F6FBFE" />
+              </g>
+              <defs>
+                <clipPath id="clip0_56_89">
+                  <rect width="36" height="36" rx="10" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
         </div>
-
-        <div class="footer__main flex">
-            <div class="footer__logo flex">
-              <a href="{% url 'home' %}">
-                <img src="../../static/main/img/svg/Logo.svg" alt="Логотип" class="logo">
-              </a>
-            </div>
-            <ul class="footer__list list-reset flex">
-              {% for m in menu %}
-              <li class="nav__item">
-                <a class="#" href="{% url m.url_name %}">{{ m.title }}</a>
-              </li>
-              {% endfor %}
-            </ul>
-
-            <div class="footer__social flex">
-              <a href="https://vk.com/kamarooff" target="_blank" class="social__link social__vk">
-                  <svg class="social-img" width="36" height="36" viewBox="0 0 36 36" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_56_84)">
-                          <path
-                              d="M29.7 0H6.3C2.82061 0 0 2.82061 0 6.3V29.7C0 33.1794 2.82061 36 6.3 36H29.7C33.1794 36 36 33.1794 36 29.7V6.3C36 2.82061 33.1794 0 29.7 0Z"
-                              fill="black" />
-                          <path
-                              d="M5.4113 11.1204H9.7313C9.82162 11.1202 9.90983 11.1476 9.9842 11.1989C10.0586 11.2501 10.1155 11.3228 10.1476 11.4073C10.6257 12.6391 12.6113 17.4598 14.4282 17.8535C15.7782 17.8535 15.3001 11.441 13.5844 11.441C13.1344 11.441 14.3832 10.6423 14.4676 10.6085C16.0619 10.1715 17.7445 10.1715 19.3388 10.6085C20.1994 10.9685 20.3457 11.9754 20.3682 12.8304C20.3907 13.6854 19.4119 17.3304 20.7001 17.7241C22.3876 18.2416 24.5588 12.9485 25.0651 11.6491C25.098 11.5657 25.1553 11.4942 25.2296 11.4441C25.3039 11.3939 25.3916 11.3673 25.4813 11.3679H30.2907C30.365 11.3677 30.4382 11.3858 30.5038 11.4208C30.5694 11.4558 30.6253 11.5064 30.6665 11.5683C30.7077 11.6301 30.733 11.7012 30.7401 11.7752C30.7471 11.8492 30.7357 11.9238 30.7069 11.9923C29.7163 14.2522 28.5286 16.4206 27.1576 18.4723C27.041 18.6416 26.9863 18.8459 27.0027 19.0508C27.0191 19.2556 27.1056 19.4486 27.2476 19.5973C28.6876 21.1385 32.6251 25.5035 30.3751 25.5035H25.5207C25.3952 25.5038 25.2711 25.4774 25.1567 25.426C25.0422 25.3746 24.94 25.2994 24.8569 25.2054C24.1032 24.3729 21.9094 22.0554 20.9194 22.241C20.0982 22.3929 20.0194 23.7879 20.0588 24.6991C20.0712 24.9342 19.991 25.1649 19.8354 25.3415C19.6798 25.5182 19.4611 25.6268 19.2263 25.6441C18.3657 25.6948 17.1901 25.7173 17.0832 25.7116C13.6519 25.4923 11.6213 23.2029 9.68068 20.6491C7.64789 17.9417 6.06215 14.926 4.9838 11.7166C4.96176 11.6487 4.95599 11.5766 4.96695 11.506C4.9779 11.4355 5.00529 11.3685 5.04689 11.3105C5.08849 11.2525 5.14314 11.205 5.20644 11.172C5.26974 11.139 5.33992 11.1213 5.4113 11.1204V11.1204Z"
-                              fill="white" />
-                      </g>
-                      <defs>
-                          <clipPath id="clip0_56_84">
-                              <rect width="36" height="36" fill="white" />
-                          </clipPath>
-                      </defs>
-                  </svg>
-
-              </a>
-              <a href="https://t.me/@Kamarooff" target="_blank" class="social__link social__telegram">
-                  <svg class="social-img" width="36" height="36" viewBox="0 0 36 36" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_56_89)">
-                          <path
-                              d="M35.9895 0H0.0105469C0.004722 0 0 0.004722 0 0.0105469V35.9895C0 35.9953 0.004722 36 0.0105469 36H35.9895C35.9953 36 36 35.9953 36 35.9895V0.0105469C36 0.004722 35.9953 0 35.9895 0Z"
-                              fill="black" />
-                          <path
-                              d="M13.9922 28.4062C13.2188 28.4062 13.2891 28.125 13.0781 27.4219L10.8281 20.0391L28.0547 9.91406"
-                              fill="#C8DAEA" />
-                          <path
-                              d="M13.9922 28.4062C14.4844 28.4062 14.7656 28.125 15.1172 27.8438L18.2812 24.8203L14.3438 22.4297"
-                              fill="#A9C9DD" />
-                          <path
-                              d="M14.3437 22.4296L23.8359 29.3906C24.8203 30.0234 25.664 29.6718 25.9453 28.4062L29.8125 10.2656C30.164 8.71869 29.1797 8.01557 28.125 8.50775L5.55466 17.2265C4.0781 17.789 4.0781 18.7031 5.27341 19.0546L11.1093 20.8828L24.4687 12.3749C25.1015 12.0234 25.664 12.164 25.2422 12.6562"
-                              fill="#F6FBFE" />
-                      </g>
-                      <defs>
-                          <clipPath id="clip0_56_89">
-                              <rect width="36" height="36" rx="10" fill="white" />
-                          </clipPath>
-                      </defs>
-                  </svg>
-              </a>
-            </div>
-
-        </div>
+      </div>
     </div>
   </footer>
 </body>

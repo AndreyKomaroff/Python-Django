@@ -7,14 +7,14 @@
 {% block body %}
 <section class="hero">
 <div class="container">
-  <h1 class="title title__animation">{{ course.title }}</h1>
+  <h1 class="title-second classes__title title__animation">{{ course.title }}</h1>
   {% if modules %}
-    <ul class="list">
+    <ul class="modules__list list-reset">
       {% for module in modules %}
-        <li class="classes__item pt-3 pb-5">
+        <li class="modules__item">
           <h4>{{ module.title }}</h4>
-          <img class="blog-img mb-3" src="{{ module.image.url }}" alt="">
-          <p>{{ module.description }}</p>
+          <img class="blog-img" src="{{ module.image.url }}" alt="">
+          <p>{{ module.description|safe|linebreaks }}</p>
           {% if module.url %}
 
           <a href="{{ module.url }}" target="_blank" class="classes__btn">
