@@ -16,7 +16,7 @@ menu = [{'title': 'Главная', 'url_name': 'home'},
 def home(request):
     items = Product.objects.all()
     context = {
-        'title': 'Главная',
+        'title': 'Персональный тренер онлайн',
         'menu': menu,
         'items': items
     }

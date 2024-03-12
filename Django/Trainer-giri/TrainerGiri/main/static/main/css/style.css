@@ -38,7 +38,7 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
-    background-image: url(../img/nordwood-themes-R53t-Tg6J4c-unsplash.jpg);
+    background-image: url(../img/theme.jpg);
 }
 
 section {
@@ -180,7 +180,6 @@ section {
 .logo {
     display: block;
 }
-
 
 .nav {
     padding: 20px 0;
@@ -505,13 +504,7 @@ section {
     width: calc(100% / 4);
 }
 
-
-
 /*  footer  */
-
-.footer {
-    /*border-top: 1px solid var(--dusty_gray);*/
-}
 
 .title__footer__img {
     position: relative;
@@ -558,7 +551,6 @@ section {
     font-weight: 600;
     font-size: 13px;
     line-height: 100%;
-
 }
 
 /*  blog  */
@@ -600,7 +592,6 @@ section {
 }
 
 .pagination {
-    /*width: calc(100% / 2);*/
     justify-content: end;
     align-items: center;
 }
@@ -615,10 +606,6 @@ section {
 }
 
 /*  classes  */
-
-.classes__main {
-
-}
 
 .classes__title {
     margin-bottom: 25px;
@@ -636,7 +623,6 @@ section {
     text-align: center;
     flex-direction: column;
     border: 1px solid var(--dusty_gray);
-
 }
 
 .classes__link {

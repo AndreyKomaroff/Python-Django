@@ -19,13 +19,9 @@
         font-size: 120px;
         line-height: 120px;
     }
-
-
 }
 
 @media (max-width: 1024px) {
-
-
 
     .nav__item {
         margin-right: 20px;
@@ -49,13 +45,9 @@
     .training__item {
         padding: 20px;
     }
-
-
-
 }
 
 @media (max-width: 900px) {
-
 
     .main__title {
         font-weight: 600;
@@ -88,7 +80,6 @@
     .training__item-block {
         padding: 0;
     }
-
 }
 
 
@@ -112,9 +103,6 @@
 
     .about__right-block {
         padding: 0;
-    }
-
-    .services__item {
     }
 
     .products__main {
@@ -141,7 +129,6 @@
         width: 100%;
         text-align: center;
     }
-
 }
 
 
@@ -291,8 +278,6 @@
     .social__link {
         margin-right: 35px;
     }
-
-
 }
 
 @media (max-width: 600px) {
@@ -336,9 +321,7 @@
         font-size: 15px;
         line-height: 150%;
     }
-
 }
-
 
 @media (max-width: 420px) {
 
@@ -369,7 +352,4 @@
     .customs__list {
         padding: 0;
     }
-
-
 }
-
