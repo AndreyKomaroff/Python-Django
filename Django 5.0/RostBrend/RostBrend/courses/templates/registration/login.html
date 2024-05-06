@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Вход{% endblock %}
+{% block content %}
+<h1>Авторизация</h1>
+<div class="module">
+    {% if form.errors %}
+    <p>Пользователь с такими данными не найден. Попробуйте снова</p>
+    {% else %}
+    <p>Введите ваши данные:</p>
+    {% endif %}
+    <div class="login-form">
+        <form action="{% url 'login' %}" method="post">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ next }}" />
+            <p><input type="submit" value="Авторизоваться"></p>
+        </form>
+    </div>
+</div>
+{% endblock %}
