@@ -1,0 +1,17 @@
+.navbar {
+    background: var(--rb);
+    color: var(--gold);
+}
+
+.sticky {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 100;
+  }
+
+.heading {
+    text-align: center;
+}

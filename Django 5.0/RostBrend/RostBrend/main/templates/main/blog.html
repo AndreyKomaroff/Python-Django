@@ -11,7 +11,8 @@
     <h1 class="title title__animation">{{ h1 }}</h1>
     <ul class="list">
       {% for p in posts %}
-      <li class="blog__item">
+      {% if p.status == 'PB' %}
+      <li class="blog__item list-reset">
         <img class="blog-img mb-3" src="{{ p.image.url }}" alt="">
         <h2 class="d-flex justify-content-between">
           {{ p.title }}
@@ -22,6 +23,7 @@
         <p>{{ p.text|safe|linebreaks|truncatewords:50 }}</p>
         <a href="{{ p.get_absolute_url }}" class="button btn__animation btn-reset" target="_blank">Читать пост</a>
       </li>
+      {% endif %}
       {% endfor %}
     </ul>
   </div>

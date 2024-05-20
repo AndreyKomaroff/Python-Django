@@ -11,11 +11,11 @@ document.querySelectorAll('input[type="checkbox"][name="fact"]').forEach(checkbo
 document.getElementById('check-facts').addEventListener('click', function() {
     const selectedFact = document.querySelector('input[type="checkbox"][name="fact"]:checked');
 
-    if (selectedFact && selectedFact.value === '2') {
-        document.getElementById('feedback').innerText = 'Угадал!';
+    if (selectedFact && selectedFact.value === '4') {
+        document.getElementById('feedback').innerText = 'Не правда!';
         // Добавьте код для подсветки чекбокса зеленым
     } else {
-        document.getElementById('feedback').innerText = 'Не угадал!';
+        document.getElementById('feedback').innerText = 'Правда!';
         // Добавьте код для подсветки чекбокса красным
     }
 });

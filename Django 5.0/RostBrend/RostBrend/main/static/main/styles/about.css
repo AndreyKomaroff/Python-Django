@@ -1,0 +1,73 @@
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-top {
+    display: flex;
+    gap: 50px;
+}
+
+.about-top__left {
+    width: calc(80%);
+    background-color: var(--white_color);
+    border-radius: 20px;
+
+}
+
+.about-title {
+    font-family: "Bebas";
+    font-weight: 400;
+    font-size: 92px;
+    line-height: 120%;
+    background: linear-gradient(162deg, #f39200 0%, #e05f02 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-param {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--black__color);
+}
+
+.about-top__right {
+    width: 490px;
+    height: 490px;
+    font-family: "Bebas";
+    font-weight: 400;
+    font-size: 59px;
+    color: var(--storm-gray);
+    background-image: url(../img/wizard.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 350px 260px;
+    background-color: var(--white_color);
+    border-radius: 20px;
+}
+
+.about-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-bottom__cards {
+    width: 12em;
+    height: 20em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    background-color: var(--white_color);
+    border-radius: 12px;
+}
+
+.about-bottom__cards--img {
+    width: 100%;
+}
+
+.about-bottom__cards-title {
+    text-align: center;
+}

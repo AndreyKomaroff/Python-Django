@@ -9,6 +9,9 @@ import os
 # Create your views here.
 
 menu = [{'title': 'Главная', 'url_name': 'home'},
+    {'title': 'Подписка', 'url_name': 'home'},
+    {'title': 'Основатель', 'url_name': 'home'},
+    {'title': 'Начать бесплатно', 'url_name': 'home'},
     {'title': 'Блог', 'url_name': 'blog'},
     {'title': 'Уроки', 'url_name': 'classes'}]
 

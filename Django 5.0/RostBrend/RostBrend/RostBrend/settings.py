@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -41,7 +42,8 @@ INSTALLED_APPS = [
     "main.apps.MainConfig",
     "courses.apps.CoursesConfig",
     "django.contrib.sites",
-    "django.contrib.sitemaps"
+    "django.contrib.sitemaps",
+    'django_sass'
 ]
 
 MIDDLEWARE = [
@@ -134,3 +136,6 @@ MEDIA_ROOT = BASE_DIR / 'media'
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+SASS_PROCESSOR_ENABLED = True
+SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'static')

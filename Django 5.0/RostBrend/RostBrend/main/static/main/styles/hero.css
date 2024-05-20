@@ -1,0 +1,42 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 40px;
+    height: 50em;
+    background-image: url(../img/bg.png);
+    color: var(--white_color);
+    border-radius: 20px;
+}
+
+.hero-block {
+    display: flex;
+    margin-bottom: auto;
+}
+
+.title {
+    text-transform: uppercase;
+    font-family: "Bebas";
+    font-weight: 400;
+    font-size: 145px;
+    line-height: 103%;
+    color: var(--white_color);
+}
+
+.hero-param {
+    margin-left: auto;
+    width: calc(100% / 2 - 225px);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 125%;
+}
+
+.hero-btn {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 28px;
+    background: var(--white_color);
+    color: var(--gold);
+    border-radius: 12px;
+    border: none;
+
+}
