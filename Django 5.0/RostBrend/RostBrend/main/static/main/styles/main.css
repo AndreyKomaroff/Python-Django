@@ -3,12 +3,11 @@
 @import url(header.css);
 @import url(hero.css);
 @import url(about.css);
-@import url(services.css);
 @import url(topics.css);
 @import url(product.css);
 @import url(owner.css);
-@import url(start.css);
-@import url(cards.css);
+@import url(footer.css);
+@import url(subscription.css);
 @import url(media.css);
 @import url(blog.css);
 
@@ -25,6 +24,12 @@ body {
 section {
     padding: 55px 0;
 }
+
+/*.container {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}*/
 
 .list-reset {
     margin: 0;

@@ -10,6 +10,7 @@
     <h1 class="title-second blog__title">{{ h1 }}</h1>
     <ul class="list-reset">
       {% for p in page_obj %}
+      {% if p.status == 'PB' %}
       <li class="blog__item">
         <img class="blog__img" src="{{ p.image.url }}" alt="">
         <h2 class="blog__subtitle">
@@ -21,6 +22,7 @@
         {{ p.text|safe|linebreaks|truncatewords:50 }}
         <a href="{{ p.get_absolute_url }}" class="btn blog__btn" target="_blank">Читать пост</a>
       </li>
+      {% endif %}
       {% endfor %}
     </ul>
     {% if page_obj.has_other_pages %}

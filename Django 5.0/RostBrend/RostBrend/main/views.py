@@ -128,6 +128,6 @@ def fact_check(request):
         # Обработка POST-запроса
         return HttpResponse(status=200)  # Ответ успешен
     else:
-        return render(request, 'your_template.html')
+         return HttpResponse("Ошибка. Неизвестный тип запроса.", status=400) # Возвращаем ошибку с кодом статуса 400
 
 handler404 = page_not_found

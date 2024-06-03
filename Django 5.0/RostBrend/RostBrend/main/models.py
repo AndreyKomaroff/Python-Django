@@ -58,5 +58,3 @@ class Blog(models.Model):
 
     def get_absolute_url(self):
         return reverse('post', kwargs={'blog_slug': self.slug})
-
-

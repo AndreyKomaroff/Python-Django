@@ -17,7 +17,7 @@ def home(request):
     items = Product.objects.all()
     structure = Structure.objects.all()
     context = {
-        'title': 'Главная',
+        'title': 'Библиотека маркетолога',
         'menu': menu,
         'items': items,
         'structure': structure,

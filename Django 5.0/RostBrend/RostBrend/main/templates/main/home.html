@@ -4,8 +4,9 @@
 {% endblock %}
 
 {% block body %}
-    <section class="">
-        <div class="container hero pt-5 pb-3">
+<section class="">
+    <div class="container pt-5 pb-3">
+        <div class="hero">
             <div class="hero-block">
                 <h1 class="title">
                     Рост бренда <br>с Комаровой
@@ -13,109 +14,410 @@
                 <p class="hero-param">
                     Подписка на закрытое обучающее сообщество по построению личного бренда
                 </p>
-                </div>
+            </div>
             <button class="hero-btn ">
                 Начать бесплатно
             </button>
         </div>
-    </section>
-    <section class="">
-        <div class="container about pt-5 pb-3">
-            <div class="about-top  mb-5">
-                <div class="about-top__left p-3">
-                    <h2 class="about-title">
-                        Не очередной курс
-                    </h2>
-                    <p class="about-param">
-                        Подписка на обучающее сообщество закрывает все основные пробелы в маркетинге и продвижении личного бренда, с которыми приходят как новички, так и опытные эксперты.
-                    </p>
-                </div>
-                <div class="about-top__right p-3">
-                    <h3 class="about-title__second">
-                        У вас тут сущность в виде неуверенного <br>в себе эксперта. <br>Сейчас я все это почистию.
-                    </h3>
-                </div>
-
+    </div>
+</section>
+<section class="">
+    <div class="container about pt-5 pb-3">
+        <div class="about-top  mb-5">
+            <div class="about-top__left p-3">
+                <h2 class="title-second">
+                    Не очередной курс
+                </h2>
+                <p class="about-param">
+                    Подписка на обучающее сообщество закрывает все основные пробелы в маркетинге и продвижении личного
+                    бренда, с которыми приходят как новички, так и опытные эксперты.
+                </p>
             </div>
-            <div class="about-bottom">
-                <div class="about-bottom__cards p-3">
-                    <img src="../../static/main/img/card-1.png" alt="" class="about-bottom__cards--img mb-2">
-                    <h3 class="about-bottom__cards-title">
-                        Не знаю, как привлекать трафик
-                    </h3>
-                </div>
-                <div class="about-bottom__cards p-3">
-                    <img src="../../static/main/img/card-2.png" alt="" class="about-bottom__cards--img mb-2">
-                    <h3 class="about-bottom__cards-title">
-                        Не знаю, где брать клиентов
-                    </h3>
-                </div>
-                <div class="about-bottom__cards p-3">
-                    <img src="../../static/main/img/card-3.png" alt="" class="about-bottom__cards--img mb-2">
-                    <h3 class="about-bottom__cards-title">
-                        Не знаю, как автоматизировать свой блог
-                    </h3>
-                </div>
-                <div class="about-bottom__cards p-3">
-                    <img src="../../static/main/img/card-4.png" alt="" class="about-bottom__cards--img mb-2">
-                    <h3 class="about-bottom__cards-title">
-                        Не умею снимать и делать красивый визуал
-                    </h3>
-                </div>
-                <div class="about-bottom__cards p-3">
-                    <img src="../../static/main/img/card-5.png" alt="" class="about-bottom__cards--img mb-2">
-                    <h3 class="about-bottom__cards-title">
-                        Мои рилсы не набирают охваты и не раскручиваются
-                    </h3>
-                </div>
-                <div class="about-bottom__cards p-3">
-                    <img src="../../static/main/img/card-6.png" alt="" class="about-bottom__cards--img mb-2">
-                    <h3 class="about-bottom__cards-title">
-                        Не знаю, как делать крутые прогревы
-                    </h3>
-                </div>
-                <div class="about-bottom__cards p-3">
-                    <img src="../../static/main/img/card-7.png" alt="" class="about-bottom__cards--img mb-2">
-                    <h3 class="about-bottom__cards-title">
-                        Не знаю, как продавать себя
-                    </h3>
-                </div>
+            <div class="about-top__right p-3">
+                <h3 class="about-title__second">
+                    У вас тут сущность в виде неуверенного <br>в себе эксперта. <br>Сейчас я все это почистию.
+                </h3>
             </div>
-        </div>
-    </section>
-    <section id="services" class="">
-        <div class="container services pt-5 pb-3">
-        </div>
-    </section>
-    <section id="portfolios" class="">
-        <div class="container portfolios pt-5 pb-3">
-        </div>
-    </section>
-    <section class="">
-        <div class="container cooperation pt-5 pb-3">
-            <div class="cooperation__main ps-2">
-                <form id="fact-form">
-    {% csrf_token %}
-    <input type="checkbox" id="fact1" name="fact" value="1"> Я — руководитель отдела маркетинга в 3-х онлайн-школах<br>
-    <input type="checkbox" id="fact2" name="fact" value="2"> Потратила на различные курсы и обучения больше 3 000 000 руб<br>
-    <input type="checkbox" id="fact3" name="fact" value="3"> Разработала и запустила маркетинговые стратегии в 127 проектах<br>
-    <input type="checkbox" id="fact4" name="fact" value="4"> Вложила в рекламный бюджет одного проекта 1 300 000 руб.<br>
-    <input type="checkbox" id="fact5" name="fact" value="5"> Помимо популярных ниш (продажи, психология, IT, бьюти) я работала с производствами систем обогрева, нумерологией, фитнесом и финансами<br>
 
-    <button type="button" id="check-facts">Проверить</button>
-</form>
-
-<div id="feedback"></div>
-            </div>
         </div>
-    </section>
-    <section class="">
-        <div class="container reviews pt-5 pb-3">
-        </div>
-    </section>
-    <section class="" id="product">
-        <div class="container product pt-5 pb-3">
-        </div>
-    </section>
+        <div class="about-bottom">
+            <div class="about-bottom__cards">
+                <div class="about-bottom__cards-inner">
+                    <div class="about-bottom__cards-front">
+                        <img src="../../static/main/img/card-1.png" alt="" class="about-bottom__cards--img mb-2">
+                        <h3 class="about-bottom__cards-title">
+                            Не знаю, как привлекать трафик
+                        </h3>
     
+                    </div>
+                    <div class="about-bottom__cards-back">
+                        <p class="about-bottom__cards-param">
+                            Причина: есть искажение, что привлечь трафик можно только платными мерами.
+                        </p>
+                        <p class="about-bottom__cards-param">
+                            Решение: освоить бесплатные инструменты по привлечению стабильного холодного трафика и правильно ими пользоваться для дальнейшего прогрева аудитории
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="about-bottom__cards">
+                <div class="about-bottom__cards-inner">
+                    <div class="about-bottom__cards-front">
+                        <img src="../../static/main/img/card-2.png" alt="" class="about-bottom__cards--img mb-2">
+                        <h3 class="about-bottom__cards-title">
+                            Не знаю, где брать клиентов
+                        </h3>
+    
+                    </div>
+                    <div class="about-bottom__cards-back">
+                        <p class="about-bottom__cards-param">
+                            Причина: есть искажение, что единственная площадка, где можно найти клиентов, — это Instagram*, а туда уже заходить нет смысла, так как там каждый второй — эксперт, который что-то продает.
+                        </p>
+                        <p class="about-bottom__cards-param">
+                            Решение: изучить другие площадки и инструменты по привлечению клиентов
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="about-bottom__cards">
+                <div class="about-bottom__cards-inner">
+                    <div class="about-bottom__cards-front">
+                        <img src="../../static/main/img/card-3.png" alt="" class="about-bottom__cards--img mb-2">
+                        <h3 class="about-bottom__cards-title">
+                            Не знаю, как автоматизировать свой блог
+                        </h3>
+    
+                    </div>
+                    <div class="about-bottom__cards-back">
+                        <p class="about-bottom__cards-param">
+                            Причина: нет четкого понимания, куда идти и какими шагами.
+                        </p>
+                        <p class="about-bottom__cards-param">
+                            Решение: выстроить грамотный путь клиента, чтоб он сам захотел купить ваш продукт
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="about-bottom__cards">
+                <div class="about-bottom__cards-inner">
+                    <div class="about-bottom__cards-front">
+                        <img src="../../static/main/img/card-4.png" alt="" class="about-bottom__cards--img mb-2">
+                        <h3 class="about-bottom__cards-title">
+                            Не умею снимать и делать красивый визуал
+                        </h3>
+    
+                    </div>
+                    <div class="about-bottom__cards-back">
+                        <p class="about-bottom__cards-param">
+                            Причина: есть убеждение, что для красивой визуальной упаковки нужен талант и дорогое проф. оборудование
+                        </p>
+                        <p class="about-bottom__cards-param">
+                            Решение: тренировать насмотренность, прокачивать визуальную жилку и разобрать правила и ошибки визуальной упаковки профиля
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="about-bottom__cards">
+                <div class="about-bottom__cards-inner">
+                    <div class="about-bottom__cards-front">
+                        <img src="../../static/main/img/card-5.png" alt="" class="about-bottom__cards--img mb-2">
+                        <h3 class="about-bottom__cards-title">
+                            Мои рилсы не набирают охваты и не раскручиваются
+                        </h3>
+    
+                    </div>
+                    <div class="about-bottom__cards-back">
+                        <p class="about-bottom__cards-param">
+                            Причина: рилсы создаются в потоке, без четкой стратегии, аккаунт не упакован и подписчик не понимает, зачем подписываться.
+                        </p>
+                        <p class="about-bottom__cards-param">
+                            Решение: начать с упаковки себя и своего продукта, который сам себя продаст и научиться грамотно составлять стратегию на несколько месяцев вперед
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="about-bottom__cards">
+                <div class="about-bottom__cards-inner">
+                    <div class="about-bottom__cards-front">
+                        <img src="../../static/main/img/card-6.png" alt="" class="about-bottom__cards--img mb-2">
+                        <h3 class="about-bottom__cards-title">
+                            Не знаю, как делать крутые прогревы
+                        </h3>
+    
+                    </div>
+                    <div class="about-bottom__cards-back">
+                        <p class="about-bottom__cards-param">
+                            Причина: 90% людей не умею рассказывать истории.
+                        </p>
+                        <p class="about-bottom__cards-param">
+                            Решение: изучить инструменты и чек-листы по созданию крутого сторителлинга и освоить навык рассказывания историй
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="about-bottom__cards">
+                <div class="about-bottom__cards-inner">
+                    <div class="about-bottom__cards-front">
+                        <img src="../../static/main/img/card-7.png" alt="" class="about-bottom__cards--img mb-2">
+                        <h3 class="about-bottom__cards-title">
+                            Не знаю, как продавать себя
+                        </h3>
+    
+                    </div>
+                    <div class="about-bottom__cards-back">
+                        <p class="about-bottom__cards-param">
+                            Причина: нет четкого понимания миссии, роли своего личного бренда, как и где себя презентовать.
+                        </p>
+                        <p class="about-bottom__cards-param">
+                            Решение: изучить структуру самопрезентации, создания личного бренда и варианты мест, где можно и нужно себя презентовать, чтобы приходили клиенты
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="">
+    <div class="container subscription">
+        <div class="subscription-top mb-5">
+            <h2 class="title-second">
+                Подписка на результат
+            </h2>
+            <p class="subscription-param">
+                Формат обучения, при котором ты в своем темпе изучаешь важные для себя темы по маркетингу и продвижению,
+                развиваешь личный бренд с поддержкой наставников и растешь как эксперт.
+                <br><br>Без стресса, гонок и обязаловки.
+            </p>
+            <button class="hero-btn subscription-btn">
+                Начать бесплатно
+            </button>
+
+        </div>
+        <div class="subscription-bottom">
+            <h3 class="title-third me-5">
+                Что дает подписка
+            </h3>
+            <ul class="subscription-bottom__list list-reset">
+                <li class="subscription-bottom__item mb-5">
+                    <h4 class="subscription-bottom__title">
+                        Новая тема для изучения каждый месяц
+                    </h4>
+                    <p class="subscription-bottom__param">
+                        Сообщество — это не гонка. Ты заходишь в любой момент и начинаешь там, где у тебя запрос. Можно
+                        осваивать тему месяца вместе со всеми, а можно в параллель взять что-то еще из нашей библиотеки.
+                    </p>
+                </li>
+                <li class="subscription-bottom__item mb-5">
+                    <h4 class="subscription-bottom__title">
+                        Честное обучение
+                    </h4>
+                    <p class="subscription-bottom__param">
+                        Мы даем актуальную и глубоко изученную информацию, которая проверена на реальных проектах. Мы не
+                        даем пустых обещаний, не дышим маткой и не утаиваем идей для роста.
+                    </p>
+                </li>
+                <li class="subscription-bottom__item mb-5">
+                    <h4 class="subscription-bottom__title">
+                        Возможность изучать только то, что интересно и нужно именно тебе
+                    </h4>
+                    <p class="subscription-bottom__param">
+                        У нас есть простая навигация по пройденному материалу, поэтому можно начать с любого момента и
+                        изучать только тот контент, который поможет закрыть именно твой запрос
+                    </p>
+                </li>
+                <li class="subscription-bottom__item mb-5">
+                    <h4 class="subscription-bottom__title">
+                        Комьюнити таких же как ты
+                    </h4>
+                    <p class="subscription-bottom__param">
+                        В сообществе собрались эксперты, которые устали от пустых обещаний и бесконечных гонок на
+                        онлайн-курсах и марафонах и хотят в своем темпе изучать то, что актуально конкретно им
+                    </p>
+                </li>
+                <li class="subscription-bottom__item mb-5">
+                    <h4 class="subscription-bottom__title">
+                        Поддержка от команды, которая прошла огонь, воду и тысячу запусков
+                    </h4>
+                    <p class="subscription-bottom__param">
+                        Мы находим свой подход к каждому, потому что знаем, что нельзя всех людей наложить на единую,
+                        подходящую всем стратегию развития
+                    </p>
+                </li>
+                <li class="subscription-bottom__item mb-5">
+                    <h4 class="subscription-bottom__title">
+                        Дружеский пинок под зад, который нужен, чтобы перестать стоять на месте
+                    </h4>
+                    <p class="subscription-bottom__param">
+                        Для нас важно создать пространство, в котором тебе захочется (а не придется) расти
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="">
+    <div class="container topics">
+        <div class="topics-top">
+            <h3 class="title-third mb-3">
+                Темы и материалы<br> по продвижению бренда,<br> которые мы разбираем на атомы:
+            </h3>
+            <ul class="topics-list list-reset">
+                <li class="topics-item">
+                    трафик
+                </li>
+                <li class="topics-item">
+                    воронки
+                </li>
+                <li class="topics-item">
+                    упаковка соцсетей
+                </li>
+                <li class="topics-item">
+                    съемка контента
+                </li>
+                <li class="topics-item">
+                    разработка контент-плана
+                </li>
+                <li class="topics-item">
+                    поиск клиентов
+                </li>
+                <li class="topics-item">
+                    создание и реализация прогревов
+                </li>
+                <li class="topics-item">
+                    реклама
+                </li>
+                <li class="topics-item">
+                    аналитика
+                </li>
+                <li class="topics-item">
+                    партизанский маркетинг
+                </li>
+                <li class="topics-item">
+                    создание стратегии
+                </li>
+                <li class="topics-item">
+                    написание сценариев
+                </li>
+            </ul>
+        </div>
+        <div class="topics-bottom">
+            <h4 class="title-four">
+                Тут ты уже понял, что тебе<br> надо. А сколько стоит?
+            </h4>
+            <div class="topics-bottom__right">
+                <ul class="topics-bottom__right--list list-reset">
+                    <li class="topics-bottom__right--item mb-5">
+                        <span class="topics-span">3000₽/мес</span> фиксировано навсегда
+                    </li>
+                    <li class="topics-bottom__right--item mb-5">
+                        А еще начать можно бесплатно
+                    </li>
+                    <li class="topics-bottom__right--item mb-5">
+                        Прям вот по этой кнопке. Да, ничего платить не надо.
+                    </li>
+                </ul>
+                <button class="hero-btn subscription-btn mb-5">
+                    Начать бесплатно
+                </button>
+                <img src="../../static/main/img/unagi.png" alt="фрилансер" class="topic-bottom__right--img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container owner">
+        <h2 class="title-second">
+            <span class="owner-span">Пара слов про Комарову — </span> <br>основателя сообщества
+        </h2>
+        <div class="owner-block">
+            <img src="../../static/main/img/Ann.png" alt="маркетолог" class="owner-block__img">
+            <div class="owner-block__right">
+                <h3 class="title-third mb-3">
+                    Привет! Я Аня, создатель «Роста бренда с Комаровой»
+                </h3>
+                <p class="owner-block__right--param">
+                    И вот несколько фактов обо мне. Кстати, один из них — неправда. Попробуй угадать какой ;)
+                </p>
+                <form id="fact-form" class="mb-3">
+                    {% csrf_token %}
+                    <input type="checkbox" id="fact1" name="fact" value="1" class="owner-checkbox"> Я — руководитель
+                    отдела маркетинга в 3-х
+                    онлайн-школах<br>
+                    <input type="checkbox" id="fact2" name="fact" value="2" class="owner-checkbox"> Потратила на
+                    различные курсы и обучения больше
+                    3 000 000 руб<br>
+                    <input type="checkbox" id="fact3" name="fact" value="3" class="owner-checkbox"> Разработала и
+                    запустила маркетинговые стратегии
+                    в 127 проектах<br>
+                    <input type="checkbox" id="fact4" name="fact" value="4" class="owner-checkbox"> Вложила в рекламный
+                    бюджет одного проекта 1 300
+                    000 руб.<br>
+                    <input type="checkbox" id="fact5" name="fact" value="5" class="owner-checkbox"> Помимо популярных
+                    ниш (продажи, психология, IT,
+                    бьюти) я работала с производствами систем обогрева, нумерологией, фитнесом и финансами
+
+                </form>
+                <div class="owner-block__right--feedback">
+                    <button class="hero-btn subscription-btn me-3" type="button" id="check-facts">Проверить</button>
+
+                    <div id="feedback"></div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="">
+    <div class="container">
+        <div class="hero pt-5 pb-3">
+            <div class="hero-block">
+                <h2 class="title">
+                    3000р в месяц
+                </h2>
+                <p class="hero-param">
+                    Чтобы начать бесплатно, нажимай на кнопку и переходи в Telegram-бот. Мы пришлем первые 5 уроков для
+                    изучения.
+                </p>
+            </div>
+            <button class="hero-btn ">
+                Начать бесплатно
+            </button>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <ul class="footer-list list-reset">
+            <li class="footer-item">
+                <h5 class="footer-title">
+                    Мой открытый Telegram-канал про маркетинг и жизнь за его пределами
+                </h5>
+            </li>
+            <li class="footer-item">
+                <h5 class="footer-title">
+                    По сотрудничеству и другим вопросам — велком ко мне в личку
+                </h5>
+            </li>
+            <li class="footer-item">
+                <h5 class="footer-title">
+                    Мои обучающие продукты
+                </h5>
+            </li>
+        </ul>
+    </div>
+</footer>
+
 {% endblock %}
