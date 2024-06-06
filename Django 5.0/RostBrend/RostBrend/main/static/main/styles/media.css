@@ -1,0 +1,111 @@
+@import url(vars.css);
+
+@media (max-width: 1170px) {
+
+    .hero-block {
+        flex-direction: column;
+    }
+
+    .hero-param {
+        margin: 0;
+        width: 100%;
+    }
+
+    .owner-block {
+        flex-direction: column;
+    }
+
+    .owner-block__img {
+        margin-bottom: 50px;
+        max-width: 260px;
+    }
+
+    .owner-block__right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .title {
+        font-weight: 400;
+        font-size: 74px;
+        line-height: 103%;
+    }
+
+    .hero {
+        height: auto;
+        background-image: url(../img/bg_768.png);
+    }
+
+    .hero-param {
+        margin-bottom: 7em;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+    .hero-btn {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .title-second {
+        font-weight: 400;
+        font-size: 67px;
+        line-height: 95%;
+    }
+
+    .about-param {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .about-bottom__cards-title {
+        margin-bottom: 2em;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .subscription-param {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 103%;
+        letter-spacing: -0.01em;
+    }
+
+    .title-third {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 103%;
+    }
+
+    .subscription-bottom__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 122%;
+    }
+
+    .subscription-bottom__param {
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    .title-four {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 110%;
+    }
+
+    .topics-bottom__right--item {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 110%;
+    }
+
+    .footer-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 125%;
+    }
+}

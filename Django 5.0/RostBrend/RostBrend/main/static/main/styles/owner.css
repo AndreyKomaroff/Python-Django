@@ -4,7 +4,8 @@
 }
 
 .owner-block__img {
-    max-width: 420px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .owner-span {
