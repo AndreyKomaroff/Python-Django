@@ -9,9 +9,6 @@ import os
 # Create your views here.
 
 menu = [{'title': 'Главная', 'url_name': 'home'},
-    {'title': 'Подписка', 'url_name': 'home'},
-    {'title': 'Основатель', 'url_name': 'home'},
-    {'title': 'Начать бесплатно', 'url_name': 'home'},
     {'title': 'Блог', 'url_name': 'blog'},
     {'title': 'Уроки', 'url_name': 'classes'}]
 
@@ -20,7 +17,7 @@ def home(request):
     items = Product.objects.all()
     structure = Structure.objects.all()
     context = {
-        'title': 'Главная',
+        'title': 'Рост Бренда',
         'menu': menu,
         'items': items,
         'structure': structure,

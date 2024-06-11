@@ -33,8 +33,11 @@
 }
 
 .about-top__right {
-    width: 490px;
-    height: 490px;
+   /* width: 490px;
+    height: 490px;*/
+    padding-left: .3em;
+    padding-top: .3em;
+    padding-bottom: 5em;
     font-family: "Bebas";
     font-weight: 400;
     font-size: 59px;
@@ -106,8 +109,8 @@
 }
 
 .about-bottom__cards-front {
-    padding-top: 1em;
-    background-color: #fff;
+    padding: .5em;
+    background-color: var(--white_color);
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -8,11 +8,11 @@
 {% block body %}
 <section class="blog">
   <div class="container">
-    <h1 class="title title__animation">{{ h1 }}</h1>
-    <ul class="list">
+    <h1 class="title blog-title">{{ h1 }}</h1>
+    <ul class="list list-reset">
       {% for p in posts %}
       {% if p.status == 'PB' %}
-      <li class="blog__item list-reset">
+      <li class="blog__item">
         <img class="blog-img mb-3" src="{{ p.image.url }}" alt="">
         <h2 class="d-flex justify-content-between">
           {{ p.title }}

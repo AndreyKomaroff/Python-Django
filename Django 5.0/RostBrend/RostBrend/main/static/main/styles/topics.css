@@ -52,7 +52,7 @@
 
 .topics-bottom__right {
     margin-top: 15em;
-    width: calc(100% / 2 - 60px);
+    width: calc(100% / 2 - 30px);
 }
 
 .topics-span {
@@ -63,6 +63,7 @@
 }
 
 .topics-bottom__right--item {
+    margin-bottom: 5em;
     font-weight: 700;
     font-size: 40px;
     line-height: 110%;
