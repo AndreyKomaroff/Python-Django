@@ -1,42 +1,42 @@
 {% extends 'main/base.html' %}
 
 {% block title %}
-  {{ title }}
+{{ title }}
 {% endblock %}
 
 {% block body %}
-  <section>
-    <div class="container">
-      <h1 class="title blog-title mb-3">{{ h1 }}</h1>
-      <div class="row">
-        <!-- Левая колонка со списком курсов -->
-        <div class="col-md-4">
-          <h2>Курсы</h2>
-          <ul class="list-unstyled">
-            {% for course in courses %}
-              <li class="mb-3 border p-3">
-                <a href="?course={{ course.slug }}" class="">
-                {{ course.title }}
-              </a>
-              <a href="{{ course.get_absolute_url }}" class="button btn-reset mb-3 mt-3 btn__animation">Перейти</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-        <!-- Правая колонка с модулями выбранного курса -->
-        <div class="col-md-8">
-          <h4>{{ selected_course.title|default_if_none:"Выберите курс" }}</h4>
-          {% if modules %}
-            <ul>
-              {% for module in modules %}
-                <li>{{ module.title }}</li>
-              {% endfor %}
-            </ul>
-          {% else %}
-            <p>Выберите курс из списка, чтобы увидеть оглавление</p>
-          {% endif %}
-        </div>
-      </div>      
+<section>
+  <div class="container">
+    <h1 class="title blog-title mb-3">{{ h1 }}</h1>
+    <div class="row">
+      <!-- Левая колонка со списком курсов -->
+      <div class="col-md-4">
+        <h2>Курсы</h2>
+        <ul class="list-unstyled">
+          {% for course in courses %}
+          <li class="mb-3 border p-3">
+            <a href="?course={{ course.slug }}" class="">
+              {{ course.title }}
+            </a>
+            <a href="{{ course.get_absolute_url }}" class="hero-btn subscription-btn mb-3 mt-3 btn__animation">Перейти</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <!-- Правая колонка с модулями выбранного курса -->
+      <div class="col-md-8">
+        <h4>{{ selected_course.title|default_if_none:"Выберите курс" }}</h4>
+        {% if modules %}
+        <ul>
+          {% for module in modules %}
+          <li>{{ module.title }}</li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p>Выберите курс из списка, чтобы увидеть оглавление</p>
+        {% endif %}
+      </div>
     </div>
+  </div>
 </section>
 {% endblock %}

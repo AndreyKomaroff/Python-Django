@@ -4,7 +4,6 @@
 {{ title }}
 {% endblock %}
 
-
 {% block body %}
 <section class="blog">
   <div class="container">
@@ -13,7 +12,7 @@
       {% for p in posts %}
       {% if p.status == 'PB' %}
       <li class="blog__item">
-        <img class="blog-img mb-3" src="{{ p.image.url }}" alt="">
+        <img class="blog-img mb-3" src="{{ p.image.url }}" alt="картинка поста">
         <h2 class="d-flex justify-content-between">
           {{ p.title }}
         </h2>
@@ -21,7 +20,7 @@
           <span class="post__span">({{ p.publish }})</span>
         </p>
         <p>{{ p.text|safe|linebreaks|truncatewords:50 }}</p>
-        <a href="{{ p.get_absolute_url }}" class="button btn__animation btn-reset" target="_blank">Читать пост</a>
+        <a href="{{ p.get_absolute_url }}" class="hero-btn subscription-btn btn__animation" target="_blank">Читать пост</a>
       </li>
       {% endif %}
       {% endfor %}

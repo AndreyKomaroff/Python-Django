@@ -5,3 +5,7 @@
 .blog-title {
     color: var(--black_color);
 }
+
+.blog-btn {
+    border: 2px solid var(--gold);
+}
