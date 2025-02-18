@@ -1,0 +1,12 @@
+.modules-list {
+    padding: 0;
+}
+
+.modules-icon {
+    fill: var(--white_color);
+    transition: fill .5s ease-in-out;
+}
+
+.modules-icon:hover {
+    fill: var(--tamarillo);
+}

@@ -1,0 +1,46 @@
+.footer {
+    margin-bottom: 6em;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    padding-left: 1em;
+    width: calc(100% / 3 - 40px);
+    background-image: url(../img/frame.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.footer-title {
+    padding-top: .6em;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    color: var(--white_color);
+}
+
+.footer-list__svg {
+    display: block;
+    margin-bottom: auto;
+    margin-left: auto;
+    width: 5em;
+    height: 5em;
+}
+
+.footer-brend {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-brend__param {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    color: #b1ada9;
+}

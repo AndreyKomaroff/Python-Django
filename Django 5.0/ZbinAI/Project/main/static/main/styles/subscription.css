@@ -1,0 +1,75 @@
+.subscription-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription-param {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 103%;
+}
+
+.subscription-btn {
+    background: var(--gold);
+    color: var(--white_color);
+}
+
+.subscription-bottom {
+    display: flex;
+}
+
+.title-third {
+    width: 100%;
+    font-family: "Bebas";
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 103%;
+}
+
+.subscription-bottom__item {
+    padding: 64px 150px;
+    position: relative;
+    border-radius: 20px;
+    background-color: var(--white_color);
+}
+
+.subscription-bottom__item::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.subscription-bottom__item:first-child::before {
+    content: url('../img/svg/1.svg');
+}
+
+.subscription-bottom__item:nth-child(2)::before {
+    content: url('../img/svg/2.svg');
+}
+
+.subscription-bottom__item:nth-child(3)::before {
+    content: url('../img/svg/3.svg');
+}
+
+.subscription-bottom__item:nth-child(4)::before {
+    content: url('../img/svg/4.svg');
+}
+
+.subscription-bottom__item:nth-child(5)::before {
+    content: url('../img/svg/5.svg');
+}
+
+.subscription-bottom__item:nth-child(6)::before {
+    content: url('../img/svg/6.svg');
+}
+
+.subscription-bottom__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 122%;
+    background: linear-gradient(162deg, #f39200 0%, #e05f02 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

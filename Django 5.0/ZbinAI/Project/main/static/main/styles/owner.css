@@ -1,0 +1,40 @@
+.owner-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.owner-block__img {
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.owner-span {
+    background: var(--black_color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.owner-block__right {
+    width: calc(100% / 2);
+}
+
+.owner-checkbox[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #555;
+    border-radius: 50%;
+}
+
+.owner-checkbox[type="checkbox"]:checked {
+    padding: 3px;
+    background-color: var(--gold);
+}
+
+.owner-block__right--feedback {
+    display: flex;
+}

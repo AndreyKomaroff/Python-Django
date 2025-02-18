@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Involve';
+    src: local('Involve-Bold'),
+      url(../fonts/Involve-Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: local('Involve-SemiBold'),
+      url(../fonts/Involve-SemiBold.woff2) format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: local('Involve-Medium'),
+      url(../fonts/Involve-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter-bold'),
+    url(../fonts/Inter-bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas';
+  src: local('Bebas-neue'),
+    url(../fonts/Bebas-neue.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

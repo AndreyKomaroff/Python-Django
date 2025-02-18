@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/home/andrew/Документы/Python/Django 5.0/RostBrend/venv/bin/python3" "$0" "$@"
+'''exec' "/home/andreykomarov/Документы/Python-Django/Django 5.0/RostBrend/venv/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re
