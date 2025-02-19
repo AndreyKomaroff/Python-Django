@@ -15,14 +15,43 @@
         <ul class="list-unstyled">
           {% for course in courses %}
           <li class="mb-3 border p-3">
-            <a href="?course={{ course.slug }}" class="">
+            <a href="?course={{ course.slug }}">
               {{ course.title }}
             </a>
             <a href="{{ course.get_absolute_url }}" class="hero-btn subscription-btn mb-3 mt-3 btn__animation">Перейти</a>
           </li>
           {% endfor %}
         </ul>
+
+        <!-- Пагинация курсов -->
+        <nav aria-label="Навигация по страницам">
+          <ul class="pagination">
+            {% if courses.has_previous %}
+              <li class="page-item">
+                <a class="page-link" href="?page=1">Первая</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="?page={{ courses.previous_page_number }}">Назад</a>
+              </li>
+            {% endif %}
+
+            <li class="page-item disabled">
+              <span class="page-link">Страница {{ courses.number }} из {{ courses.paginator.num_pages }}</span>
+            </li>
+
+            {% if courses.has_next %}
+              <li class="page-item">
+                <a class="page-link" href="?page={{ courses.next_page_number }}">Вперед</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="?page={{ courses.paginator.num_pages }}">Последняя</a>
+              </li>
+            {% endif %}
+          </ul>
+        </nav>
+
       </div>
+      
       <!-- Правая колонка с модулями выбранного курса -->
       <div class="col-md-8">
         <h4>{{ selected_course.title|default_if_none:"Выберите курс" }}</h4>

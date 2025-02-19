@@ -8,22 +8,23 @@
   <section class="hero">
     <div class="container">
       <h1 class="title-second classes__title">{{ h1 }}</h1>
-      <div class="classes__main flex">
+      <div class="classes__main">
+        
         <!-- Левая колонка со списком курсов -->
-        <div class="classes__left col-md-4">
+        <div class="classes__left">
           <h2 class="course__subtitle">Курсы</h2>
           <ul class="list-reset">
             {% for course in courses %}
               <li class="classes__item flex">
                 <a href="?course={{ course.slug }}" class="classes__link">
-                {{ course.title }}
-              </a>
-              <a href="{{ course.get_absolute_url }}" class="btn course__btn">Перейти</a>
-
-            </li>
+                  {{ course.title }}
+                </a>
+                <a href="{{ course.get_absolute_url }}" class="btn course__btn">Перейти</a>
+              </li>
             {% endfor %}
           </ul>
-          
+
+          <!-- Упрощенная пагинация -->
         </div>
     
         <!-- Правая колонка с модулями выбранного курса -->
@@ -32,7 +33,6 @@
           {% if modules %}
             <ul>
               {% for module in modules %}
-              
                 <li>{{ module.title }}</li>
               {% endfor %}
             </ul>
@@ -40,7 +40,31 @@
             <p>Выберите курс из списка, чтобы увидеть оглавление</p>
           {% endif %}
         </div>
-      </div>      
+      </div>     
+      <nav aria-label="Навигация по страницам">
+        <ul class="pagination justify-content-center">
+          {% if courses.has_previous %}
+            <li class="page-item">
+              <a class="page-link" href="?page={{ courses.previous_page_number }}" aria-label="Назад">
+                <span aria-hidden="true">«</span>
+              </a>
+            </li>
+          {% endif %}
+
+          <li class="page-item disabled">
+            <span class="page-link">Страница {{ courses.number }} из {{ courses.paginator.num_pages }}</span>
+          </li>
+
+          {% if courses.has_next %}
+            <li class="page-item">
+              <a class="page-link" href="?page={{ courses.next_page_number }}" aria-label="Вперед">
+                <span aria-hidden="true">»</span>
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      </nav>
+
     </div>
-</section>
+  </section>
 {% endblock %}

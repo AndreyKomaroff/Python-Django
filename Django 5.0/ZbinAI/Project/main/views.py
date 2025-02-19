@@ -4,6 +4,7 @@ from django.views.decorators.cache import cache_page
 from courses.models import Module, Course
 from main.models import Blog, Product, Structure
 from django.http import HttpResponse, HttpResponseRedirect
+from django.core.paginator import Paginator
 import os
 
 # Create your views here.
@@ -17,7 +18,7 @@ def home(request):
     items = Product.objects.all()
     structure = Structure.objects.all()
     context = {
-        'title': 'Рост Бренда',
+        'title': 'Продажи с AI',
         'menu': menu,
         'items': items,
         'structure': structure,
@@ -40,23 +41,29 @@ def blog(request):
 #@cache_page(60)
 @login_required
 def classes(request):
-    courses = Course.objects.all()
+    """
+    Представление для отображения списка курсов с пагинацией.
+    """
+    courses_list = Course.objects.all()
+    paginator = Paginator(courses_list, 5)  # Показываем 5 курсов на одной странице
+    page_number = request.GET.get('page')
+    courses = paginator.get_page(page_number)
 
     course_slug = request.GET.get('course', None)
     if course_slug:
-        course = Course.objects.get(slug=course_slug)
-        modules = Module.objects.filter(course=course)
+        selected_course = get_object_or_404(Course, slug=course_slug)
+        modules = Module.objects.filter(course=selected_course)  # Все модули без пагинации
     else:
-        course = None
+        selected_course = None
         modules = None
 
     context = {
         'title': 'Уроки',
         'h1': 'Видеоуроки от Супермаркетолог',
         'menu': menu,
-        'courses': courses,
-        'selected_course': course,
-        'modules': modules    
+        'courses': courses,  # Курсы с пагинацией
+        'selected_course': selected_course,  # Выбранный курс
+        'modules': modules  # Все модули курса (без пагинации)
     }
     
     return render(request, 'main/classes.html', context=context)

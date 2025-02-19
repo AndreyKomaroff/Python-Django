@@ -1,52 +1,54 @@
 from django.db import models
 from django.utils import timezone
 from django.urls import reverse
-from django.contrib.auth.models import User
 
-# Create your models here.
-
-class Product(models.Model):
-    title = models.CharField('Название',max_length=100, unique=True)
-    #image = models.ImageField(upload_to="media/blog", verbose_name="Фото")
-    text = models.TextField('Основной текст статьи')
-    price = models.IntegerField('Стоимость')
-    discountPrice = models.IntegerField('Стоимость со скидкой')
-    url = models.URLField('Ссылка')
-
-    def __str__ (self):
-        return f'Предложения: {self.title}'
+# Базовая модель с общими полями (абстрактный класс)
+class AbstractBaseModel(models.Model):
+    title = models.CharField('Название', max_length=250, unique=True)
+    created = models.DateTimeField(auto_now_add=True, verbose_name="Создано")
 
     class Meta:
-        verbose_name = 'Предложение'
-        verbose_name_plural = 'Предложения'
+        abstract = True  # Указывает, что это базовый класс (не создаст таблицу)
 
-class Structure(models.Model):
-    title = models.CharField('Название',max_length=100, unique=True)
-    text = models.TextField('Основной текст')
+    def __str__(self):
+        return self.title
 
-    def __str__ (self):
-        return f'Структура: {self.title}'
+# Модель товара
+class Product(AbstractBaseModel):
+    text = models.TextField('Описание')
+    price = models.DecimalField('Стоимость', max_digits=10, decimal_places=2, default=0.00)
+    discount_price = models.DecimalField('Стоимость со скидкой', max_digits=10, decimal_places=2, null=True, blank=True, default=0.00)
+    url = models.URLField('Ссылка')
+
+    class Meta:
+        verbose_name = 'Продукт'
+        verbose_name_plural = 'Продукты'
+
+    def get_absolute_url(self):
+        return reverse('product_detail', kwargs={'pk': self.pk})
+
+# Модель структуры
+class Structure(AbstractBaseModel):
+    text = models.TextField('Описание')
 
     class Meta:
         verbose_name = 'Структура'
-        verbose_name_plural = 'Структура'
+        verbose_name_plural = 'Структуры'
 
+    def get_absolute_url(self):
+        return reverse('structure_detail', kwargs={'pk': self.pk})
 
-class Blog(models.Model):
+# Модель блога
+class Blog(AbstractBaseModel):
     class Status(models.TextChoices):
         DRAFT = 'DF', 'Черновик'
-        PUBLISHED = 'PB', 'Опубликовать'
+        PUBLISHED = 'PB', 'Опубликовано'
 
-    title = models.CharField('Название статьи', max_length=250, unique=True)
-    slug = models.SlugField(max_length=255, db_index=True, verbose_name="URL")
+    slug = models.SlugField(max_length=255, unique=True, verbose_name="URL")
     image = models.ImageField(upload_to="media/blog", verbose_name="Изображение")
-    text = models.TextField('Основной текст статьи')
-    created = models.DateTimeField(auto_now_add=True, verbose_name="Создано")
-    publish = models.DateTimeField(default=timezone.now, verbose_name="Дата")
+    text = models.TextField('Основной текст')
+    publish = models.DateTimeField(default=timezone.now, verbose_name="Дата публикации")
     status = models.CharField(max_length=2, choices=Status.choices, default=Status.DRAFT, verbose_name="Статус")
-
-    def __str__ (self):
-        return f'Пост: {self.title}'
 
     class Meta:
         ordering = ['-publish']
@@ -54,7 +56,7 @@ class Blog(models.Model):
             models.Index(fields=['-publish']),
         ]
         verbose_name = 'Блог'
-        verbose_name_plural = 'Блог'
+        verbose_name_plural = 'Блоги'
 
     def get_absolute_url(self):
         return reverse('post', kwargs={'blog_slug': self.slug})

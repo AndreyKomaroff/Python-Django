@@ -607,13 +607,17 @@ section {
 
 /*  classes  */
 
+.classes__main {
+    display: flex;
+    flex-direction: column;
+}
+
 .classes__title {
     margin-bottom: 25px;
 }
 
 .classes__left {
     margin-right: 35px;
-    width: calc(100% / 2 - 3em);
 }
 
 .classes__item {

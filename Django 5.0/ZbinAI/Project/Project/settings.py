@@ -33,6 +33,7 @@ SITE_ID = 1
 # Application definition
 
 INSTALLED_APPS = [
+    "jazzmin",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -137,6 +138,63 @@ MEDIA_ROOT = BASE_DIR / 'media'
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Админ | AI-Платформа",
+    "site_header": "Панель управления",
+    "site_brand": "ZbinAI",
+    "welcome_sign": "Добро пожаловать в админку AI!",
+    "search_model": ["main.Product", "courses.Course"],
+    "show_ui_builder": True,
+    "topmenu_links": [
+        {"name": "На сайт", "url": "home", "permissions": ["auth.view_user"]},
+        {"name": "Telegram-канал", "url": "https://t.me/zbinprodazhi", "new_window": True},
+    ],
+}
+
+JAZZMIN_SETTINGS["custom_links"] = {
+    "main": [{
+        "name": "Создать продукт",
+        "url": "admin:main_product_add",
+        "icon": "fas fa-plus",
+        "permissions": ["main.add_product"],
+    }],
+}
+JAZZMIN_SETTINGS["icons"] = {
+    "auth": "fas fa-users-cog",
+    "auth.User": "fas fa-user",
+    "auth.Group": "fas fa-users",
+    "main.Product": "fas fa-box",
+    "main.Structure": "fas fa-project-diagram",
+    "courses.Course": "fas fa-book",
+    "courses.Module": "fas fa-chalkboard-teacher",
+}
+JAZZMIN_SETTINGS["order_with_respect_to"] = ["auth", "main", "courses"]
+
+
+JAZZMIN_UI_TWEAKS = {
+    "theme": "darkly",  # Тема оформления (варианты: "flatly", "darkly", "pulse", "solar")
+    "dark_mode_theme": "darkly",  # Тема для темного режима (лучше оставить такую же, как "theme")
+    "navbar_small_text": False,  # Маленький текст в navbar (True = уменьшенный размер)
+    "footer_small_text": False,  # Маленький текст в подвале
+    "body_small_text": False,  # Маленький текст в теле страницы
+    "brand_small_text": False,  # Маленький текст для логотипа бренда
+    "brand_colour": "navbar-primary",  # Цвет логотипа (варианты: "navbar-primary", "navbar-dark", "navbar-light")
+    "accent": "accent-primary",  # Акцентный цвет интерфейса (варианты: "accent-primary", "accent-danger", "accent-warning")
+    "navbar": "navbar-dark navbar-primary",  # Цвет и стиль navbar (варианты: "navbar-light navbar-white", "navbar-dark navbar-primary")
+    "no_navbar_border": False,  # Убрать границу у navbar (True = без границы)
+    "navbar_fixed": True,  # Закрепленный navbar (True = не прокручивается при скролле)
+    "footer_fixed": False,  # Закрепленный подвал
+    "sidebar_fixed": True,  # Закрепленный боковой сайдбар (True = не прокручивается при скролле)
+    "layout_boxed": False,  # Обычный (False) или "boxed" (ограниченный по ширине) макет
+    "sidebar": "sidebar-dark-primary",  # Цвет sidebar (варианты: "sidebar-light-primary", "sidebar-dark-primary")
+    "sidebar_nav_small_text": False,  # Уменьшенный текст в меню боковой панели
+    "sidebar_disable_expand": False,  # Отключить автоматическое разворачивание бокового меню
+    "sidebar_nav_child_indent": False,  # Включить отступы для вложенных пунктов меню
+    "sidebar_nav_compact_style": False,  # Сделать пункты меню компактными (уменьшенные отступы)
+    "sidebar_nav_legacy_style": False,  # Использовать старый стиль бокового меню (True = дизайн как в старых версиях)
+    "sidebar_nav_flat_style": False,  # Отключить 3D-эффект в боковом меню (True = более "плоский" дизайн)
+}
 
 #SASS_PROCESSOR_ENABLED = True
 #SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'static')

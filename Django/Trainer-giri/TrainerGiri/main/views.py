@@ -42,27 +42,32 @@ def blog(request):
 #@cache_page(60)
 @login_required
 def trainings(request):
-    courses = Course.objects.all()
-    #posts = Module.objects.all()
+    """
+    Представление для отображения списка курсов с пагинацией.
+    """
+    courses_list = Course.objects.all()
+    paginator = Paginator(courses_list, 10)  # 5 курсов на одной странице
+    page_number = request.GET.get('page')
+    courses = paginator.get_page(page_number)
 
     course_slug = request.GET.get('course', None)
     if course_slug:
-        course = Course.objects.get(slug=course_slug)
-        modules = Module.objects.filter(course=course)
+        selected_course = get_object_or_404(Course, slug=course_slug)
+        modules = Module.objects.filter(course=selected_course)  # Все модули без пагинации
     else:
-        course = None
+        selected_course = None
         modules = None
 
     context = {
         'title': 'Тренировки',
         'h1': 'Курсы и программы',
         'menu': menu,
-        'courses': courses,
-        'selected_course': course,
-        'modules': modules    
+        'courses': courses,  # Курсы с пагинацией
+        'selected_course': selected_course,  # Выбранный курс
+        'modules': modules  # Все модули курса (без пагинации)
     }
     
-    return render(request, 'main/classes.html', context=context)
+    return render(request, 'main/classes.html', context)
 
 #@cache_page(60)
 def modules_view(request, course_slug):

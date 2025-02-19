@@ -41,8 +41,8 @@ class CourseAdmin(admin.ModelAdmin):
     actions = [export_to_csv]
 
 
-admin.site.site_title = 'Админ-панель MarAnn'
-admin.site.site_header = 'Админ-панель MarAnn'
+admin.site.site_title = 'Komdevel'
+admin.site.site_header = 'Komdevel'
 
 
 #class AdminVideo(AdminVideoMixin, admin.ModelAdmin):
