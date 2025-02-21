@@ -1,43 +1,59 @@
 .subscription-top {
+    padding: 1em;
     display: flex;
     flex-direction: column;
+    background-color: var(--chambray);
+    border-radius: 20px;
 }
 
 .subscription-param {
+    margin-bottom: 2em;
+    width: 70%;
     font-weight: 500;
     font-size: 24px;
     line-height: 103%;
 }
 
 .subscription-btn {
-    background: var(--gold);
+    width: 100%;
+    justify-content: center;
+    background: var(--electricviolet);
     color: var(--white);
 }
 
 .subscription-bottom {
     display: flex;
+    align-items: flex-start; /* Выравнивание элементов внутри */
 }
 
 .title-third {
-    width: 100%;
+    width: 50%;
     font-family: "Bebas";
     font-weight: 400;
     font-size: 72px;
     line-height: 103%;
+    color: var(--aqua);
+}
+
+.subscription-bottom__list {
+    width: 90%;
 }
 
 .subscription-bottom__item {
-    padding: 64px 150px;
+    padding: 3em 10em;
     position: relative;
     border-radius: 20px;
-    background-color: var(--white_color);
+    background-color: var(--chambray);
 }
 
 .subscription-bottom__item::before {
     position: absolute;
     bottom: 0;
-    left: 0;
+    top: 0; /* Выравниваем по верхнему краю */
+    left: 0; /* Двигаем влево, чтобы начиналось от края */
     z-index: 1;
+    width: 50%;
+    height: 50%;
 }
 
 .subscription-bottom__item:first-child::before {
@@ -68,8 +84,5 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 122%;
-    background: linear-gradient(162deg, #f39200 0%, #e05f02 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--aqua);
 }

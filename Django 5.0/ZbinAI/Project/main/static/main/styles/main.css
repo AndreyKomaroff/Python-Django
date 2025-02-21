@@ -15,8 +15,8 @@
 
 body {
     min-width: 320px;
-    color: var(--black);
-    background-color: var(--alabaster);
+    color: var(--white);
+    background-color: var(--elephant);
     font-family: 'Involve', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -75,7 +75,7 @@ a {
 }
 
 .btn__animation {
-    animation: btn-size 3s linear infinite;
+    animation: btn-size 5s linear infinite;
 }
 
 @keyframes btn-size {
@@ -83,7 +83,7 @@ a {
       transform: scale(1);
     }
     50% {
-        transform: scale(85%);
+        transform: scale(95%);
     }
 
     100% {
