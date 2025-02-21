@@ -4,13 +4,13 @@
 
 .footer-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer-item {
     padding-left: 1em;
     width: calc(100% / 3 - 40px);
-    background-image: url(../img/frame.png);
+    background-image: url(../img/back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
@@ -21,7 +21,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 125%;
-    color: var(--white_color);
+    color: var(--white);
 }
 
 .footer-list__svg {

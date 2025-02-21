@@ -30,6 +30,10 @@
     line-height: 125%;
 }
 
+.hero-param__second {
+    margin-bottom: 6em;
+}
+
 .hero-btn {
     padding: .7em;
     width: 100%;

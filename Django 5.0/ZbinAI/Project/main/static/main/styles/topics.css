@@ -16,7 +16,7 @@
     text-align: center;
     border-radius: 37px;
     color: var(--white_color);
-    background: linear-gradient(162deg, #f39200 0%, #e05f02 100%);
+    background-color: var(--electricviolet);
     font-weight: 700;
     font-size: 18px;
     line-height: 103%;
@@ -36,6 +36,7 @@
 
 .topics-bottom {
     display: flex;
+    flex-direction: column;
     justify-content:space-between;
 }
 
@@ -45,14 +46,21 @@
 }
 
 .title-four {
+    margin-bottom: 1em;
     font-weight: 700;
     font-size: 40px;
     line-height: 110%;
+    color: var(--aqua);
 }
 
 .topics-bottom__right {
-    margin-top: 15em;
-    width: calc(100% / 2 - 30px);
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.topics-bottom__right--list {
+    width: 50%;
 }
 
 .topics-span {
@@ -63,9 +71,9 @@
 }
 
 .topics-bottom__right--item {
-    margin-bottom: 5em;
+    margin-bottom: .7em;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 18px;
     line-height: 110%;
 }
 

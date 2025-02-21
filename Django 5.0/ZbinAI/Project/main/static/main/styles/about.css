@@ -72,10 +72,6 @@
     line-height: 120%;
 }
 
-.about-bottom__cards:active .about-bottom__cards-inner {
-    transform: rotateY(180deg);
-}
-
 .about-bottom__cards-inner {
     width: 100%;
     height: 100%;
@@ -112,7 +108,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../img/frame.png);
+    background-image: url(../img/back.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 12px;

@@ -1,9 +1,11 @@
 .owner-block {
     display: flex;
     justify-content: space-between;
+    gap: 3em;
 }
 
 .owner-block__img {
+    width: 30%;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -16,25 +18,18 @@
 }
 
 .owner-block__right {
-    width: calc(100% / 2);
+    padding: 2em;
+    background-color: var(--chambray);
+    border-radius: 20px;
 }
 
-.owner-checkbox[type="checkbox"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    border: 2px solid #555;
-    border-radius: 50%;
+.owner-block__right--param {
+    margin-bottom: 2em;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 110%;
 }
 
-.owner-checkbox[type="checkbox"]:checked {
-    padding: 3px;
-    background-color: var(--gold);
-}
-
-.owner-block__right--feedback {
-    display: flex;
+.owner_list {
+    width: 75%;
 }
