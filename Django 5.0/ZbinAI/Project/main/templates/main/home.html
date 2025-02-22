@@ -42,7 +42,7 @@
 
             </div>
             <div class="about-top__right">
-                <img src="../../static/main/img/mask.png" alt="">
+                <img class="img" src="../../static/main/img/mask.png" alt="">
             </div>
         </div>
         <div class="about-bottom">
@@ -342,7 +342,7 @@
                 </a>
 
                 </ul>
-                <img src="../../static/main/img/image.png" alt="фрилансер" class="topic-bottom__right--img">
+                <img src="../../static/main/img/image.png" alt="фрилансер" class="topic-bottom__right--img img">
             </div>
         </div>
     </div>
@@ -386,6 +386,27 @@
                 Подписаться
             </a>
         </div>
+        <ul class="services__list flex">
+            {% for i in items %}
+            <li class="services__item">
+                <img class="footer-img" src="../../static/main/img/svg/code.svg" alt="">
+                <h3 class="services__title">
+                    {{ i.title }}
+                </h3>
+                <p class="services__param">
+                    {{ i.text|safe }}
+                </p>
+                <p class="services__param-price">{{ i.price }} руб</p>
+        
+                {% if i.url %}
+                <a href="{{ i.url }}" target="_blank" class="btn services__btn">
+                    Купить
+                </a>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        
     </div>
 </section>
 

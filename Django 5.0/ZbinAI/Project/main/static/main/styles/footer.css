@@ -5,14 +5,16 @@
 .footer-list {
     display: flex;
     justify-content: space-around;
+    gap: 2em;
 }
 
 .footer-item {
-    padding-left: 1em;
-    width: calc(100% / 3 - 40px);
-    background-image: url(../img/back.jpg);
+    padding: 1em;
+    background-image: url(/static/main/img/back.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    color: var(--aqua) !important;
     border-radius: 20px;
 }
 
@@ -30,6 +32,10 @@
     margin-left: auto;
     width: 5em;
     height: 5em;
+}
+
+.footer-img {
+    width: 2em;
 }
 
 .footer-brend {

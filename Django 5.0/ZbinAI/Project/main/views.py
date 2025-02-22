@@ -11,7 +11,7 @@ import os
 
 menu = [{'title': 'Главная', 'url_name': 'home'},
     {'title': 'Блог', 'url_name': 'blog'},
-    {'title': 'Уроки', 'url_name': 'classes'}]
+    {'title': 'Твои AI-решения', 'url_name': 'classes'}]
 
 
 def home(request):
@@ -58,8 +58,8 @@ def classes(request):
         modules = None
 
     context = {
-        'title': 'Уроки',
-        'h1': 'Видеоуроки от Супермаркетолог',
+        'title': 'Твои AI-решения',
+        'h1': 'Твои AI-решения',
         'menu': menu,
         'courses': courses,  # Курсы с пагинацией
         'selected_course': selected_course,  # Выбранный курс

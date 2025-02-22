@@ -16,9 +16,9 @@ class AbstractBaseModel(models.Model):
 # Модель товара
 class Product(AbstractBaseModel):
     text = models.TextField('Описание')
-    price = models.DecimalField('Стоимость', max_digits=10, decimal_places=2, default=0.00)
+    price = models.DecimalField('Стоимость', max_digits=10, decimal_places=2, null=True, blank=True, default=0.00)
     discount_price = models.DecimalField('Стоимость со скидкой', max_digits=10, decimal_places=2, null=True, blank=True, default=0.00)
-    url = models.URLField('Ссылка')
+    url = models.URLField('Ссылка', null=True, blank=True)
 
     class Meta:
         verbose_name = 'Продукт'
