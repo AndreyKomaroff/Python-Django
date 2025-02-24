@@ -36,7 +36,7 @@
 
     .hero {
         height: auto;
-        background-image: url(../img/bg_768.png);
+        /*background-image: url(../img/bg_768.png);*/
         background-repeat: no-repeat;
     }
 
@@ -122,6 +122,12 @@
 
 @media (max-width: 769px) {
 
+    .title {
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 103%;
+    }
+
     .about-top {
         flex-direction: column;
     }
@@ -149,6 +155,20 @@
 }
 
 @media (max-width: 695px) {
+
+    .hero {
+        padding: 1em;
+        align-items: center;
+    }
+
+    .hero-block {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-param {
+        margin-bottom: 3em;
+    }
 
     .subscription-bottom {
         flex-direction: column;
@@ -190,7 +210,7 @@
 
     .title {
         font-weight: 400;
-        font-size: 52px;
+        font-size: 33px;
         line-height: 103%;
     }
 
