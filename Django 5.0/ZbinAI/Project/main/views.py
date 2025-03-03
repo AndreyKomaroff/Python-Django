@@ -28,15 +28,22 @@ def home(request):
 
 #@cache_page(60)
 def blog(request):
-    posts = Blog.objects.all()
+    """
+    Представление для отображения списка постов блога с пагинацией.
+    """
+    posts = Blog.objects.filter(status='PB').order_by('-publish')
+    paginator = Paginator(posts, 5)  # 5 постов на странице
+    page_number = request.GET.get('page')  # Запрашиваем номер страницы
+    page_obj = paginator.get_page(page_number)  # Получаем объект страницы
+
     context = {
         'title': 'Блог',
         'h1': 'Блог',
-        'posts': posts,
-        'menu': menu
+        'menu': menu,  # Убедитесь, что menu определен
+        'page_obj': page_obj  # Передаем только page_obj в шаблон
     }
 
-    return render(request, 'main/blog.html', context=context)
+    return render(request, 'main/blog.html', context)
 
 #@cache_page(60)
 @login_required

@@ -9,22 +9,52 @@
   <div class="container">
     <h1 class="title blog-title">{{ h1 }}</h1>
     <ul class="list list-reset">
-      {% for p in posts %}
-      {% if p.status == 'PB' %}
-      <li class="blog__item">
-        <img class="blog-img mb-3" src="{{ p.image.url }}" alt="картинка поста">
-        <h2 class="d-flex justify-content-between">
-          {{ p.title }}
-        </h2>
-        <p>
-          <span class="post__span">({{ p.publish }})</span>
-        </p>
-        <p>{{ p.text|safe|linebreaks|truncatewords:50 }}</p>
-        <a href="{{ p.get_absolute_url }}" class="hero-btn subscription-btn btn__animation" target="_blank">Читать пост</a>
-      </li>
+      {% if page_obj %}
+        {% for p in page_obj %}
+          <li class="blog__item mb-3">
+            <img class="blog-img mb-3" src="{{ p.image.url }}" alt="картинка поста">
+            <h2 class="d-flex justify-content-between">
+              {{ p.title }}
+            </h2>
+            <p>
+              <span class="post__span">({{ p.publish }})</span>
+            </p>
+            <p>{{ p.text|safe|linebreaks|truncatewords:50 }}</p>
+            <a href="{{ p.get_absolute_url }}" class="hero-btn subscription-btn btn__animation" target="_blank">Читать пост</a>
+          </li>
+        {% endfor %}
+      {% else %}
+        <p>Постов пока нет.</p>
       {% endif %}
-      {% endfor %}
     </ul>
+{% if page_obj.has_other_pages %}
+  <ul class="pagination list-reset flex">
+    
+    {% if page_obj.has_previous %}
+      <li class="list-reset">
+        <a href="?page={{ page_obj.previous_page_number }}">&lt;&lt;</a>
+      </li>
+    {% endif %}
+
+    {% for p in page_obj.paginator.page_range %}
+      {% if p == page_obj.number %}
+        <li class="pagination_item pagination_item-selected me-3">{{ p }}</li>
+      {% elif p >= page_obj.number|add:"-2" and p <= page_obj.number|add:"2" %}
+        <li class="pagination_item me-3">
+          <a href="?page={{ p }}">{{ p }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+
+    {% if page_obj.has_next %}
+      <li class="list-reset">
+        <a href="?page={{ page_obj.next_page_number }}">&gt;&gt;</a>
+      </li>
+    {% endif %}
+    
+  </ul>
+{% endif %}
+
   </div>
 </section>
 
